@@ -16,7 +16,7 @@ facebook_username: chaangtristan
 instagram_username: tristan_chaang
 # linkedin_username:
 # pinterest_username:
-youtube_username: Tristan Chaang
+youtube_username: "Tristan Chaang"
 # googleplus_username: +jekyll
 
 # Mastodon instances
@@ -35,8 +35,8 @@ minima:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.html
+header_pages:
+  - pages/about.html
 
 # Build settings
 theme: minima
