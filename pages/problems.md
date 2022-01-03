@@ -23,4 +23,9 @@ MathJax.Hub.Queue(function() {
 </script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML-full"></script>
 
-Here are some of my favourite mathematical problems and some problems that I have set for BIMO: $x^2$
+Here are some of my favourite mathematical problems and some problems that I have set for BIMO:
+
+Let $k$ be a fixed positive integer and $f$ be a polynomial with integer coefficients such that $f(x) \neq 0$
+for all $x \in \mathbb{Z}$. We know that
+$$f(x) \mid f(x + k)$$
+for all $x \in \mathbb{Z}$. Prove that $f$ is constant.
