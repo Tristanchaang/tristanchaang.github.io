@@ -7,14 +7,14 @@ description: > # this means to ignore newlines until "twitter_username:"
   Google search results) and in your feed.xml site description.
 
 # social links
-# twitter_username: 
+# twitter_username:
 github_username: Tristanchaang
-# dribbble_username: 
+# dribbble_username:
 facebook_username: /chaangtristan
-# flickr_username: 
-instagram_username: @tristan_chaang
-# linkedin_username: 
-# pinterest_username: 
+# flickr_username:
+instagram_username: tristan_chaang
+# linkedin_username:
+# pinterest_username:
 youtube_username: Tristan Chaang
 # googleplus_username: +jekyll
 
@@ -24,7 +24,6 @@ youtube_username: Tristan Chaang
 #   instance: example.com
 # - username: jekyll2
 #   instance: example.com
-
 
 show_excerpts: true # set to true to show excerpts on the homepage
 
@@ -42,5 +41,5 @@ minima:
 theme: minima
 
 plugins:
- - jekyll-feed
- - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-seo-tag
