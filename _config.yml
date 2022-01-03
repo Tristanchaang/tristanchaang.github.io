@@ -7,16 +7,15 @@ description: > # this means to ignore newlines until "twitter_username:"
   Google search results) and in your feed.xml site description.
 
 # social links
-twitter_username: 
+# twitter_username: 
 github_username: Tristanchaang
-rss: rss
-# dribbble_username: jekyll
-# facebook_username: jekyll
-# flickr_username: jekyll
-# instagram_username: jekyll
-# linkedin_username: jekyll
-# pinterest_username: jekyll
-# youtube_username: jekyll
+# dribbble_username: 
+facebook_username: /chaangtristan
+# flickr_username: 
+instagram_username: @tristan_chaang
+# linkedin_username: 
+# pinterest_username: 
+youtube_username: Tristan Chaang
 # googleplus_username: +jekyll
 
 # Mastodon instances
