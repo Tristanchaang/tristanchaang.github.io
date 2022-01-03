@@ -25,6 +25,8 @@ MathJax.Hub.Queue(function() {
 
 Here are some of my favourite mathematical problems and some problems that I have set for BIMO:
 
+#Problem 1
+
 Let $k$ be a fixed positive integer and $f$ be a polynomial with integer coefficients such that $f(x) \neq 0$
 for all $x \in \mathbb{Z}$. We know that
 $$f(x) \mid f(x + k)$$
