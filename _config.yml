@@ -36,6 +36,7 @@ minima:
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 header_pages:
+  - pages/index.md
   - pages/about.md
   - pages/privacy.md
 
