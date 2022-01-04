@@ -20,9 +20,15 @@ permalink: /about/
 
 ## Interests
 
-* Maths
+* Problem solving
 * Teaching
 * Learning foreign languages
+* Shakespeare
+* Marvel Cinematic Universe (MCU)
+
+## Books
+
+* Techniques for High School Mathematics Contests
 
 ## Contests
 
