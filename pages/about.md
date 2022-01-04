@@ -14,9 +14,9 @@ permalink: /about/
 
 ## Education
 
-2016 - 2021: Kuen Cheng High School
+* 2016 - 2021: Kuen Cheng High School
 
-2021 - : Sunway College
+* 2021 - : Sunway College
 
 ## Interests
 
