@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Writing _Techniques for High School Mathematics Contests_"
+title: Writing _Techniques for High School Mathematics Contests_
 categories: misc
 ---
 
