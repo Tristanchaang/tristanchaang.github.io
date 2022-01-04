@@ -17,3 +17,11 @@ Nationality: Malaysian
 2016 - 2021: Kuen Cheng High School
 
 2021 - : Sunway College
+
+## Interests
+
+Maths, Teaching
+
+## Contests
+
+International Mathematical Olympiad (IMO)
