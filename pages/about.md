@@ -1,8 +1,10 @@
 ---
 layout: page
-title: About
+title: "About"
 permalink: /about/
 ---
+
+## Basic Info
 
 Full name: Chaang Tze Shen Tristan
 
