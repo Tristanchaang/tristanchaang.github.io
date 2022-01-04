@@ -35,5 +35,5 @@ for all $x \in \mathbb{Z}$. Prove that $f$ is constant.
 # Burnside's Lemma ([_The Lemma that is not Burnside's_](https://en.wikipedia.org/wiki/Burnside%27s_lemma))
 
 Let $G$ be any permutation group of $N=\{1,\cdots,n\}$. Let $f: N\rightarrow \{1,\cdots,m\}$ be a colouring of $N$. Two colourings $f_1$ and $f_2$ are said to be equivalent if $f_1(x)=f_2(g\cdot x)$ for some $g\in G$. The number of equivalence classes is
-$ \frac{1}{|G|}\sum _{g\in G}_ m^{C(g)}$
+$ \frac{1}{|G|}\sum \_{g\in G} m^{C(g)}$
 where $C(g)$ is the number of cycles in the cyclic decomposition of $g$.
