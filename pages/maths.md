@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Problemset
-permalink: /problemset/
+title: Maths
+permalink: /maths/
 ---
 
 <style TYPE="text/css">

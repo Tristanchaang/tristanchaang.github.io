@@ -36,7 +36,8 @@ minima:
 header_pages:
   - pages/index.md
   - pages/about.md
-  - pages/problemset.md
+  - pages/maths.md
+  - pages/lit.md
   - pages/privacy.md
 
 # Build settings
