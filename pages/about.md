@@ -6,11 +6,11 @@ permalink: /about/
 
 ## Basic Info
 
-Full name: Chaang Tze Shen Tristan
+* Chaang Tze Shen Tristan
 
-Age: 18
+* 18 years old
 
-Nationality: Malaysian
+* Malaysian
 
 ## Education
 
@@ -20,8 +20,10 @@ Nationality: Malaysian
 
 ## Interests
 
-Maths, Teaching
+* Maths
+* Teaching
+* Learning foreign languages
 
 ## Contests
 
-International Mathematical Olympiad (IMO)
+* International Mathematical Olympiad (IMO)
