@@ -15,7 +15,6 @@ where $C_{i,j}$ are all constants determined by the initial terms of the recursi
 <details>
 <summary> Click for Solution </summary> 
 Let $v_n=[a_n,a_{n-1},\cdots,a_{n-k+1}]$ for each $n\in \mathbb{Z}$. Note that if $M$ is the matrix
-
 <p align=center>
 $\begin{bmatrix}
 c_{k-1} & 1 & 0 & \cdots & 0\\
@@ -25,8 +24,7 @@ c_{k-3} & 0 & 0 & \cdots & 0\\
 c_0 & 0 & 0 & \cdots & 0
 \end{bmatrix}$
 </p>
-
-then $Mv_n = v_{n+1}$.
+then $v_nM = v_{n+1}$ and thus $v_n = v_0 M^n$. It is easy to verify that $\text{det}(xI-M)=f(x)$ via induction by expanding the last row. Write $M=P^{-1} J P$ in Jordan Form. Hence $v_n = v_0P^{-1}J^n P$. Recall that $J^n$ is made up of $n$-th powers of Jordan blocks, whose entries are all in the form $r_i {n-j} \binom{n}{j}$ etc. $\binom{n}{j}$ is just a polynomial in $n$. Expanded out, the first entry $a_n$ of $v_n$ definitely has the form as stated in the problem.
 </details>
 
 ## Burnside's Lemma ([_The Lemma that is not Burnside's_](https://en.wikipedia.org/wiki/Burnside%27s_lemma))
