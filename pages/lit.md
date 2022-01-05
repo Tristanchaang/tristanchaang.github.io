@@ -6,9 +6,9 @@ permalink: /literature/
 
 ### Romeo and Juliet
 
-What's in a name? That which we call a rose
+What's in a name? That which we call a rose  
 By any other name would smell as sweet.
 
 ### Julius Caesar
 
-Et tu Brute? Then fall Caesar!
+Et tu Brut\'{e}? Then fall Caesar!
