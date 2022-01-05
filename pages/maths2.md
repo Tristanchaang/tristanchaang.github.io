@@ -4,6 +4,17 @@ title: Favourite Problems
 permalink: /maths/favproblems
 ---
 
+## General Solution for Linear Recursion
+
+Suppose $a_n = c_{k-1}a_{n-1}+c_{k-2}a_{n-2}+\cdots + c_{0}a_{n-k}$ be a recursive relation of $a_i$ for constants $c_1,\cdots,c_k$. We define the _characteristic polynomial_ of this relation as $f(x) = x^k - c_{k-1}x^{k-1}- c_{k-2}x^{k-2} - \cdots - c_0$. If the factored form of $f(x)$ is $f(x) = \prod (x-r_i)^{m_i}$ where $r_i$ are distinct roots, then the general solution for $a_n$ is
+
+$a_n = \sum_{i} (C_{i0} + nC_{i1} + \cdots + n^{m-1} C_{i(m-1)}) r_i^n$.
+
+<details>
+<summary> Click for Solution </summary> 
+
+</details>
+
 ## Burnside's Lemma ([_The Lemma that is not Burnside's_](https://en.wikipedia.org/wiki/Burnside%27s_lemma))
 
 Let $G$ be any permutation group of $N=\\{1,\cdots,n\\}$. Let $f: N\rightarrow \\{1,\cdots,m\\}$ be a colouring of $N$ with $m$ colours. Two colourings $f_1$ and $f_2$ are said to be equivalent if $f_1=f_2 \circ g$ for some $g\in G$. The number of equivalence classes is $ \frac{1}{|G|}\sum_{g\in G} m^{C(g)}$
