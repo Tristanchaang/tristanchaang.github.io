@@ -26,12 +26,12 @@ c_{k-3} & 0 & 0 & \cdots & 0\\
 c_0 & 0 & 0 & \cdots & 0
 \end{bmatrix}$
 </p>
-then $\vec{v_n}M = \vec{v_{n+1}}$ and thus $\vec{v_n} = \vec{v_0} M^n$. It is easy to verify that $\text{det}(xI-M)=f(x)$ via induction by expanding the last row. Write $M=P^{-1} J P$ in Jordan Form. Hence $\vec{v_n} = \vec{v_0}P^{-1}J^n P$. Recall that $J^n$ is made up of $n$-th powers of Jordan blocks, whose entries are all in the form $\lambda _i {n-j} \binom{n}{j}$ etc. $\binom{n}{j}$ is just a polynomial in $n$. Expanded out, the first entry $a_n$ of $\vec{v_n}$ definitely has the form as stated in the problem.
+then $\vec{v_n}M = \vec{v_{n+1}}$ and thus $\vec{v_n} = \vec{v_0} M^n$. It is easy to verify that $\text{det}(xI-M)=f(x)$ via induction by expanding the last row. Write $M=P^{-1} J P$ in Jordan Form. Hence $\vec{v_n} = \vec{v_0}P^{-1}J^n P$. Recall that $J^n$ is made up of $n$-th powers of Jordan blocks, whose entries are all in the form $\lambda _i^{n-j} \binom{n}{j}$ etc. $\binom{n}{j}$ is just a polynomial in $n$. Expanded out, the first entry $a_n$ of $\vec{v_n}$ definitely has the form as stated in the problem.
 </details>
 
 ## General Solution for Homogeneous Differential Equation
 
-Suppose $y^{(n)} = c_{n-1}y^{(n-1)}$ + c_{n-2}y^{(n-2)} + \cdots + c_0 y$ is an ordinary differential equation of $y(t)$ with constants $c_1,\cdots,c_{n-1}$. We define the _characteristic polynomial_ of this ODE as $f(x) = x^k - c_{n-1}x^{n-1}- c_{n-2}x^{n-2} - \cdots - c_0$. If the factored form of $f(x)$ is $f(x) = \prod _i (x-\lambda _i)^{m_i}$ where $\lambda _i$ are distinct roots, then the general solution for $y$ is
+Suppose $y^{(n)} = c_{n-1}y^{(n-1)} + c_{n-2}y^{(n-2)} + \cdots + c_0 y$ is an ordinary differential equation of $y(t)$ with constants $c_1,\cdots,c_{n-1}$. We define the _characteristic polynomial_ of this ODE as $f(x) = x^k - c_{n-1}x^{n-1}- c_{n-2}x^{n-2} - \cdots - c_0$. If the factored form of $f(x)$ is $f(x) = \prod _i (x-\lambda _i)^{m_i}$ where $\lambda _i$ are distinct roots, then the general solution for $y$ is
 
 <p align=center> $y = \sum_{i} (C_{i,0} + nC_{i,1} + \cdots + n^{m_i-1} C_{i,m_i-1}) e^{\lambda _it}$. </p>
 
