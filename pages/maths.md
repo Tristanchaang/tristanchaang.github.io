@@ -7,6 +7,10 @@ permalink: /maths/
 
 Here are some of my favourite mathematical problems and some problems that I have set for BIMO:
 
+[A](maths1.md)
+
+[B](maths2.md)
+
 ## Problem 1
 
 Let $k$ be a fixed positive integer and $f$ be a polynomial with integer coefficients such that $f(x) \neq 0$
