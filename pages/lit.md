@@ -11,4 +11,4 @@ By any other name would smell as sweet.
 
 ### Julius Caesar
 
-Et tu Brut\'{e}? Then fall Caesar!
+Et tu Brute? Then fall Caesar!

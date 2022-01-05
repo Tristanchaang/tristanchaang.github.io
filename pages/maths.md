@@ -15,7 +15,7 @@ for all $x \in \mathbb{Z}$. We know that
 for all $x \in \mathbb{Z}$. Prove that $f$ is constant.
 
 <details>
-<summary> Solution </summary>
+<summary> <button> Solution </button> </summary>
 This is yes.
 </details>
 
