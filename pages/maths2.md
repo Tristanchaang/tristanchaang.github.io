@@ -8,11 +8,18 @@ permalink: /maths/favproblems
 
 Suppose $a_n = c_{k-1}a_{n-1}+c_{k-2}a_{n-2}+\cdots + c_{0}a_{n-k}$ be a recursive relation of $a_i$ with constants $c_1,\cdots,c_k$. We define the _characteristic polynomial_ of this relation as $f(x) = x^k - c_{k-1}x^{k-1}- c_{k-2}x^{k-2} - \cdots - c_0$. If the factored form of $f(x)$ is $f(x) = \prod (x-r_i)^{m_i}$ where $r_i$ are distinct roots, then the general solution for $a_n$ is
 
-<p align=center> $a_n = \sum_{i} (C_{i0} + nC_{i1} + \cdots + n^{m-1} C_{i(m-1)}) r_i^n$. </p>
+<p align=center> $a_n = \sum_{i} (C_{i,0} + nC_{i,1} + \cdots + n^{m-1} C_{i,m-1}) r_i^n$. </p>
+
+where $C_{i,j}$ are all constants determined by the initial terms of the recursion.
 
 <details>
 <summary> Click for Solution </summary> 
-
+Let $v_n=(a_n,a_{n-1},\cdots,a_{n-k})$ for each $n\in \mathbb{Z}$. Note that if $M$ is the matrix
+$\begin{bmatrix}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+7 & 8 & 9
+\end{bmatrix}$
 </details>
 
 ## Burnside's Lemma ([_The Lemma that is not Burnside's_](https://en.wikipedia.org/wiki/Burnside%27s_lemma))
