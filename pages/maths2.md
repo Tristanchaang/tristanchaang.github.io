@@ -6,9 +6,9 @@ permalink: /maths/favproblems
 
 ## General Solution for Linear Recursion
 
-Suppose $a_n = c_{k-1}a_{n-1}+c_{k-2}a_{n-2}+\cdots + c_{0}a_{n-k}$ be a recursive relation of $a_i$ for constants $c_1,\cdots,c_k$. We define the _characteristic polynomial_ of this relation as $f(x) = x^k - c_{k-1}x^{k-1}- c_{k-2}x^{k-2} - \cdots - c_0$. If the factored form of $f(x)$ is $f(x) = \prod (x-r_i)^{m_i}$ where $r_i$ are distinct roots, then the general solution for $a_n$ is
+Suppose $a_n = c_{k-1}a_{n-1}+c_{k-2}a_{n-2}+\cdots + c_{0}a_{n-k}$ be a recursive relation of $a_i$ with constants $c_1,\cdots,c_k$. We define the _characteristic polynomial_ of this relation as $f(x) = x^k - c_{k-1}x^{k-1}- c_{k-2}x^{k-2} - \cdots - c_0$. If the factored form of $f(x)$ is $f(x) = \prod (x-r_i)^{m_i}$ where $r_i$ are distinct roots, then the general solution for $a_n$ is
 
-$a_n = \sum_{i} (C_{i0} + nC_{i1} + \cdots + n^{m-1} C_{i(m-1)}) r_i^n$.
+<p align=center> $a_n = \sum_{i} (C_{i0} + nC_{i1} + \cdots + n^{m-1} C_{i(m-1)}) r_i^n$. </p>
 
 <details>
 <summary> Click for Solution </summary> 
