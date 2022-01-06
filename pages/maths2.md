@@ -4,8 +4,6 @@ title: Favourite Problems
 permalink: /maths/favproblems
 ---
 
-<link type="text/css" href="styles.css"/>
-
 Here are some of my favourite maths problems that I solved.
 
 ### General Solution for Linear Recursion
