@@ -8,4 +8,4 @@ _Techniques for High School Mathematics Contests_ is the first book I have writt
 
 Nonetheless, it is a great book for maths enthusiasts to learn about advanced topics such as complex numbers, calculus, vector geometry etc and at the same time explore the beauty of them.
 
-<a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/Preview.pdf" download>Here</a> is a preview of the book. If you're interested in the book, please do email me and I will reply as soon as possible.
+<a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Preview.pdf" download>Here</a> is a preview of the book. If you're interested in the book, please do email me and I will reply as soon as possible.

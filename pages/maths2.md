@@ -40,7 +40,7 @@ Suppose $y^{(n)} = c_{n-1}y^{(n-1)} + c_{n-2}y^{(n-2)} + \cdots + c_0 y$ is an o
 where $C_{i,j}$ are all constants.
 
 <details>
-<summary> Click for Proof </summary> 
+<summary onmouseover="alert(Are you sure?)"> Click for Proof </summary> 
 We proceed like the previous problem. Let $\vec{v}=[y^{(n-1)},y^{(n-1)},\cdots,y]$ for each $n\in \mathbb{Z}$. Note that if $M$ is the matrix
 <p align=center>
 $\begin{bmatrix}
