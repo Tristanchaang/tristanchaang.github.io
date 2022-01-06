@@ -8,7 +8,7 @@ Here are some of my favourite maths problems that I solved.
 
 ### General Solution for Linear Recursion
 
-Suppose $a_n = c_{k-1}a_{n-1}+c_{k-2}a_{n-2}+\cdots + c_{0}a_{n-k}$ is a recursive relation of $a_i$ with constants $c_1,\cdots,c_{k-1}$. We define the _characteristic polynomial_ of this relation as $f(x) = x^k - c_{k-1}x^{k-1}- c_{k-2}x^{k-2} - \cdots - c_0$. If the factored form of $f(x)$ is $f(x) = \prod (x-\lambda _i)^{m_i}$ where $\lambda _i$ are distinct roots, then the general solution for $a_n$ is
+Suppose $a_n = c_{k-1}a_{n-1}+c_{k-2}a_{n-2}+\cdots + c_{0}a_{n-k}$ is a recursive relation of $a_i$ with constants $c_1,\cdots,c_{k-1}$. We define the _characteristic polynomial_ of this relation as $f(x) = x^k - c_{k-1}x^{k-1}- c_{k-2}x^{k-2} - \cdots - c_0$. If the factored form of $f(x)$ is $f(x) = \prod _i (x-\lambda _i)^{m_i}$ where $\lambda _i$ are distinct roots, then the general solution for $a_n$ is
 
 <p align=center> $a_n = \sum_{i} (C_{i,0} + nC_{i,1} + \cdots + n^{m_i-1} C_{i,m_i-1}) \lambda _i^n$. </p>
 
@@ -39,7 +39,9 @@ Suppose $y^{(n)} = c_{n-1}y^{(n-1)} + c_{n-2}y^{(n-2)} + \cdots + c_0 y$ is an o
 
 where $C_{i,j}$ are all constants.
 
-<details class="boxed">
+<div class="boxed"> hi </div>
+
+<details>
 <summary> Click for Proof </summary> 
 We proceed like the previous problem. Let $\vec{v}=[y^{(n-1)},y^{(n-1)},\cdots,y]$ for each $n\in \mathbb{Z}$. Note that if $M$ is the matrix
 <p align=center>
