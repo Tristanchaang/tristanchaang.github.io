@@ -18,6 +18,12 @@ permalink: /about/
 
 * 2021 - : Sunway College
 
+## Contests
+
+* International Mathematical Olympiad (IMO) - Bronze
+* Iranian Geometry Olympiad (IGO) - Silver
+* Chen Jing-Run Cup Mathematics Contest - National 1st
+
 ## Interests
 
 * Problem solving
@@ -26,10 +32,7 @@ permalink: /about/
 * Shakespeare
 * Marvel Cinematic Universe (MCU)
 
+
 ## Books
 
 * Techniques for High School Mathematics Contests
-
-## Contests
-
-* International Mathematical Olympiad (IMO)
