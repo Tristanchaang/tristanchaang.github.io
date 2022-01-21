@@ -14,6 +14,7 @@ Suppose $a_n = c_{k-1}a_{n-1}+c_{k-2}a_{n-2}+\cdots + c_{0}a_{n-k}$ is a recursi
 
 where $C_{i,j}$ are all constants determined by the initial terms of the recursion.
 
+<div class="boxed">
 <details>
 <summary> Click for Proof </summary> 
 Let $\vec{v_n}=[a_n,a_{n-1},\cdots,a_{n-k+1}]$ for each $n\in \mathbb{Z}$. Note that if $M$ is the matrix
@@ -28,6 +29,7 @@ c_0 & 0 & 0 & \cdots & 0
 </p>
 then $\vec{v_n}M = \vec{v_{n+1}}$ and thus $\vec{v_n} = \vec{v_0} M^n$. It is easy to verify that $\text{det}(xI-M)=f(x)$ via induction by expanding the last row. Write $M=P^{-1} J P$ in Jordan Form. Hence $\vec{v_n} = \vec{v_0}P^{-1}J^n P$. Recall that $J^n$ is made up of $n$-th powers of Jordan blocks, whose entries are all in the form $\lambda _i^{n-j} \binom{n}{j}$ etc. $\binom{n}{j}$ is just a polynomial in $n$. Expanded out, the first entry $a_n$ of $\vec{v_n}$ definitely has the form as stated in the problem.
 </details>
+</div>
 
 <hr/>
 
@@ -63,7 +65,9 @@ then $\vec{v}M = \frac{d\vec{v}}{dt}$. Using the useful property of matrix expon
 Let $G$ be any permutation group of $N=\\{1,\cdots,n\\}$. Let $f: N\rightarrow \\{1,\cdots,m\\}$ be a colouring of $N$ with $m$ colours. Two colourings $f_1$ and $f_2$ are said to be equivalent if $f_1=f_2 \circ g$ for some $g\in G$. The number of equivalence classes is $ \frac{1}{|G|}\sum_{g\in G} m^{C(g)}$
 where $C(g)$ is the number of cycles in the cyclic decomposition of $g$.
 
+<div class="boxed">
 <details>
 <summary> Click for Proof </summary> 
 Let $G$ act on the set $S= \{f_i\}$ of colourings by the rule $g(f) = f \circ g$. The number of colourings fixed by an element $g\in G$ is exactly $m^{C(g)}$ because for such colourings, every element of $\{1,\cdots,n\}$ situated in the same cycle of $g$ must have the same colour and elements situated in different cycles can freely have different colours. Therefore, using double counting, $\sum_{g\in G} m^{C(g)} = \sum_{f \in S} |\text{Stab}(f)|$. By the Orbit-Stabiliser theorem, $|\text{Stab}(f)| = \frac{|G|}{|O_f|} $ where $O_f$ is the orbit of $f$. In conclusion, the number of orbits in total is $\sum_{f\in S} \frac{1}{|O_f|} = \sum_{f\in S} \frac{|\text{Stab}(f)|}{|G|} = \frac{1}{|G|} \sum_{g\in G} m^{C(g)}$.
 </details>
+</div>
