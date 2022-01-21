@@ -39,8 +39,7 @@ Suppose $y^{(n)} = c_{n-1}y^{(n-1)} + c_{n-2}y^{(n-2)} + \cdots + c_0 y$ is an o
 
 where $C_{i,j}$ are all constants.
 
-<div class="boxed"> hi </div>
-
+<div class="boxed">
 <details>
 <summary> Click for Proof </summary> 
 We proceed like the previous problem. Let $\vec{v}=[y^{(n-1)},y^{(n-1)},\cdots,y]$ for each $n\in \mathbb{Z}$. Note that if $M$ is the matrix
@@ -55,6 +54,7 @@ c_0 & 0 & 0 & \cdots & 0
 </p>
 then $\vec{v}M = \frac{d\vec{v}}{dt}$. Using the useful property of matrix exponentials, $\vec{v}=\vec{v_0}e^{tM}$ for some constant $\vec{v_0}$. Write $M$ as the Jordan form and proceed as the previous problem.
 </details>
+</div>
 
 <hr/>
 
