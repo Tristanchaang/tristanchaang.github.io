@@ -4,6 +4,11 @@ title: "Literature"
 permalink: /literature/
 ---
 
+### Henry VI Part II
+
+Ignorance is the curse of God; 
+knowledge is the wing wherewith we fly to heaven. (Act IV Scene 7)
+
 ### Romeo and Juliet
 
 What's in a name? That which we call a rose  
