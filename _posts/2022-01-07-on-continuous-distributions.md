@@ -1,6 +1,6 @@
 ---
 layout: post
-title: On Continuous Distributions (Article Attached)
+title: On Continuous Distributions (Attached)
 ---
 
 Here is an article I have written about the several continuous distributions that we learnt in high-school, namely the normal distribution, t-distribution and chi-squared distributions. 
@@ -9,4 +9,4 @@ These are all bell-shaped curves, and therefore it is meaningless to define a no
 
 Most importantly, I will be deriving the curve equations (called the _pdf_) for each of these distributions.
 
-<a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/On-Continuous-Distributions.pdf" download>Click here</a> to download the article. (article still in progress)
+<a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/On-Continuous-Distributions.pdf" download>Click here</a> to download the article. 
