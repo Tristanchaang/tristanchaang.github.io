@@ -1,4 +1,9 @@
 .boxed {
     border: 3px solid black;
     background-color: lightgray;
+    border-radius: 10px;
+}
+
+.click {
+    cursor: pointer;
 }
