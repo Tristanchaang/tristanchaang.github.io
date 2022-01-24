@@ -16,7 +16,7 @@ where $C_{i,j}$ are all constants determined by the initial terms of the recursi
 
 <div class="boxed">
 <details>
-<summary> Click for Proof </summary> 
+<summary> <span class="click">Click for Proof</span> </summary> 
 Let $\vec{v_n}=[a_n,a_{n-1},\cdots,a_{n-k+1}]$ for each $n\in \mathbb{Z}$. Note that if $M$ is the matrix
 <p align=center>
 $\begin{bmatrix}
@@ -43,7 +43,7 @@ where $C_{i,j}$ are all constants.
 
 <div class="boxed">
 <details>
-<summary> Click for Proof </summary> 
+<summary> <span class="click">Click for Proof</span> </summary> 
 We proceed like the previous problem. Let $\vec{v}=[y^{(n-1)},y^{(n-1)},\cdots,y]$ for each $n\in \mathbb{Z}$. Note that if $M$ is the matrix
 <p align=center>
 $\begin{bmatrix}
@@ -67,7 +67,7 @@ where $C(g)$ is the number of cycles in the cyclic decomposition of $g$.
 
 <div class="boxed">
 <details>
-<summary> Click for Proof </summary> 
+<summary> <span class="click">Click for Proof</span> </summary> 
 Let $G$ act on the set $S= \{f_i\}$ of colourings by the rule $g(f) = f \circ g$. The number of colourings fixed by an element $g\in G$ is exactly $m^{C(g)}$ because for such colourings, every element of $\{1,\cdots,n\}$ situated in the same cycle of $g$ must have the same colour and elements situated in different cycles can freely have different colours. Therefore, using double counting, $\sum_{g\in G} m^{C(g)} = \sum_{f \in S} |\text{Stab}(f)|$. By the Orbit-Stabiliser theorem, $|\text{Stab}(f)| = \frac{|G|}{|O_f|} $ where $O_f$ is the orbit of $f$. In conclusion, the number of orbits in total is $\sum_{f\in S} \frac{1}{|O_f|} = \sum_{f\in S} \frac{|\text{Stab}(f)|}{|G|} = \frac{1}{|G|} \sum_{g\in G} m^{C(g)}$.
 </details>
 </div>
