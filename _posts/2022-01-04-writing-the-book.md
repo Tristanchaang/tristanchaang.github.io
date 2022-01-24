@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Writing My First Book (Attached)
-categories: misc
 ---
 
 _Techniques for High School Mathematics Contests_ is the first book I have written. It is a result from the many years of training high school students in preparing national contests such as OMK, IMONST, Chen Jing-Run cup, Hua Lo-Geng cup etc. In this book, I explore with the reader several techniques and concepts that are somewhat useful in these contests, assuming the reader has basic understanding of high school maths. This book, however, is not sufficient to prepare the reader for olympiad-level contests. 
