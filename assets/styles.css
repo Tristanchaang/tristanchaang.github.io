@@ -7,3 +7,7 @@
 .click {
     cursor: pointer;
 }
+
+.wrapper {
+    background-color: aquamarine;
+}
