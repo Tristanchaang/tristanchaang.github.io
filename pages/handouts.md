@@ -14,6 +14,8 @@ permalink: /handouts/
 
 #### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Elementary-Inequalities.pdf" download>Elementary Inequalities</a>
 
+#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Complex-Numbers.pdf" download>Complex Numbers</a>
+
 ### Non-Olympiad
 
 #### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/On-Continuous-Distributions.pdf" download>Continuous Distributions</a>
