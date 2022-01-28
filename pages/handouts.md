@@ -16,6 +16,8 @@ permalink: /handouts/
 
 #### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Complex-Numbers.pdf" download>Complex Numbers</a>
 
+#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Modular-Arithmetic.pdf" download>Modular Arithmetic</a>
+
 ### Non-Olympiad
 
 #### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/On-Continuous-Distributions.pdf" download>Continuous Distributions</a>
