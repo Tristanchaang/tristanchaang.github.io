@@ -22,6 +22,8 @@ permalink: /handouts/
 
 #### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/On-Continuous-Distributions.pdf" download>Continuous Distributions</a>
 
+#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Linear-Algebra.pdf" download>Linear Algebra</a>
+
 ### Other Notes
 
 #### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Chemicals.pdf" download>SPM Chemicals</a>
