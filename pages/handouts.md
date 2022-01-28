@@ -20,7 +20,7 @@ permalink: /handouts/
 
 #### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Chemicals.pdf" download>SPM Chemicals</a>
 
-#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Chemicals-For-Consumers.pdf" download>SPM Chemicals for  (Form 5)</a>
+#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Chemicals-For-Consumers.pdf" download>SPM Chemicals for Consumers (Form 5)</a>
 
 #### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Manufactured-Substances-In-Industry.pdf" download>SPM Manufactured Substances in Industry (Form 4)</a>
 
