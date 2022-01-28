@@ -12,6 +12,8 @@ permalink: /handouts/
 
 #### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Combinatorics.pdf" download>General Combinatorial Problems</a>
 
+#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Elementary-Inequalities.pdf" download>Elementary Inequalities</a>
+
 ### Non-Olympiad
 
 #### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/On-Continuous-Distributions.pdf" download>Continuous Distributions</a>
