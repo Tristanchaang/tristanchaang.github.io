@@ -12,4 +12,4 @@ Most importantly, I will be deriving the curve equations (called the _pdf_) for 
 <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/On-Continuous-Distributions.pdf" download>Click here</a> to download the article, or read it here:
 
 <embed src="https://drive.google.com/viewerng/
-viewer?embedded=true&url=http://tristanchaang.github.io/downloads/On-Continuous-Distributions.pdf" type="application/pdf" width="100%" height="600px" />
+viewer?embedded=true&url=http://tristanchaang.github.io/downloads/On-Continuous-Distributions.pdf" width="100%" height="600px" />

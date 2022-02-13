@@ -10,4 +10,4 @@ Nonetheless, it is a great book for maths enthusiasts to learn about advanced to
 <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Preview.pdf" download>Click here</a> to download a preview of the book, or read it below. If you're interested in the book, please do email me and I will reply as soon as possible.
 
 <embed src="https://drive.google.com/viewerng/
-viewer?embedded=true&url=http://tristanchaang.github.io/downloads/Preview.pdf" type="application/pdf" width="100%" height="600px" />
+viewer?embedded=true&url=http://tristanchaang.github.io/downloads/Preview.pdf" width="100%" height="600px" />

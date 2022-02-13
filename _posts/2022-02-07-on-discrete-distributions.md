@@ -8,4 +8,4 @@ This is a follow-up article of _On Continuous Distributions_. It explores a few 
 <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/On-Discrete-Distributions.pdf" download>Click here</a> to download the article, or read it here:
 
 <embed src="https://drive.google.com/viewerng/
-viewer?embedded=true&url=http://tristanchaang.github.io/downloads/On-Discrete-Distributions.pdf" type="application/pdf" width="100%" height="600px" />
+viewer?embedded=true&url=http://tristanchaang.github.io/downloads/On-Discrete-Distributions.pdf" width="100%" height="600px" />
