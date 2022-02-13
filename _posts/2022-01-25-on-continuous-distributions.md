@@ -1,6 +1,6 @@
 ---
 layout: post
-title: On Continuous Distributions (Attached)
+title: On Continuous Distributions
 ---
 
 Here is an article I have written about the several continuous distributions that we learnt in high-school, namely the normal distribution, t-distribution and chi-squared distributions. 
