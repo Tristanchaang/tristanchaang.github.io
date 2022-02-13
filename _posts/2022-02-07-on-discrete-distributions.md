@@ -1,6 +1,6 @@
 ---
 layout: post
-title: On Discrete Distributions (Attached)
+title: On Discrete Distributions
 ---
 
 This is a follow-up article of _On Continuous Distributions_. It explores a few well-known discrete distributions and gives derivations and explanations about them. The binomial, geometric, Poisson, uniform distributions are discussed, together with how the Wilcoxon test works.
