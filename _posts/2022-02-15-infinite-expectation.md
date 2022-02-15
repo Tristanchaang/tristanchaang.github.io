@@ -13,6 +13,6 @@ Let's compute the expected prize of this game. The game must be a sequence of (s
 
 What's going on here? The expected prize is infinite! In other words, if you play this game enough number of times, you will, on average, get infinite money, so anyone should pay any finite amount of money to play this game.
 
-However, this does not make much sense. What if you just paid $10^{100}$ dollars to play the game, but got a tails on the first try. I cannot imagine how angry you would be.
+However, this does not make much sense. What if you just paid $10^{100}$ dollars to play the game, but got a tails on the first try? I cannot imagine how angry you would be.
 
 Is this computation hence flawed? Or are human beings just not rational enough? Unfortunately, the fact might really incline towards the latter. If we 
