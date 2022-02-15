@@ -15,4 +15,6 @@ What's going on here? The expected prize is infinite! In other words, if you pla
 
 However, this does not make much sense. What if you just paid $10^{100}$ dollars to play the game, but got a tails on the first try? I cannot imagine how angry you would be.
 
-Is this computation hence flawed? Or are human beings just not rational enough? Unfortunately, the fact might really incline towards the latter. If we 
+Is this computation hence flawed? Or are human beings just not rational enough? The key reason why $E(X)$ is infinite is because the prizes are rising with the same speed as the fall in the probability. In essence, it is a situation where _winning a lot of money is rare, but if I won I would get so much money!_ If we were to play this game infinitely many times, then the amount of money won from the really lucky games will eventually cover up the games in which we only won a little a bit of money.
+
+Hence the computation isn't flawed, but human beings aren't irrational either. It is impossible to play this game an arbitrarily large number of times. Even if we can, casinoes will not host this game as they will also expect infinite losses!
