@@ -9,7 +9,7 @@ We want to characterise sets with nice structures. In mathematics, when we give 
 
 Before we define a group, we have to define a binary operation. A _binary operation_ on a set $A$, like the $+,-,\times$ operations on $\mathbb{Z}$, is technically a function from $A\times A \rightarrow A$, that is, a function taking two inputs and giving one output in the same set. For example, $5+3=8$ can be said as $+$ taking the input $(5,3)$ and giving the output $8$, or written non-conventionally as $+(5,3)=8$.
 
-Some binary operations are 'neat', others are not: The operation $* = +$ on $\mathbb{Q}$ satisfies $a * (b * c) = (a * b) * c$, but the operation $*=-$ does not. This property, $a * (b * c) = (a * b) * c$, is called associativity, because if we write $a * b * c$, it doesn't matter which $*$ we associate as the first operation we do. Another property that some binary operations have is $a * b = b * a$, which is called commutativity. 
+Some binary operations are 'neat', others are not: The operation $ * = + $ on $\mathbb{Q}$ satisfies $a * (b * c) = (a * b) * c$, but the operation $ * = - $ does not. This property, $a * (b * c) = (a * b) * c$, is called associativity, because if we write $a * b * c$, it doesn't matter which $*$ we associate as the first operation we do. Another property that some binary operations have is $a * b = b * a$, which is called commutativity. 
 
 We are ready to define a group. A _group_ is a set $G$ with a binary operation $*$ on it (can be written as $(G,*)$), such that
 
