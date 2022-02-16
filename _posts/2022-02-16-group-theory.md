@@ -12,3 +12,9 @@ Before we define a group, we have to define a binary operation. A _binary operat
 Some binary operations are 'neat', others are not: The operation $* = +$ on $\mathbb{Q}$ satisfies $a * (b * c) = (a * b) * c$, but the operation $*=-$ does not. This property, $a * (b * c) = (a * b) * c$, is called associativity, because if we write $a * b * c$, it doesn't matter which $*$ we associate as the first operation we do. Another property that some binary operations have is $a * b = b * a$, which is called commutativity. 
 
 We are ready to define a group. A _group_ is a set $G$ with a binary operation $*$ on it (can be written as $(G,*)$), such that
+
+1. $*$ is associative, i.e. $a * (b * c) = (a * b) * c$ for any $a,b,c \in G$.
+
+2. There exists an identity element $e$. This is an element that satisfies $a * e = e * a = a$ for any $a \in G$.
+
+3. For every element $a \in G$, there exists an inverse $a^{-1} \in G$. This is an element such that $a * a^{-1} = e$.
