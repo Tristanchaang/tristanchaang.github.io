@@ -19,7 +19,7 @@ Define $\displaystyle F(x) = \sum_{n\geq 0} a_nx^n$. The given conditions imply 
 We are left to find $\displaystyle a_n= \frac{F^{(n)}(0)}{n!}$. By definition of residue, $\displaystyle \frac{F^{(n)}(0)}{n!} = \text{Res} \left(\frac{F(x)}{x^{n+1}},0\right)$.
 Let $\displaystyle f(z) = \frac{F(z)}{z^{n+1}} = \frac{1}{z^n \ln(1-z)}$ be a complex function where $\ln$ is the complex logarithm. The arguments are in the range $[-\pi,\pi)$. Therefore the branch cut of $f$ is where $1-z \leq 0 \ (z\in \mathbb{R})$. Apply an anticlockwise keyhole integral around the point $z=1$:
 
-![The Coutour](/contour.png)
+![The Coutour](contour.png)
 
 <p align="center"> $\displaystyle 2\pi i\ a_n= 2\pi i\ \text{Res} \left(\frac{F(x)}{x^{n+1}}\right) = \oint f(z) \ dz =\int_\Gamma + \int_\gamma + \int_{C_1} + \int_{C_2}$ </p>
 
