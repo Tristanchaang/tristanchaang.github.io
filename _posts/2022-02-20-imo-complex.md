@@ -19,7 +19,7 @@ Let $\displaystyle f(z) = \frac{F(z)}{z^{n+1}} = \frac{1}{z^n \ln(1-z)}$ be a co
 
 <p align="center"> $\displaystyle 2\pi ia_n&= 2\pi i\text{Res} \pr{\frac{F(x)}{x^{n+1}},0}\\
     &= \oint f(z) \ dz\\
-    &=\int_\Gamma + \int_\gamma + \int_{C_1} + \int_{C_2}$ <p align="center">
+    &=\int_\Gamma + \int_\gamma + \int_{C_1} + \int_{C_2}$ </p>
 
 Taking the large radius to infinity and the small radius to 0:
 
