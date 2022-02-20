@@ -11,10 +11,10 @@ Show that $a_n>0$ for all $n\geq 1$.
 
 Define $\displaystyle F(x) = \sum_{n\geq 0} a_nx^n$. The given conditions imply $\displaystyle F(x) \cdot \sum_{n \geq 0} \frac{x^n}{n+1} = -1$, but
 
-<p align="center"> $\displaystyle \sum_{n\geq 0} \frac{x^n}{n+1} &= \frac{1}{x} \int_{0}^x \sum_{n\geq 0} X^{n}\ dX = -\frac{\ln(1-x)}{x},\\
-    \therefore F(x) &= \frac{x}{\ln(1-x)}.$ </p>
+<p align="center"> $\displaystyle \sum_{n\geq 0} \frac{x^n}{n+1} = \frac{1}{x} \int_{0}^x \sum_{n\geq 0} X^{n}\ dX = -\frac{\ln(1-x)}{x}$ </p>
+<p align="center"> $\therefore F(x) = \frac{x}{\ln(1-x)}.$ </p>
 
-We are left to find $\displaystyle a_n=\DS \frac{F^{(n)}(0)}{n!}$. By definition of residue, $\displaystyle \frac{F^{(n)}(0)}{n!} = \text{Res} \pr{\frac{F(x)}{x^{n+1}},0}$.
+We are left to find $\displaystyle a_n= \frac{F^{(n)}(0)}{n!}$. By definition of residue, $\displaystyle \frac{F^{(n)}(0)}{n!} = \text{Res} \pr{\frac{F(x)}{x^{n+1}},0}$.
 Let $\displaystyle f(z) = \frac{F(z)}{z^{n+1}} = \frac{1}{z^n \ln(1-z)}$ be a complex function where $\ln$ is the complex logarithm. The arguments are in the range $[-\pi,\pi)$. Therefore the branch cut of $f$ is where $1-z \leq 0 \ (z\in \mathbb{R})$. Apply an anticlockwise keyhole integral around the point $z=1$:
 
 <p align="center"> $\displaystyle 2\pi ia_n&= 2\pi i\text{Res} \pr{\frac{F(x)}{x^{n+1}},0}\\
