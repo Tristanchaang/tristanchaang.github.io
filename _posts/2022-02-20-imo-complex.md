@@ -21,9 +21,7 @@ Let $\displaystyle f(z) = \frac{F(z)}{z^{n+1}} = \frac{1}{z^n \ln(1-z)}$ be a co
 
 ![The Coutour](/contour.png)
 
-<p align="left"> $\displaystyle 2\pi i\ a_n= 2\pi i\ \text{Res} \left(\frac{F(x)}{x^{n+1}}\right)$ </p>
-<p align="left"> $\displaystyle= \oint f(z) \ dz$ </p>
-<p align="left"> $\displaystyle=\int_\Gamma + \int_\gamma + \int_{C_1} + \int_{C_2}$ </p>
+<p align="center"> $\displaystyle 2\pi i\ a_n= 2\pi i\ \text{Res} \left(\frac{F(x)}{x^{n+1}}\right) = \oint f(z) \ dz =\int_\Gamma + \int_\gamma + \int_{C_1} + \int_{C_2}$ </p>
 
 Taking the large radius to infinity and the small radius to 0:
 
