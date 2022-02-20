@@ -28,12 +28,15 @@ Taking the large radius to infinity and the small radius to 0:
 <p align="left"> $\displaystyle\left|\int_\Gamma \right|= \left| \int_{\varepsilon}^{2\pi-\varepsilon} \frac{Ri\ d\theta}{R^ne^{ni\theta}\ln(1-Re^{i\theta})}\right|\lessapprox \int_{\varepsilon}^{2\pi-\varepsilon} \left|\frac{1}{R^{n-1}\ln(R)}\right|\ d\theta \xrightarrow{R\rightarrow \infty} 0\\
     \displaystyle \left|\int_\gamma \right|= \left| \int_{\varepsilon}^{2\pi-\varepsilon} \frac{ri\ d\theta}{(1+re^{i\theta})^n\ln(-re^{i\theta})}\right|\lessapprox \int_{\varepsilon}^{2\pi-\varepsilon} \left|\frac{r}{\ln(r)}\right|\ d\theta \xrightarrow{r\rightarrow 0} 0.$ </p>
 
-For the remaining two curves,
+For the curve $C_1$,
 
 <p align="left"> $\displaystyle \int_{C_1} = \int_{1+\varepsilon}^R \frac{dx}{(x+i\varepsilon)^n\ln(1-x-i\varepsilon)}$ </p>
 <p align="left"> $\displaystyle = \int_{1+\varepsilon}^R \frac{dx}{(x+i\varepsilon)^n(\ln|1-x-i\varepsilon|+ i\arg(1-x-i\varepsilon) )}$ </p>
 <p align="left"> $\displaystyle \xrightarrow{\substack{\varepsilon \rightarrow 0\\R\rightarrow \infty}} \int_{1}^\infty \frac{dx}{x^n(\ln(x-1)-i\pi)}$ </p>
 <p align="left"> $\displaystyle = \int_{1}^\infty \frac{\ln(x-1)+i\pi}{x^n(\ln^2(x-1)+\pi^2)}\ dx$ </p>
+
+For the curve $C_2$,
+
 <p align="left"> $\displaystyle \int_{C_2} = \int^{1+\varepsilon}_R \frac{dx}{(x-i\varepsilon)^n\ln(1-x+i\varepsilon)}$ </p>
 <p align="left"> $\displaystyle =- \int_{1+\varepsilon}^R \frac{dx}{(x-i\varepsilon)^n(\ln|1-x+i\varepsilon|+ i\arg(1-x+i\varepsilon) )}$ </p>
 <p align="left"> $\displaystyle \xrightarrow{\substack{\varepsilon \rightarrow 0\\R\rightarrow \infty}} -\int_{1}^\infty \frac{dx}{x^n(\ln(x-1)+i\pi)}$ </p>
