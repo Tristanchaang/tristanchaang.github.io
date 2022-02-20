@@ -11,15 +11,15 @@ Show that $a_n>0$ for all $n\geq 1$.
 
 Define $\displaystyle F(x) = \sum_{n\geq 0} a_nx^n$. The given conditions imply $\displaystyle F(x) \cdot \sum_{n \geq 0} \frac{x^n}{n+1} = -1$, but
 
-<p align="center"> $\displaystyle \sum_{n\geq 0} \frac{x^n}{n+1} = \frac{1}{x} \int_{0}^x \sum_{n\geq 0} X^{n}\ dX = -\frac{\ln(1-x)}{x}$ </p>
-<p align="center"> $\therefore F(x) = \frac{x}{\ln(1-x)}.$ </p>
+<p align="center"> $\displaystyle \sum_{n\geq 0} \frac{x^n}{n+1} = \frac{1}{x} \int_{0}^x \sum_{n\geq 0} X^{n}\ dX = -\frac{\ln(1-x)}{x},$ </p>
+<p align="center"> $\displaystyle \therefore F(x) = \frac{x}{\ln(1-x)}.$ </p>
 
-We are left to find $\displaystyle a_n= \frac{F^{(n)}(0)}{n!}$. By definition of residue, $\displaystyle \frac{F^{(n)}(0)}{n!} = \text{Res} \pr{\frac{F(x)}{x^{n+1}},0}$.
+We are left to find $\displaystyle a_n= \frac{F^{(n)}(0)}{n!}$. By definition of residue, $\displaystyle \frac{F^{(n)}(0)}{n!} = \text{Res} \left(\frac{F(x)}{x^{n+1}},0\right)$.
 Let $\displaystyle f(z) = \frac{F(z)}{z^{n+1}} = \frac{1}{z^n \ln(1-z)}$ be a complex function where $\ln$ is the complex logarithm. The arguments are in the range $[-\pi,\pi)$. Therefore the branch cut of $f$ is where $1-z \leq 0 \ (z\in \mathbb{R})$. Apply an anticlockwise keyhole integral around the point $z=1$:
 
-<p align="center"> $\displaystyle 2\pi ia_n&= 2\pi i\text{Res} \pr{\frac{F(x)}{x^{n+1}},0}\\
-    &= \oint f(z) \ dz\\
-    &=\int_\Gamma + \int_\gamma + \int_{C_1} + \int_{C_2}$ </p>
+<p align="center"> $\displaystyle 2\pi ia_n= 2\pi i\text{Res} \pr{\frac{F(x)}{x^{n+1}},0}$ </p>
+<p align="center"> $= \oint f(z) \ dz$ </p>
+<p align="center"> $=\int_\Gamma + \int_\gamma + \int_{C_1} + \int_{C_2}$ </p>
 
 Taking the large radius to infinity and the small radius to 0:
 
@@ -28,14 +28,14 @@ Taking the large radius to infinity and the small radius to 0:
 
 For the remaining two curves,
 
-<p align="center"> $\int_{C_1} &= \int_{1+\varepsilon}^R \frac{dx}{(x+i\varepsilon)^n\ln(1-x-i\varepsilon)} \\
-    &= \int_{1+\varepsilon}^R \frac{dx}{(x+i\varepsilon)^n(\ln|1-x-i\varepsilon|+ i\arg(1-x-i\varepsilon) )}\\
-    &\xrightarrow{\substack{\varepsilon \rightarrow 0\\R\rightarrow \infty}} \int_{1}^\infty \frac{dx}{x^n(\ln(x-1)-i\pi)}\\
-    &= \int_{1}^\infty \frac{\ln(x-1)+i\pi}{x^n(\ln^2(x-1)+\pi^2)}\ dx\\
-    \int_{C_2} &= \int^{1+\varepsilon}_R \frac{dx}{(x-i\varepsilon)^n\ln(1-x+i\varepsilon)} \\
-    &=- \int_{1+\varepsilon}^R \frac{dx}{(x-i\varepsilon)^n(\ln|1-x+i\varepsilon|+ i\arg(1-x+i\varepsilon) )}\\
-    &\xrightarrow{\substack{\varepsilon \rightarrow 0\\R\rightarrow \infty}} -\int_{1}^\infty \frac{dx}{x^n(\ln(x-1)+i\pi)}\\
-    &= -\int_{1}^\infty \frac{\ln(x-1)-i\pi}{x^n(\ln^2(x-1)+\pi^2)}\ dx$
+<p align="center"> $\int_{C_1} &= \int_{1+\varepsilon}^R \frac{dx}{(x+i\varepsilon)^n\ln(1-x-i\varepsilon)}$ </p>
+<p align="center"> $= \int_{1+\varepsilon}^R \frac{dx}{(x+i\varepsilon)^n(\ln|1-x-i\varepsilon|+ i\arg(1-x-i\varepsilon) )}$ </p>
+<p align="center"> $\xrightarrow{\substack{\varepsilon \rightarrow 0\\R\rightarrow \infty}} \int_{1}^\infty \frac{dx}{x^n(\ln(x-1)-i\pi)}$ </p>
+<p align="center"> $= \int_{1}^\infty \frac{\ln(x-1)+i\pi}{x^n(\ln^2(x-1)+\pi^2)}\ dx$ </p>
+<p align="center"> $\int_{C_2} &= \int^{1+\varepsilon}_R \frac{dx}{(x-i\varepsilon)^n\ln(1-x+i\varepsilon)}$ </p>
+<p align="center"> $=- \int_{1+\varepsilon}^R \frac{dx}{(x-i\varepsilon)^n(\ln|1-x+i\varepsilon|+ i\arg(1-x+i\varepsilon) )}$ </p>
+<p align="center"> $\xrightarrow{\substack{\varepsilon \rightarrow 0\\R\rightarrow \infty}} -\int_{1}^\infty \frac{dx}{x^n(\ln(x-1)+i\pi)}$ </p>
+<p align="center"> $= -\int_{1}^\infty \frac{\ln(x-1)-i\pi}{x^n(\ln^2(x-1)+\pi^2)}\ dx$ </p>
 </p>
 
 Combining everything above,
