@@ -5,9 +5,11 @@ title: "Solving an IMO Shortlist Problem using Complex Analysis!"
 
 The sequence of real numbers $a_0, a_1,\cdots$ is defined by
 
-<p align="left"> $\displaystyle a_0 = -1, \qquad \sum_{k=0}^n \frac{a_{n-k}}{k+1} = 0\text{ for $n\geq 1$.}$ </p>
+<p align="center"> $\displaystyle a_0 = -1, \qquad \sum_{k=0}^n \frac{a_{n-k}}{k+1} = 0\text{ for $n\geq 1$.}$ </p>
 
 Show that $a_n>0$ for all $n\geq 1$.
+
+This was an A2 problem from the 2006 IMO Shortlist. In the footnote of the shortlist it mentioned a complex analysis approach for this problem, but did not say how it's done. I spent a lot of months before finally finding this solution:c
 
 Define $\displaystyle F(x) = \sum_{n\geq 0} a_nx^n$. The given conditions imply $\displaystyle F(x) \cdot \sum_{n \geq 0} \frac{x^n}{n+1} = -1$, but
 
