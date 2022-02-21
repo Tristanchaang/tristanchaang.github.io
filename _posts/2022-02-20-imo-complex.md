@@ -45,5 +45,5 @@ $$\begin{aligned}\displaystyle \int_{C_2} &= \int_R^{1+\varepsilon} \frac{dx}{(x
 
 Combining everything above,
 
-$$\begin{aligned} \displaystyle a_n &= \frac{1}{2\pi i}\int_{1}^\infty \frac{2\pi i}{x^n(\ln^2(x-1)+\pi^2)}\ dx$ </p>
+$$\begin{aligned} \displaystyle a_n &= \frac{1}{2\pi i}\int_{1}^\infty \frac{2\pi i}{x^n(\ln^2(x-1)+\pi^2)}\ dx
 \\&= \int_{1}^\infty \frac{dx}{x^n(\ln^2(x-1)+\pi^2)}>0.\end{aligned}$$
