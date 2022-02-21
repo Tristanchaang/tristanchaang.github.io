@@ -30,10 +30,10 @@ Taking the large radius to infinity and the small radius to 0:
 
 For the curve $C_1$,
 
-<p align="left"> $\displaystyle \int_{C_1} = \int_{1+\varepsilon}^R \frac{dx}{(x+i\varepsilon)^n\ln(1-x-i\varepsilon)}$ </p>
-<p align="left"> $\displaystyle = \int_{1+\varepsilon}^R \frac{dx}{(x+i\varepsilon)^n(\ln|1-x-i\varepsilon|+ i\arg(1-x-i\varepsilon) )}$ </p>
-<p align="left"> $\displaystyle \xrightarrow{\substack{\varepsilon \rightarrow 0\\R\rightarrow \infty}} \int_{1}^\infty \frac{dx}{x^n(\ln(x-1)-i\pi)}$ </p>
-<p align="left"> $\displaystyle = \int_{1}^\infty \frac{\ln(x-1)+i\pi}{x^n(\ln^2(x-1)+\pi^2)}\ dx$ </p>
+$$\begin{aligned}\displaystyle \int_{C_1} &= \int_{1+\varepsilon}^R \frac{dx}{(x+i\varepsilon)^n\ln(1-x-i\varepsilon)}
+\\ &= \int_{1+\varepsilon}^R \frac{dx}{(x+i\varepsilon)^n(\ln|1-x-i\varepsilon|+ i\arg(1-x-i\varepsilon) )}
+\\ &\xrightarrow{\substack{\varepsilon \rightarrow 0\\R\rightarrow \infty}} \int_{1}^\infty \frac{dx}{x^n(\ln(x-1)-i\pi)}
+\\ &= \int_{1}^\infty \frac{\ln(x-1)+i\pi}{x^n(\ln^2(x-1)+\pi^2)}\ dx\end{aligned}$$
 
 For the curve $C_2$,
 
