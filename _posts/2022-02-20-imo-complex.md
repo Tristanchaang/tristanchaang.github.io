@@ -19,14 +19,15 @@ $$\begin{aligned} \displaystyle \sum_{n\geq 0} \frac{x^n}{n+1} &= \frac{1}{x} \i
 We are left to find $\displaystyle a_n= \frac{F^{(n)}(0)}{n!}$. By definition of residue, $\displaystyle \frac{F^{(n)}(0)}{n!} = \text{Res} \left(\frac{F(x)}{x^{n+1}},0\right)$.
 Let $\displaystyle f(z) = \frac{F(z)}{z^{n+1}} = \frac{1}{z^n \ln(1-z)}$ be a complex function where $\ln$ is the complex logarithm. The arguments are in the range $[-\pi,\pi)$. Therefore the branch cut of $f$ is where $1-z \leq 0 \ (z\in \mathbb{R})$. Apply an anticlockwise keyhole integral around the point $z=1$:
 
-<p align="center"> ![The Contour](/downloads/coutour.png) </p>
+<p align=center> ![The Contour](/downloads/coutour.png) </p>
 
 $$\begin{aligned} \displaystyle 2\pi i\ a_n= 2\pi i\ \text{Res} \left(\frac{F(x)}{x^{n+1}}\right) = \oint f(z) \ dz =\int_\Gamma + \int_\gamma + \int_{C_1} + \int_{C_2} \end{aligned}$$
 
 Taking the large radius to infinity and the small radius to 0:
 
-$$\begin{aligned} \displaystyle\left|\int_\Gamma \right|= \left| \int_{\varepsilon}^{2\pi-\varepsilon} \frac{Ri\ d\theta}{R^ne^{ni\theta}\ln(1-Re^{i\theta})}\right|\lessapprox \int_{\varepsilon}^{2\pi-\varepsilon} \left|\frac{1}{R^{n-1}\ln(R)}\right|\ d\theta \xrightarrow{R\rightarrow \infty} 0 \end{aligned}$$
-$$\begin{aligned} \displaystyle \left|\int_\gamma \right|= \left| \int_{\varepsilon}^{2\pi-\varepsilon} \frac{ri\ d\theta}{(1+re^{i\theta})^n\ln(-re^{i\theta})}\right|\lessapprox \int_{\varepsilon}^{2\pi-\varepsilon} \left|\frac{r}{\ln(r)}\right|\ d\theta \xrightarrow{r\rightarrow 0} 0 \end{aligned}$$
+$$\begin{aligned} \displaystyle\left|\int_\Gamma \right| = \left| \int_{\varepsilon}^{2\pi-\varepsilon} \frac{Ri\ d\theta}{R^ne^{ni\theta}\ln(1-Re^{i\theta})}\right|\lessapprox \int_{\varepsilon}^{2\pi-\varepsilon} \left|\frac{1}{R^{n-1}\ln(R)}\right|\ d\theta \xrightarrow{R\rightarrow \infty} 0 \end{aligned}$$
+
+$$\begin{aligned} \displaystyle \left|\int_\gamma \right| = \left| \int_{\varepsilon}^{2\pi-\varepsilon} \frac{ri\ d\theta}{(1+re^{i\theta})^n\ln(-re^{i\theta})}\right|\lessapprox \int_{\varepsilon}^{2\pi-\varepsilon} \left|\frac{r}{\ln(r)}\right|\ d\theta \xrightarrow{r\rightarrow 0} 0 \end{aligned}$$
 
 For the curve $C_1$,
 
