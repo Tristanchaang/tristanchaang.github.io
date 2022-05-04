@@ -44,12 +44,12 @@ where $C_{i,j}$ are all constants.
 <div class="boxed">
 <details>
 <summary> <span class="click">Click for Proof</span> </summary> 
-We proceed like the previous problem. Let $\vec{v}=[y^{(n-1)},y^{(n-1)},\cdots,y]$ for each $n\in \mathbb{Z}$. Note that if $M$ is the matrix
+We proceed like the previous problem. Let $\vec{v}=[y^{(n-1)},y^{(n-2)},\cdots,y]$ for each $n\in \mathbb{Z}$. Note that if $M$ is the matrix
 <p align=center>
 $\begin{bmatrix}
-c_{k-1} & 1 & 0 & \cdots & 0\\
-c_{k-2} & 0 & 1 & \cdots & 0\\
-c_{k-3} & 0 & 0 & \cdots & 0\\
+c_{n-1} & 1 & 0 & \cdots & 0\\
+c_{n-2} & 0 & 1 & \cdots & 0\\
+c_{n-3} & 0 & 0 & \cdots & 0\\
 \vdots & \vdots & \vdots & \ddots & \vdots\\
 c_0 & 0 & 0 & \cdots & 0
 \end{bmatrix}$
