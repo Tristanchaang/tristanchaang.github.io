@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Stirling Numbers"
+title: "Multivariate Calculus"
 ---
 
 I'm back! Apologies as I was preparing for A Levels and the IMO. Here is a new handout on a new topic: Multivariate Calculus.
