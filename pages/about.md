@@ -33,6 +33,7 @@ permalink: /about/
 * Learning foreign languages
 * Shakespeare
 * Marvel Cinematic Universe (MCU)
+* Sherlock Holmes
 
 
 ## Books
