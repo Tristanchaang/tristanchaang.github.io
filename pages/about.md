@@ -4,6 +4,8 @@ title: "About"
 permalink: /about/
 ---
 
+<img src="/downloads/ProfilePic.jpg" alt="Profile Picture" style="height: 100px; width:100px;"/>
+
 ## Basic Info
 
 * Chaang Tze Shen Tristan
@@ -16,7 +18,7 @@ permalink: /about/
 
 * 2016 - 2021: Kuen Cheng High School
 
-* 2021 - : Sunway College
+* 2021 - 2022: Sunway College
 
 ## Contests
 
