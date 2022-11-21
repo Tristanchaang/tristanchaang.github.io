@@ -10,7 +10,7 @@ permalink: /about/
 
 * Chaang Tze Shen Tristan
 
-* 18 years old
+* 19 years old
 
 * Malaysian
 
