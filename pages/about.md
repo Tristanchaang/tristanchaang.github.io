@@ -4,7 +4,7 @@ title: "About"
 permalink: /about/
 ---
 
-<img src="/downloads/ProfilePic.jpg" alt="Profile Picture" style="height: 200px; width:200px;"/>
+<img align="right" src="/downloads/ProfilePic.jpg" alt="Profile Picture" style="height: 200px; width:200px;"/>
 
 ## Basic Info
 
