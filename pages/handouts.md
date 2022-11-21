@@ -4,6 +4,12 @@ title: Handouts
 permalink: /handouts/
 ---
 
+BIMO 2023 Handouts
+
+#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Algebra(J)-12112022.pdf" download>Algebra (J) - 12 Nov 2022</a>
+
+#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Combinatorics(B)-13112022.pdf" download>Combinatorics (B) - 13 Nov 2022</a>
+
 ### Olympiad
 
 #### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Projective-Geometry.pdf" download>Projective Geometry</a>
