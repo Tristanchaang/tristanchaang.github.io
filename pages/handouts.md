@@ -12,7 +12,7 @@ permalink: /handouts/
 
 #### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Number-Theory(J)-181220222.pdf" download>Number Theory II (J) - 18 Dec 2022</a>
 
-#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Number-Theory(J)-181220221.pdf" download>Number Theory I (J)) - 18 Dec 2022</a>
+#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Number-Theory(J)-181220221.pdf" download>Number Theory I (J) - 18 Dec 2022</a>
 
 #### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Algebra(J)-12112022.pdf" download>Algebra (J) - 12 Nov 2022</a>
 
