@@ -6,6 +6,14 @@ permalink: /handouts/
 
 ## BIMO 2023 Handouts
 
+#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Algebra(B)-140120233.pdf" download>Algebra II (B) - 14 Jan 2023</a>
+
+#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Algebra(B)-140120232.pdf" download>Algebra I (B) - 14 Jan 2023</a>
+
+#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Number-Theory(J)-181220222.pdf" download>Number Theory II (J) - 18 Dec 2022</a>
+
+#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Number-Theory(J)-181220221.pdf" download>Number Theory I (J)) - 18 Dec 2022</a>
+
 #### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Algebra(J)-12112022.pdf" download>Algebra (J) - 12 Nov 2022</a>
 
 #### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Combinatorics(B)-13112022.pdf" download>Combinatorics (B) - 13 Nov 2022</a>
