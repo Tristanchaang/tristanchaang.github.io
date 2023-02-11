@@ -6,6 +6,8 @@ permalink: /handouts/
 
 ## BIMO 2023 Handouts
 
+#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Geometry(J-PSS)-11022023.pdf" download>Geometry Problem-Solving Session (B) - 11 Feb 2023</a>
+
 #### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Algebra(B)-140120233.pdf" download>Algebra II (B) - 14 Jan 2023</a>
 
 #### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Algebra(B)-140120232.pdf" download>Algebra I (B) - 14 Jan 2023</a>
