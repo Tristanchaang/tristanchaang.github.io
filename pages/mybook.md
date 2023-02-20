@@ -8,6 +8,8 @@ _Techniques for High School Mathematics Contests_ is the first book I have writt
 
 Nonetheless, it is a great book for maths enthusiasts to learn about advanced topics such as complex numbers, calculus, vector geometry etc and at the same time explore the beauty of them.
 
+The current price for this e-book is RM40.
+
 <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Preview.pdf" download>Click here</a> to download a preview of the book, or read it below. If you're interested in the book, please do email me and I will reply as soon as possible.
 
 <embed src="https://drive.google.com/viewerng/
