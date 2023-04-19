@@ -16,9 +16,11 @@ permalink: /about/
 
 ## Education
 
-* 2016 - 2021: Kuen Cheng High School
+* 2016 - 2021: Kuen Cheng High School (SPM)
 
-* 2021 - 2022: Sunway College
+* 2021 - 2022: Sunway College (A-levels)
+
+* 2023 - 2027: MIT (Undergraduate)
 
 ## Contests
 
@@ -26,16 +28,20 @@ permalink: /about/
 * Iranian Geometry Olympiad (IGO) - Silver
 * Chen Jing-Run Cup Mathematics Contest - National 1st
 
+## Experiences
+
+* Trained primary school and high school students for various maths olympiads
+* Lectures at the Malaysian IMO Bootcamp (BIMO)
+
 ## Interests
 
 * Problem solving
 * Teaching
 * Learning foreign languages
 * Shakespeare
-* Marvel Cinematic Universe (MCU)
+* Marvel Cinematic Universe
 * Sherlock Holmes
-
 
 ## Books
 
-* Techniques for High School Mathematics Contests
+* [Techniques for High School Mathematics Contests](https://tristanchaang.github.io/mybook/)
