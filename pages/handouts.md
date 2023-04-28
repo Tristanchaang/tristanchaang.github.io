@@ -4,6 +4,10 @@ title: Handouts
 permalink: /handouts/
 ---
 
+## 27 & 28 April 2023 OMK Talk at Sunway
+
+#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/sunwaytalk27april2023.pdf" download>Slides</a>
+
 ## BIMO 2023 Handouts
 
 #### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Number-Theory-IV(J)-12022023.pdf" download>Number Theory IV (J) - 12 Feb 2023</a>
