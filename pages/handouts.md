@@ -4,6 +4,10 @@ title: Handouts
 permalink: /handouts/
 ---
 
+## 6 June 2023 Probability Talk at Kuen Cheng
+
+#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/talkkcmath.pdf" download>Slides</a>
+
 ## 27 & 28 April 2023 OMK Talk at Sunway
 
 #### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/sunwaytalk27april2023.pdf" download>Slides</a>
