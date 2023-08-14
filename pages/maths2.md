@@ -8,7 +8,7 @@ Here are some of my favourite maths problems that I solved.
 
 ### Electric Field Above Uniformly Charged Square Plate
 
-Find the electric field at a height $z$ above the center of a square sheet (side $s$) carrying a uniform surface charge $\sigma$.
+(Source: <emph>Introduction to Electrodynamics</emph> by Griffiths, Chapter 2) Find the electric field at a height $z$ above the center of a square sheet (side $s$) carrying a uniform surface charge $\sigma$.
 
 <div class="boxed">
 <details>
