@@ -13,25 +13,25 @@ Find the electric field at a height $z$ above the center of a square sheet (side
 <div class="boxed">
 <details>
 <summary> <span class="click">Click for Proof</span> </summary> 
-  $$\int_0^\frac{\pi}{4}\frac{d\theta}{\sqrt{k^2+\sec^2\theta}} &= \int_0^\frac{\pi}{4}\frac{\cos\theta \ d\theta}{\sqrt{k^2\cos^2\theta+1}}\\
+  $$\begin{aligned}\int_0^\frac{\pi}{4}\frac{d\theta}{\sqrt{k^2+\sec^2\theta}} &= \int_0^\frac{\pi}{4}\frac{\cos\theta \ d\theta}{\sqrt{k^2\cos^2\theta+1}}\\
     &= \int_0^{1/\sqrt{2}}\frac{du}{\sqrt{k^2(1-u^2)+1}}\\
     &= \frac{1}{k}\int_0^{1/\sqrt{2}}\frac{du}{\sqrt{(1+k^{-2} - u^2)}}\\
     &= \frac{1}{k}\arcsin\left(\frac{1/\sqrt{2}}{\sqrt{1+k^{-2}}}\right)\\
-    &= \frac{1}{k}\arctan\left(\frac{k}{\sqrt{k^2+2}}\right)$$
+    &= \frac{1}{k}\arctan\left(\frac{k}{\sqrt{k^2+2}}\right)\end{aligned}$$
 Let $\triangle$ be the triangle with vertices $(0,0),(1,0),(1,1)$.
-  $$f(k) & = \int_{-1}^1 \int_{-1}^1 \frac{dx \ dy}{(k^2+x^2+y^2)^{3/2}}\\
+  $$\begin{aligned}f(k) & = \int_{-1}^1 \int_{-1}^1 \frac{dx \ dy}{(k^2+x^2+y^2)^{3/2}}\\
     &= 8\iint_{\triangle} \frac{dx \ dy}{(k^2+x^2+y^2)^{3/2}}\\
     &= 8\int_0^{\frac{\pi}{4}} \int_{0}^{\sec\theta} \frac{r \ dr \ d\theta}{(k^2+r^2)^{3/2}}\\
     &= 4\int_0^{\frac{\pi}{4}} \left[\int_{0}^{\sec\theta} \frac{d(k^2+r^2)}{(k^2+r^2)^{3/2}}\right]  d\theta\\
     &= 8\int_0^{\frac{\pi}{4}} \left[\frac{1}{k} - \frac{1}{\sqrt{k^2+\sec^2\theta}}\right] d\theta\\
-    &= \frac{2\pi}{k} - \frac{8}{k}\arctan\left(\frac{k}{\sqrt{k^2+2}}\right)$$
+    &= \frac{2\pi}{k} - \frac{8}{k}\arctan\left(\frac{k}{\sqrt{k^2+2}}\right)\end{aligned}$$
 Find the electric field at a height $z$ above the center of a square sheet (side $s$) carrying a uniform surface charge $\sigma$.
-  $$V(z) &= \frac{1}{4\pi \varepsilon_0} \int_{S} \frac{dq}{r} = \frac{\sigma}{4\pi \varepsilon_0}  \int_S \frac{dx \ dy}{\sqrt{z^2+x^2+y^2}}\\
+  $$\begin{aligned}V(z) &= \frac{1}{4\pi \varepsilon_0} \int_{S} \frac{dq}{r} = \frac{\sigma}{4\pi \varepsilon_0}  \int_S \frac{dx \ dy}{\sqrt{z^2+x^2+y^2}}\\
     E(z) = - \frac{\partial V}{\partial z} &= \frac{\sigma}{4\pi \varepsilon_0} \int_{-s/2}^{s/2}\int_{-s/2}^{s/2} \frac{z\ dx \ dy}{(z^2+x^2+y^2)^{3/2}}\\
     &= \frac{\sigma z}{2\pi \varepsilon_0 s} \int_{-s/2}^{s/2}\int_{-s/2}^{s/2} \frac{d(2x/s) \ d(2y/s)}{((2z/s)^2+(2x/s)^2+(2y/s)^2)^{3/2}}\\
     &= \frac{\sigma z}{2\pi \varepsilon_0 s} f(2z/s)\\
     &= \frac{\sigma}{2\varepsilon_0}\left[1 - \frac{4}{\pi}\arctan\left(\frac{z}{\sqrt{z^2+s^2/2}}\right)\right]\\
-    &= \frac{\sigma}{2\varepsilon_0}\left[\frac{4}{\pi}\arctan\left(\sqrt{1+s^2/2z^2}\right)-1\right]$$
+    &= \frac{\sigma}{2\varepsilon_0}\left[\frac{4}{\pi}\arctan\left(\sqrt{1+s^2/2z^2}\right)-1\right]\end{aligned}$$
 </details>
 </div>
 
