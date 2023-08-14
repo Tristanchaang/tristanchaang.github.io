@@ -24,7 +24,7 @@ $$\begin{aligned}
     I_{n+1} - I_n &= \int_{2n\pi}^{(2n+2)\pi} f(x) \sin x \ dx\\
     &= \int_{2n\pi}^{(2n+1)\pi} f(x) \sin x \ dx + \int_{(2n+1)\pi}^{(2n+2)\pi} f(x) \sin x \ dx\\
     &= \int_{2n\pi}^{(2n+1)\pi} f(x) \sin x \ dx + \int_{2n\pi}^{(2n+1)\pi} f(x+\pi) \sin (x+\pi) \ dx\\
-    &= \int_{2n\pi}^{(2n+1)\pi} \pr{f(x)-f(x+\pi)} \sin x \ dx \geq 0\\
+    &= \int_{2n\pi}^{(2n+1)\pi} \left(f(x)-f(x+\pi)\right) \sin x \ dx \geq 0\\
     J_{n+1} - J_n &= \int_{(2n+1)\pi}^{(2n+3)\pi} f(x) \sin x \ dx\\
     &= \int_{(2n+1)\pi}^{(2n+2)\pi} f(x) \sin x \ dx + \int_{(2n+2)\pi}^{(2n+3)\pi} f(x) \sin x \ dx\\
     &= \int_{(2n+1)\pi}^{(2n+2)\pi} f(x) \sin x \ dx + \int_{(2n+1)\pi}^{(2n+2)\pi} f(x+\pi) \sin (x+\pi) \ dx\\
