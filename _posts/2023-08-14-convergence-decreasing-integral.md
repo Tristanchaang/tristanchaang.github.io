@@ -34,7 +34,7 @@ $$\begin{aligned}
 \end{aligned}$$
 so $L=L'$. Let $t>1$.
 \begin{itemize}
-    \item If $2n\pi \leq t < (2n+1)\pi$, then $I_n \leq \DS \int_1^tf(x)\sin x \ dx \leq J_n$.
-    \item If $(2n+1)\pi \leq t < (2n+2)\pi$, then $I_{n+1} \leq \DS \int_1^tf(x)\sin x \ dx \leq J_n$.
+    \item If $2n\pi \leq t < (2n+1)\pi$, then $I_n \leq \displaystyle \int_1^tf(x)\sin x \ dx \leq J_n$.
+    \item If $(2n+1)\pi \leq t < (2n+2)\pi$, then $I_{n+1} \leq \displaystyle \int_1^tf(x)\sin x \ dx \leq J_n$.
 \end{itemize}
 By the squeeze theorem, the integral converges to $L$.
