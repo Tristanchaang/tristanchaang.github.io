@@ -4,9 +4,11 @@ title: "Convergence of the Integral of a Decreasing Sinusoidal"
 ---
 
 Let $f$ be a continuous decreasing function on $(0,\infty)$ such that $\displaystyle \lim_{x\rightarrow \infty} f(x) = 0$. Then
+
 $$\begin{aligned}
     \int_1^\infty f(x) \sin x \ dx
 \end{aligned}$$
+
 is convergent. 
 
 ## Proof
