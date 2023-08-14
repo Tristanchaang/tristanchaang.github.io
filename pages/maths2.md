@@ -13,9 +13,10 @@ Find the electric field at a height $z$ above the center of a square sheet (side
 <div class="boxed">
 <details>
 <summary> <span class="click">Click for Solution</span> </summary>
-*Answer*: $\frac{\sigma}{2\varepsilon_0}\left[\frac{4}{\pi}\arctan\left(\sqrt{1+s^2/2z^2}\right)-1\right]$
+<b>Answer:</b> $\frac{\sigma}{2\varepsilon_0}\left[\frac{4}{\pi}\arctan\left(\sqrt{1+s^2/2z^2}\right)-1\right]$
 
-*Proof*:
+<b>Proof:</b>
+
   $$\begin{aligned}\int_0^\frac{\pi}{4}\frac{d\theta}{\sqrt{k^2+\sec^2\theta}} &= \int_0^\frac{\pi}{4}\frac{\cos\theta \ d\theta}{\sqrt{k^2\cos^2\theta+1}}\\
     &= \int_0^{1/\sqrt{2}}\frac{du}{\sqrt{k^2(1-u^2)+1}}\\
     &= \frac{1}{k}\int_0^{1/\sqrt{2}}\frac{du}{\sqrt{(1+k^{-2} - u^2)}}\\
