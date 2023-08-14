@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Maths
-permalink: /maths/
+title: Problems
+permalink: /problems/
 ---
 
 
-Here are some of my favourite mathematical problems and some problems that I have set for BIMO:
+Here are some of my favourite problems and some that I have set for BIMO:
 
 ### [Self-Made Olympiad-Style Problems](maths1.md)
 
