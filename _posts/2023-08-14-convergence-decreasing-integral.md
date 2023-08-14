@@ -28,7 +28,7 @@ $$\begin{aligned}
     J_{n+1} - J_n &= \int_{(2n+1)\pi}^{(2n+3)\pi} f(x) \sin x \ dx\\
     &= \int_{(2n+1)\pi}^{(2n+2)\pi} f(x) \sin x \ dx + \int_{(2n+2)\pi}^{(2n+3)\pi} f(x) \sin x \ dx\\
     &= \int_{(2n+1)\pi}^{(2n+2)\pi} f(x) \sin x \ dx + \int_{(2n+1)\pi}^{(2n+2)\pi} f(x+\pi) \sin (x+\pi) \ dx\\
-    &= \int_{(2n+1)\pi}^{(2n+2)\pi} \pr{f(x)-f(x+\pi)} \sin x \ dx \leq 0\\
+    &= \int_{(2n+1)\pi}^{(2n+2)\pi} \left(f(x)-f(x+\pi)\right) \sin x \ dx \leq 0\\
     J_n - I_n &= \int_{2n\pi}^{(2n+1)\pi} f(x) \sin x \ dx \geq 0
 \end{aligned}$$
 
@@ -40,9 +40,7 @@ $$\begin{aligned}
 
 so $L=L'$. Let $t>1$.
 
-\begin{itemize}
-    \item If $2n\pi \leq t < (2n+1)\pi$, then $I_n \leq \displaystyle \int_1^tf(x)\sin x \ dx \leq J_n$.
-    \item If $(2n+1)\pi \leq t < (2n+2)\pi$, then $I_{n+1} \leq \displaystyle \int_1^tf(x)\sin x \ dx \leq J_n$.
-\end{itemize}
+- If $2n\pi \leq t < (2n+1)\pi$, then $I_n \leq \displaystyle \int_1^tf(x)\sin x \ dx \leq J_n$.
+- If $(2n+1)\pi \leq t < (2n+2)\pi$, then $I_{n+1} \leq \displaystyle \int_1^tf(x)\sin x \ dx \leq J_n$.
 
 By the squeeze theorem, the integral converges to $L$.
