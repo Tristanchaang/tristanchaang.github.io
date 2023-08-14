@@ -11,6 +11,11 @@ $$\begin{aligned}
 
 is convergent. 
 
+## Corollaries
+
+- $\displaystyle \int_c^\infty f(x) \sin (ax+b) \ dx$ is convergent
+- $\displaystyle \int_1^\infty \frac{\cos (x-1/4)}{\sqrt{x}} \ dx$ is convergent (I will use this in a future topic)
+
 ## Proof
 
 For all positive integers $n$, let
