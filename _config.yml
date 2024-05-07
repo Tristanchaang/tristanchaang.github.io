@@ -38,7 +38,7 @@ header_pages:
   - pages/about.md
   - pages/maths.md
   - pages/handouts.md
-  - pages/lit.md
+  - pages/notes.md
   - pages/privacy.md
 
 # Build settings
