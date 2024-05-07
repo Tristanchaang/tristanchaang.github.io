@@ -14,6 +14,8 @@ permalink: /notes/
 
 ## Algorithms
 
+#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/61220Sublinear.pdf" download>Sublinear Algorithms</a>
+
 #### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/61220MarkovChainTheorems.pdf" download>Markov Chain Theorems</a>
 
 #### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/61220PvsNP.pdf" download>Intractability, P vs NP</a>
