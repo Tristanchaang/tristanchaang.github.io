@@ -52,16 +52,18 @@ permalink: /handouts/
 
 ## Non-Olympiad
 
-#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/On-Continuous-Distributions.pdf" download>Continuous Distributions</a>
+#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/pages/handouts/Non-Olympiad/On-Continuous-Distributions.pdf" download>Continuous Distributions</a>
 
-#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Linear-Algebra.pdf" download>Linear Algebra</a>
+#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/pages/handouts/Non-Olympiad/On-Discrete-Distributions.pdf" download>Continuous Distributions</a>
 
-## Other Notes
+#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/pages/handouts/Non-Olympiad/Linear-Algebra.pdf" download>Linear Algebra</a>
 
-#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Chemicals.pdf" download>SPM Chemicals</a>
+## SPM Chemistry
 
-#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Chemicals-For-Consumers.pdf" download>SPM Chemicals for Consumers (Form 5)</a>
+#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/pages/handouts/ChemistrySPM/Chemicals.pdf" download>SPM Chemicals</a>
 
-#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Manufactured-Substances-In-Industry.pdf" download>SPM Manufactured Substances in Industry (Form 4)</a>
+#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/pages/handouts/ChemistrySPM/Chemicals-For-Consumers.pdf" download>SPM Chemicals for Consumers (Form 5)</a>
 
-#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/Chem-Equations.pdf" download>SPM All Chemical Equations</a>
+#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/pages/handouts/ChemistrySPM/Manufactured-Substances-In-Industry.pdf" download>SPM Manufactured Substances in Industry (Form 4)</a>
+
+#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/pages/handouts/ChemistrySPM/Chem-Equations.pdf" download>SPM All Chemical Equations</a>
