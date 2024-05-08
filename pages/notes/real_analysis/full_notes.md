@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Real Analysis"
+permalink: /notes/real_analysis/full_notes
 ---
 
 # Full Notes
