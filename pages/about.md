@@ -10,7 +10,7 @@ permalink: /about/
 
 * Chaang Tze Shen Tristan
 
-* 19 years old
+* 21 years old
 
 * Malaysian
 
@@ -28,19 +28,17 @@ permalink: /about/
 * Iranian Geometry Olympiad (IGO) - Silver
 * Chen Jing-Run Cup Mathematics Contest - National 1st
 
-## Experiences
-
-* Trained primary school and high school students for various maths olympiads
-* Lectures at the Malaysian IMO Bootcamp (BIMO)
-
 ## Interests
 
 * Problem solving
 * Teaching
+* Drawing
 * Learning foreign languages
-* Shakespeare
 * Marvel Cinematic Universe
-* Sherlock Holmes
+
+## Resume
+
+# [Click Here for my Latest CV and Resume](resume.md)
 
 ## Books
 
