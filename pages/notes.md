@@ -6,6 +6,10 @@ permalink: /notes/
 
 ## [Real Analysis](https://tristanchaang.github.io/notes/real_analysis)
 
+#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/18100BNotesFull.pdf" download>Full Notes</a>
+#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/18100BNotesDefinitions.pdf" download>Definitions Only</a>
+#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/18100BNotesTheorems.pdf" download>Theorems Only</a>
+
 ## Algorithms
 
 #### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/6.1220Sublinear.pdf" download>Sublinear Algorithms</a>
