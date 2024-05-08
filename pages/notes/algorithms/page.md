@@ -4,23 +4,30 @@ title: "Algorithms"
 permalink: /notes/algorithms
 ---
 
-# Full Notes
+# Max-Flow Min-Cut
 
-<a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/18100BNotesFull.pdf" download>Click here</a> to download, or read it here:
-
-<embed src="https://drive.google.com/viewerng/
-viewer?embedded=true&url=http://tristanchaang.github.io/downloads/18100BNotesFull.pdf" width="100%" height="600px" />
-
-# Just Definitions
-
-<a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/18100BNotesDefinitions.pdf" download>Click here</a> to download, or read it here:
+<a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/6.1220MaxFlowMinCut.pdf" download>Click here</a> to download, or read it here:
 
 <embed src="https://drive.google.com/viewerng/
-viewer?embedded=true&url=http://tristanchaang.github.io/downloads/18100BNotesDefinitions.pdf" width="100%" height="600px" />
+viewer?embedded=true&url=http://tristanchaang.github.io/downloads/6.1220MaxFlowMinCut.pdf" width="100%" height="600px" />
 
-# Just Theorems
+# Intractability, P vs NP
 
-<a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/18100BNotesTheorems.pdf" download>Click here</a> to download, or read it here:
+<a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/6.1220PvsNP.pdf" download>Click here</a> to download, or read it here:
 
 <embed src="https://drive.google.com/viewerng/
-viewer?embedded=true&url=http://tristanchaang.github.io/downloads/18100BNotesTheorems.pdf" width="100%" height="600px" />
+viewer?embedded=true&url=http://tristanchaang.github.io/downloads/6.1220PvsNP.pdf" width="100%" height="600px" />
+
+# Markov Chain Theorems
+
+<a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/61220MarkovChainTheorems.pdf" download>Click here</a> to download, or read it here:
+
+<embed src="https://drive.google.com/viewerng/
+viewer?embedded=true&url=http://tristanchaang.github.io/downloads/61220MarkovChainTheorems.pdf" width="100%" height="600px" />
+
+# Sublinear Algorithms
+
+<a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/6.1220Sublinear.pdf" download>Click here</a> to download, or read it here:
+
+<embed src="https://drive.google.com/viewerng/
+viewer?embedded=true&url=http://tristanchaang.github.io/downloads/6.1220Sublinear.pdf" width="100%" height="600px" />
