@@ -18,7 +18,7 @@ permalink: /about/
 * Malaysian
 
 
-Hello! I am an undergraduate student at MIT majoring in Course 18 (Mathematics) and Course 6-3 (Computer Science and Engineering). I love problem solving, teaching and learning new languages. During my free time I like to draw, swim, and watch movies. I am also an [MCU](https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe) fan.
+Hello! I am an undergraduate student at MIT majoring in Course 18 (Mathematics) and Course 6-3 (Computer Science and Engineering). I love problem solving, teaching and learning new languages. I speak English, Malay, Cantonese, Mandarin and a little bit of Japanese and French. During my free time, I like to draw, swim, and watch movies. I am also an [MCU](https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe) fan.
 
 
 ## Education
