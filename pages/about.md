@@ -8,11 +8,15 @@ permalink: /about/
 
 ## Basic Info
 
-* Chaang Tze Shen Tristan
+* Tristan Chaang Tze Shen (曾子宸)
 
 * 21 years old
 
 * Malaysian
+
+
+Hello! I am an undergraduate student at MIT majoring in Course 18 (Mathematics) and Course 6-3 (Computer Science and Engineering). I love problem solving, teaching and learning new languages. During my free time I like to draw, swim, and watch movies. I am also an [MCU](https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe) fan.
+
 
 ## Education
 
@@ -27,14 +31,6 @@ permalink: /about/
 * International Mathematical Olympiad (IMO) - Bronze
 * Iranian Geometry Olympiad (IGO) - Silver
 * Chen Jing-Run Cup Mathematics Contest - National 1st
-
-## Interests
-
-* Problem solving
-* Teaching
-* Drawing
-* Learning foreign languages
-* Marvel Cinematic Universe
 
 ## Resume
 
