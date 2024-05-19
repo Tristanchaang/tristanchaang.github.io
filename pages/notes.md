@@ -4,13 +4,13 @@ title: Notes
 permalink: /notes/
 ---
 
-## [Real Analysis](https://tristanchaang.github.io/notes/real_analysis)
+## [Real Analysis (18.100B)](https://tristanchaang.github.io/notes/real_analysis)
 
-## [Algorithms](https://tristanchaang.github.io/notes/algorithms)
+## [Algorithms (6.1210/6.1220)](https://tristanchaang.github.io/notes/algorithms)
 
-## [Machine Learning](https://tristanchaang.github.io/notes/machine_learning)
+## [Machine Learning (6.390)](https://tristanchaang.github.io/notes/machine_learning)
 
-## [Quantum Mechanics](https://tristanchaang.github.io/notes/quantum_mechanics)
+## [Quantum Mechanics (8.05)](https://tristanchaang.github.io/notes/quantum_mechanics)
 
-## [Linguistics](https://tristanchaang.github.io/notes/linguistics)
+## [Linguistics (24.900)](https://tristanchaang.github.io/notes/linguistics)
 
