@@ -8,3 +8,5 @@ permalink: /notes/
 
 ## [Algorithms](https://tristanchaang.github.io/notes/algorithms)
 
+## [Machine Learning](https://tristanchaang.github.io/notes/machine_learning)
+
