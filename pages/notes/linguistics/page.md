@@ -4,7 +4,7 @@ title: "Linguistics"
 permalink: /notes/linguistics
 ---
 
-# Finals Cheatsheet
+# Final Paper
 
 <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/pages/notes/linguistics/24900paper.pdf" download>Click here</a> to download, or read it here:
 

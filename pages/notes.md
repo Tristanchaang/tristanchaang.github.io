@@ -12,3 +12,5 @@ permalink: /notes/
 
 ## [Quantum Mechanics](https://tristanchaang.github.io/notes/quantum_mechanics)
 
+## [Linguistics](https://tristanchaang.github.io/notes/linguistics)
+
