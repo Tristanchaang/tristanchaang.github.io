@@ -10,3 +10,5 @@ permalink: /notes/
 
 ## [Machine Learning](https://tristanchaang.github.io/notes/machine_learning)
 
+## [Quantum Mechanics](https://tristanchaang.github.io/notes/quantum_mechanics)
+
