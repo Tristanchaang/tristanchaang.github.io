@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 <figure align="right">
-  <img src="/downloads/ProfilePic.jpg" alt="Profile Picture" style="height: 200px; width:200px;"/>
+  <img align="right" src="/downloads/ProfilePic.jpg" alt="Profile Picture" style="height: 200px; width:200px;"/>
   <figcaption>16 year-old me in 2019.</figcaption>
 </figure>
 
