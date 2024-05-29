@@ -22,14 +22,24 @@ To use the package on Overleaf, upload the .cls file onto your project, and type
 
 ## Some Features
 
+# New Chapter and Subchapters
+
+\chapter{} and \chapterpart{} will create chapter titles. \chapter{} will create a page break for every subsequent chapter.
+
 # Blue, Green, Red and White Boxes
 
 The environment commands \begin{bluebox}, \begin{greenbox}, \begin{redbox} and \begin{whitebox} create a colored box in which you can type paragraphs.
 
-# Symbols
+# Shorthands
 
-| \int | hi |
-|:-----:|:--:|
-| $\int$ | asd|
+| \DS           | \TS        |
+|:-------------:|:----------:|
+| \displaystyle | \textstyle |
+
+# Brackets
+
+| \pr{...} | \br{...} |
+|:--------:|:--------:|
+| $(...)$  | $[...]$  |
 
 <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/natsirt.zip" download>Click here</a> to download.
