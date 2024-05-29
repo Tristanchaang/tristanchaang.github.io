@@ -28,8 +28,8 @@ The environment commands \begin{bluebox}, \begin{greenbox}, \begin{redbox} and \
 
 # Symbols
 
-| hello | hi |
+| \int | hi |
 |:-----:|:--:|
-|asdasd | asd|
+| $\int$ | asd|
 
 <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/natsirt.zip" download>Click here</a> to download.
