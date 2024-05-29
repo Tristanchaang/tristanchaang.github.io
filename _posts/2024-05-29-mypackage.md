@@ -38,8 +38,8 @@ The environment commands \begin{bluebox}, \begin{greenbox}, \begin{redbox} and \
 
 # Brackets
 
-| \pr{...} | \br{...} |
-|:--------:|:--------:|
-| $(...)$  | $[...]$  |
+| \pr{...} | \br{...} | \ar{...}               | \set{...} | \abs{...} | \abs{...}         | \fl{...}             | \ce{...}           | \br{...} |
+|:--------:|:--------:|:----------------------:|:---------:|:---------:|:-----------------:|:--------------------:|:------------------:|:--------:|
+| $(...)$  | $[...]$  | $\langle ... \rangle$  | ${...}$   | $|...|$   | $\Vert...\Vert$   | $\lfloor...\rfloor$  | $\lceil...\rceil$  | $[...]$  |
 
 <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/natsirt.zip" download>Click here</a> to download.
