@@ -22,6 +22,12 @@ To use the package on Overleaf, upload the .cls file onto your project, and type
 
 # Some Features
 
-... To be continued
+## Blue, Green, Red and White Boxes
+
+The environment commands \begin{bluebox}, \begin{greenbox}, \begin{redbox} and \begin{whitebox} create a colored box in which you can type paragraphs.
+
+## Symbols
+
+$\frac{1}{2^{n+1}}$
 
 <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/natsirt.cls" download>Click here</a> to download.
