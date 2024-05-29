@@ -32,4 +32,4 @@ The environment commands \begin{bluebox}, \begin{greenbox}, \begin{redbox} and \
 |:-----:|:--:|
 |asdasd | asd|
 
-<a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/natsirt.cls" download>Click here</a> to download.
+<a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/natsirt.zip" download>Click here</a> to download.
