@@ -11,10 +11,13 @@ To use the package on Overleaf, upload the .cls file onto your project, and type
 \documentclass{natsirt}
 
 \title{...}
+
 \author{...}
 
 \begin{document}
+
 ...
+
 \end{document}
 
 # Some Features
