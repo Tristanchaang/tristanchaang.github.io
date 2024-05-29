@@ -28,6 +28,8 @@ The environment commands \begin{bluebox}, \begin{greenbox}, \begin{redbox} and \
 
 # Symbols
 
-$\frac{1}{2^{n+1}}$
+| hello | hi |
+|:-----:|:--:|
+|asdasd | asd|
 
 <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/natsirt.cls" download>Click here</a> to download.
