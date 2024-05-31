@@ -52,7 +52,7 @@ These brackets support automatic size correction. E.g. \pr{\sum} will be $\left(
 
 # Others
 
-| \DS           | \TS        | \cases{abc\\xyz\\...} |
+| \DS           | \TS        | \cases{abc\\\ xyz\\\ ...} |
 |:-------------:|:----------:|:-:|
 | \displaystyle | \textstyle | $\begin{cases}abc \\\ xyz\end{cases}$ |
 
