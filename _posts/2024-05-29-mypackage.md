@@ -54,6 +54,6 @@ These brackets support automatic size correction. E.g. \pr{\sum} will be $\left(
 
 | \DS           | \TS        | \cases{abc\\xyz\\...} |
 |:-------------:|:----------:|:-:|
-| \displaystyle | \textstyle | $\begin{cases}abc\\xyz\end{cases}$ |
+| \displaystyle | \textstyle | $\begin{cases}abc \\\ xyz\end{cases}$ |
 
 <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/natsirt.zip" download>Click here</a> to download.
