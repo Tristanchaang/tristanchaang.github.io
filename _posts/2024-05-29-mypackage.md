@@ -52,8 +52,8 @@ These brackets support automatic size correction. E.g. \pr{\sum} will be $\left(
 
 # Symbols
 
-| a |
-|:-:|
-| bc |
+| \emp | \N | \Z | \Q | \R | \C | \eps | \phi | \> | \imply | \qed | \QED | \mod{...} |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| $\varnothing$ | $\mathbb{N}$ | $\mathbb{Z}$ | $\mathbb{Q}$ | $\mathbb{R}$ | $\mathbb{C}$ | $\varepsilon$ | $\varphi$ | $\rightarrow$ | $\Rightarrow$ | $\square$ | $\blacksquare$ | $(\mathrm{mod} \ ...)$ |
 
 <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/natsirt.zip" download>Click here</a> to download.
