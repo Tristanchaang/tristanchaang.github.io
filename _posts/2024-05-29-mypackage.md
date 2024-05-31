@@ -65,4 +65,8 @@ These brackets support automatic size correction. E.g. \pr{\sum} will be $\left(
 |:-------------:|:----------:|:-:|
 | \displaystyle | \textstyle | $\begin{cases}abc \\\ xyz\\\ \vdots \end{cases}$ |
 
+# Example
+
+$$ f(x) = \frac{\mathrm{d}}{\mathrm{d}t}\mathbb{P}[X\leq t] = \begin{cases}1, & 0\leq x \leq 1\\ 0, & \text{otherwise}\end{cases} $$
+
 
