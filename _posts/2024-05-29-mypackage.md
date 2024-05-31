@@ -50,4 +50,10 @@ These brackets support automatic size correction. E.g. \pr{\sum} will be $\left(
 |:-----------------:|:-----------------:|:-----------------:|:---------------------:|:--------------------:|:------------------------------:|
 | $\mathbb{P}[...]$ | $\mathbb{E}[...]$ | $\mathbb{V}[...]$ | $\mathfrak{Re}[...]$ | $\mathfrak{Im}[...]$ | $\underset{xyz}{\mathrm{abc}}$ |
 
+# Symbols
+
+| a |
+|:-:|
+| bc |
+
 <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/natsirt.zip" download>Click here</a> to download.
