@@ -38,7 +38,7 @@ The environment commands \begin{bluebox}, \begin{greenbox}, \begin{redbox} and \
 
 # Brackets
 
-These brackets support
+These brackets support automatic size correction. E.g. \pr{\sum} will be $\left(\sum\right)$ instead of $(\sum)$
 
 | \pr{...} | \br{...} | \ar{...}               | \set{...} | \abs{...}       | \norm{...}        | \fl{...}             | \ce{...}           |
 |:--------:|:--------:|:----------------------:|:---------:|:---------------:|:-----------------:|:--------------------:|:------------------:|
