@@ -40,9 +40,9 @@ These brackets support automatic size correction. E.g. \pr{\sum} will be $\left(
 
 # Function Shorthands
 
-| \prb{...} | \epv{...} | \var{...} | \Re{...} | \Im{...} | \under{abc}{x} | \od{a}{b} |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| $\mathbb{P}[...]$ | $\mathbb{E}[...]$ | $\mathbb{V}[...]$ | $\mathfrak{Re}[...]$ | $\mathfrak{Im}[...]$ | $\underset{x}{\mathrm{abc}}$ | $\frac{\mathrm{d}a}{\mathrm{d}b}$ |
+| \prb{...} | \epv{...} | \var{...} | \Re{...} | \Im{...} | \under{abc}{x} | \od{a}{b} | \pd{a}{b} |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| $\mathbb{P}[...]$ | $\mathbb{E}[...]$ | $\mathbb{V}[...]$ | $\mathfrak{Re}[...]$ | $\mathfrak{Im}[...]$ | $\underset{x}{\mathrm{abc}}$ | $\frac{\mathrm{d}a}{\mathrm{d}b}$ | $\frac{\partial a}{\partial b}$ |
 
 # Symbols
 
