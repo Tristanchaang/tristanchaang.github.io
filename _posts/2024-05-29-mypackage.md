@@ -68,7 +68,6 @@ These brackets support automatic size correction. E.g. \pr{\sum} will be $\left(
 # Example
 
 ```f_X(x) = \od{}{t}\prb{X\leq t} = \cases{1, & 0\leq x \leq 1 \\```
-
 ```0, & \text{otherwise}}```
 
 $$ f_X(x) = \frac{\mathrm{d}}{\mathrm{d}t}\mathbb{P}[X\leq t] = \begin{cases}1, & 0\leq x \leq 1\\ 0, & \text{otherwise}\end{cases} $$
