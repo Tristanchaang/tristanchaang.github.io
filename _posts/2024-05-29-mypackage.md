@@ -20,7 +20,7 @@ To use the package on Overleaf, upload the .cls file onto your project, and type
 >
 >\end{document}
 
-## Some Features
+## Extra Features
 
 # New Chapter and Subchapters
 
@@ -40,20 +40,20 @@ The environment commands \begin{bluebox}, \begin{greenbox}, \begin{redbox} and \
 
 These brackets support automatic size correction. E.g. \pr{\sum} will be $\left(\sum\right)$ instead of $(\sum)$
 
-| \pr{...} | \br{...} | \ar{...}               | \set{...} | \abs{...}       | \norm{...}        | \fl{...}             | \ce{...}           |
-|:--------:|:--------:|:----------------------:|:---------:|:---------------:|:-----------------:|:--------------------:|:------------------:|
+| \pr{...} | \br{...} | \ar{...} | \set{...} | \abs{...} | \norm{...} | \fl{...} | \ce{...} |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | $(...)$  | $[...]$  | $\langle ... \rangle$  | $\\{...\\}$ | $\mid ... \mid$ | $\Vert ... \Vert$ | $\lfloor...\rfloor$  | $\lceil...\rceil$  |
 
 # Function Shorthands
 
-| \prb{...}         | \epv{...}         | \var{...}         | \Re{...}            | \Im{...}             | \under{abc}{xyz}               |
-|:-----------------:|:-----------------:|:-----------------:|:---------------------:|:--------------------:|:------------------------------:|
-| $\mathbb{P}[...]$ | $\mathbb{E}[...]$ | $\mathbb{V}[...]$ | $\mathfrak{Re}[...]$ | $\mathfrak{Im}[...]$ | $\underset{xyz}{\mathrm{abc}}$ |
+| \prb{...} | \epv{...} | \var{...} | \Re{...} | \Im{...} | \under{abc}{x} | \od{a}{b} |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| $\mathbb{P}[...]$ | $\mathbb{E}[...]$ | $\mathbb{V}[...]$ | $\mathfrak{Re}[...]$ | $\mathfrak{Im}[...]$ | $\underset{x}{\mathrm{abc}}$ | $\frac{\mathrm{d}a}{\mathrm{d}b}$ |
 
 # Symbols
 
-| \emp | \N | \Z | \Q | \R | \C | \eps | \phi | \> | \imply | \qed | \QED | \mod{...} |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| $\varnothing$ | $\mathbb{N}$ | $\mathbb{Z}$ | $\mathbb{Q}$ | $\mathbb{R}$ | $\mathbb{C}$ | $\varepsilon$ | $\varphi$ | $\rightarrow$ | $\Rightarrow$ | $\square$ | $\blacksquare$ | $(\mathrm{mod} \ ...)$ |
+| \emp | \N | \Z | \Q | \R | \C | \eps | \phi | \> | \imply | \qed | \QED | \mod{...} | \df |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| $\varnothing$ | $\mathbb{N}$ | $\mathbb{Z}$ | $\mathbb{Q}$ | $\mathbb{R}$ | $\mathbb{C}$ | $\varepsilon$ | $\varphi$ | $\rightarrow$ | $\Rightarrow$ | $\square$ | $\blacksquare$ | $(\mathrm{mod} \ ...)$ | $\mathrm{d}$ |
 
 <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/natsirt.zip" download>Click here</a> to download.
