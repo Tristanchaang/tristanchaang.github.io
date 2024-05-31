@@ -40,9 +40,13 @@ These brackets support automatic size correction. E.g. \pr{\sum} will be $\left(
 
 # Function Shorthands
 
-| \prb{...} | \epv{...} | \var{...} | \Re{...} | \Im{...} | \under{abc}{x} | \od{a}{b} | \pd{a}{b} |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| $\mathbb{P}[...]$ | $\mathbb{E}[...]$ | $\mathbb{V}[...]$ | $\mathfrak{Re}[...]$ | $\mathfrak{Im}[...]$ | $\underset{x}{\mathrm{abc}}$ | $\frac{\mathrm{d}a}{\mathrm{d}b}$ | $\frac{\partial a}{\partial b}$ |
+| \prb{...} | \epv{...} | \var{...} | \Re{...} | \Im{...} |
+|:-:|:-:|:-:|:-:|:-:|
+| $\mathbb{P}[...]$ | $\mathbb{E}[...]$ | $\mathbb{V}[...]$ | $\mathfrak{Re}[...]$ | $\mathfrak{Im}[...]$ |
+
+| \under{abc}{x} | \od{a}{b} | \pd{a}{b} |
+|:-:|:-:|:-:|
+| $\underset{x}{\mathrm{abc}}$ | $\frac{\mathrm{d}a}{\mathrm{d}b}$ | $\frac{\partial a}{\partial b}$ |
 
 # Symbols
 
@@ -54,6 +58,6 @@ These brackets support automatic size correction. E.g. \pr{\sum} will be $\left(
 
 | \DS           | \TS        | \cases{abc\\\ xyz\\\ ...} |
 |:-------------:|:----------:|:-:|
-| \displaystyle | \textstyle | $\begin{cases}abc \\\ xyz\end{cases}$ |
+| \displaystyle | \textstyle | $\begin{cases}abc \\\ xyz\\\ \vdots \end{cases}$ |
 
 <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/natsirt.zip" download>Click here</a> to download.
