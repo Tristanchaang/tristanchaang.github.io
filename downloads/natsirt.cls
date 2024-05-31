@@ -52,7 +52,7 @@
   \thispagestyle{plain}
   \header
   \lhead{\@author}
-  \rhead{\@title}
+  \rhead{\textbf{\@title}}
   \cfoot{\thepage}
   \pagestyle{fancy}
 }
@@ -130,9 +130,9 @@
 \newcommand{\ce}[1]{\left\lceil #1 \right\rceil}
 
 % Functions
-\newcommand{\prb}[1]{\mathbb{P}\left\br{#1}}
-\newcommand{\epv}[1]{\mathbb{E}\left\br{#1}}
-\newcommand{\var}[1]{\mathbb{V}\left\br{#1}}
+\newcommand{\prb}[1]{\mathbb{P}\br{#1}}
+\newcommand{\epv}[1]{\mathbb{E}\br{#1}}
+\newcommand{\var}[1]{\mathbb{V}\br{#1}}
 \renewcommand{\Re}[1]{\mathfrak{Re}\br{#1}}
 \renewcommand{\Im}[1]{\mathfrak{Im}\br{#1}}
 \newcommand{\under}[2]{\underset{#2}{\mathrm{#1}}}

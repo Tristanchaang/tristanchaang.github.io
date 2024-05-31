@@ -44,4 +44,10 @@ These brackets support automatic size correction. E.g. \pr{\sum} will be $\left(
 |:--------:|:--------:|:----------------------:|:---------:|:---------------:|:-----------------:|:--------------------:|:------------------:|
 | $(...)$  | $[...]$  | $\langle ... \rangle$  | $\\{...\\}$ | $\mid ... \mid$ | $\Vert ... \Vert$ | $\lfloor...\rfloor$  | $\lceil...\rceil$  |
 
+# Function Shorthands
+
+| \prb{...}        |
+|:----------------:|
+| $\mathbb{P}[...] |
+
 <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/natsirt.zip" download>Click here</a> to download.
