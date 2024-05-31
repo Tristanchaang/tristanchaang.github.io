@@ -136,6 +136,8 @@
 \renewcommand{\Re}[1]{\mathfrak{Re}\br{#1}}
 \renewcommand{\Im}[1]{\mathfrak{Im}\br{#1}}
 \newcommand{\under}[2]{\underset{#2}{\mathrm{#1}}}
+\newcommand{\od}[2]{\frac{\df #1}{\df #2}}
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
 
 % Symbols
 \newcommand{\emp}{\varnothing}
@@ -151,6 +153,7 @@
 %\renewcommand{\qed}{\hfill\ensuremath{\square}}
 \renewcommand{\mod}[1]{\ \ \pr{\mathrm{mod}\ #1}}
 \newcommand{\imply}{\ \Rightarrow \ }
+\newcommand{\df}{\mathrm{d}}
 
 
 \newcommand{\eqnref}[1]     {(\protect\ref{#1})}
