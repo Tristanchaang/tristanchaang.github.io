@@ -50,7 +50,7 @@ These brackets support automatic size correction. E.g. \pr{\sum} will be $\left(
 
 # Symbols
 
-| \emp | \N | \Z | \Q | \R | \C | \eps | \phi | \> | \imply | \qed | \QED | \mod{...} | \df |
+| \emp | \N | \Z | \Q | \R | \C | \eps | \phi | \\> | \imply | \qed | \QED | \mod{...} | \df |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | $\varnothing$ | $\mathbb{N}$ | $\mathbb{Z}$ | $\mathbb{Q}$ | $\mathbb{R}$ | $\mathbb{C}$ | $\varepsilon$ | $\varphi$ | $\rightarrow$ | $\Rightarrow$ | $\square$ | $\blacksquare$ | $(\mathrm{mod} \ ...)$ | $\mathrm{d}$ |
 
