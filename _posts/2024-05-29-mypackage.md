@@ -30,12 +30,6 @@ To use the package on Overleaf, upload the .cls file onto your project, and type
 
 The environment commands \begin{bluebox}, \begin{greenbox}, \begin{redbox} and \begin{whitebox} create a colored box in which you can type paragraphs.
 
-# Shorthands
-
-| \DS           | \TS        |
-|:-------------:|:----------:|
-| \displaystyle | \textstyle |
-
 # Brackets
 
 These brackets support automatic size correction. E.g. \pr{\sum} will be $\left(\sum\right)$ instead of $(\sum)$
@@ -55,5 +49,11 @@ These brackets support automatic size correction. E.g. \pr{\sum} will be $\left(
 | \emp | \N | \Z | \Q | \R | \C | \eps | \phi | \> | \imply | \qed | \QED | \mod{...} | \df |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | $\varnothing$ | $\mathbb{N}$ | $\mathbb{Z}$ | $\mathbb{Q}$ | $\mathbb{R}$ | $\mathbb{C}$ | $\varepsilon$ | $\varphi$ | $\rightarrow$ | $\Rightarrow$ | $\square$ | $\blacksquare$ | $(\mathrm{mod} \ ...)$ | $\mathrm{d}$ |
+
+# Shorthands
+
+| \DS           | \TS        |
+|:-------------:|:----------:|
+| \displaystyle | \textstyle |
 
 <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/natsirt.zip" download>Click here</a> to download.
