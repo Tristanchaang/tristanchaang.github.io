@@ -50,10 +50,10 @@ These brackets support automatic size correction. E.g. \pr{\sum} will be $\left(
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | $\varnothing$ | $\mathbb{N}$ | $\mathbb{Z}$ | $\mathbb{Q}$ | $\mathbb{R}$ | $\mathbb{C}$ | $\varepsilon$ | $\varphi$ | $\rightarrow$ | $\Rightarrow$ | $\square$ | $\blacksquare$ | $(\mathrm{mod} \ ...)$ | $\mathrm{d}$ |
 
-# Shorthands
+# Others
 
-| \DS           | \TS        |
-|:-------------:|:----------:|
-| \displaystyle | \textstyle |
+| \DS           | \TS        | \cases{abc\\xyz\\...} |
+|:-------------:|:----------:|:-:|
+| \displaystyle | \textstyle | \begin{cases}abc\\xyz\end{cases} |
 
 <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/natsirt.zip" download>Click here</a> to download.
