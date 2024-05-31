@@ -3,8 +3,9 @@ layout: post
 title: "My LaTeX Package"
 ---
 
-I have modified the MIT Course 6 LaTeX Package to one that is suited for my convenience and purposes. 
+<a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/natsirt.zip" download>Click here</a> to download.
 
+I have modified the MIT Course 6 LaTeX Package to one that is suited for my convenience and purposes. For an example of a product of this package, see my [18.100B Notes](https://tristanchaang.github.io/notes/real_analysis).
 
 To use the package on Overleaf, upload the .cls file onto your project, and type the following into your .tex file:
 
@@ -64,4 +65,4 @@ These brackets support automatic size correction. E.g. \pr{\sum} will be $\left(
 |:-------------:|:----------:|:-:|
 | \displaystyle | \textstyle | $\begin{cases}abc \\\ xyz\\\ \vdots \end{cases}$ |
 
-<a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/natsirt.zip" download>Click here</a> to download.
+
