@@ -4,13 +4,15 @@ title: MIT Notes
 permalink: /notes/
 ---
 
-## [Real Analysis (18.100B)](https://tristanchaang.github.io/notes/real_analysis)
+# [My LaTeX Package](https://tristanchaang.github.io/2024/05/29/mypackage.html)
 
-## [Algorithms (6.1210/6.1220)](https://tristanchaang.github.io/notes/algorithms)
+# [Real Analysis (18.100B)](https://tristanchaang.github.io/notes/real_analysis)
 
-## [Machine Learning (6.390)](https://tristanchaang.github.io/notes/machine_learning)
+# [Algorithms (6.1210/6.1220)](https://tristanchaang.github.io/notes/algorithms)
 
-## [Quantum Mechanics (8.05)](https://tristanchaang.github.io/notes/quantum_mechanics)
+# [Machine Learning (6.390)](https://tristanchaang.github.io/notes/machine_learning)
 
-## [Linguistics (24.900)](https://tristanchaang.github.io/notes/linguistics)
+# [Quantum Mechanics (8.05)](https://tristanchaang.github.io/notes/quantum_mechanics)
+
+# [Linguistics (24.900)](https://tristanchaang.github.io/notes/linguistics)
 
