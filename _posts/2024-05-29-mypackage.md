@@ -75,3 +75,4 @@ $$ f_X(x) = \frac{\mathrm{d}}{\mathrm{d}t}\mathbb{P}[X\leq t] = \begin{cases}1, 
 
 ``` \int_a ^b f = \sum_{\sigma} \cdots ```
 
+$$\int$$
