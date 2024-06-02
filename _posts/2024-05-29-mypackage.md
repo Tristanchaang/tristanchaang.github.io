@@ -73,6 +73,6 @@ These brackets support automatic size correction. E.g. \pr{\sum} will be $\left(
 
 $$ f_X(x) = \frac{\mathrm{d}}{\mathrm{d}t}\mathbb{P}[X\leq t] = \begin{cases}1, & 0\leq x \leq 1\\ 0, & \text{otherwise}\end{cases} $$
 
-``` f \in \mathcal{R}(a,b) \imply \int_a^b f = \under{inf}{a=x_0<\cdots<x_N=b} \sum_{i=1}^{N} (x_i - x_{i-1}) \under{osc}{[x_{i-1}, x_i]} f ```
+``` f \in \mathcal{R}(a,b) \imply \under{inf}{a=x_0<\cdots<x_N=b} \sum_{i=1}^{N} (x_i - x_{i-1}) \under{osc}{[x_{i-1}, x_i]} f = 0 ```
 
-$$f \in \mathcal{R}(a,b) \ \Rightarrow \ \int_a^b f = \underset{a=x_0<\cdots<x_N=b}{\mathrm{inf}} \sum_{i=1}^{N} (x_i - x_{i-1}) \underset{[x_{i-1}, x_i]}{\mathrm{osc}} f $$
+$$f \in \mathcal{R}(a,b) \ \Rightarrow \ \underset{a=x_0<\cdots<x_N=b}{\mathrm{inf}} \sum_{i=1}^{N} (x_i - x_{i-1}) \underset{[x_{i-1}, x_i]}{\mathrm{osc}} f = 0 $$
