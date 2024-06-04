@@ -43,9 +43,14 @@ header_pages:
 
 # Build settings
 theme: minima
+remote_theme: jekyll/minima
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-remote-theme
+
+minima:
+  skin: dark
 
 google_analytics: G-PH72KY1MTT
