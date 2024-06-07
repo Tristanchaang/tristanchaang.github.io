@@ -42,7 +42,7 @@ header_pages:
   - pages/privacy.md
 
 # Build settings
-theme: minima
+theme: jekyll-theme-minimal
 
 plugins:
   - jekyll-feed
