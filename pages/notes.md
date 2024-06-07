@@ -22,7 +22,7 @@ permalink: /notes/
 
 # [Quantum Mechanics (8.05)](https://tristanchaang.github.io/notes/quantum_mechanics)
 
-## Linguistics and Philosophy
+## Linguistics
 
 # [Linguistics (24.900)](https://tristanchaang.github.io/notes/linguistics)
 
