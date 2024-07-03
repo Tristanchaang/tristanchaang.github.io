@@ -24,3 +24,7 @@ viewer?embedded=true&url=http://tristanchaang.github.io/pages/notes/real_analysi
 
 <embed src="https://drive.google.com/viewerng/
 viewer?embedded=true&url=http://tristanchaang.github.io/pages/notes/real_analysis/18100BNotesTheorems.pdf" width="100%" height="600px" />
+
+# LaTeX Version
+
+<a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/pages/notes/real_analysis/18100Btex.zip" download>Download</a>
