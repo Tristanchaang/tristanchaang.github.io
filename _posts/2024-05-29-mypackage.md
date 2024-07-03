@@ -5,7 +5,7 @@ title: "My LaTeX Package"
 
 <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/natsirt.zip" download="download">Click here</a> to download the zip file that contains 'natsirt.cls'.
 
-I have modified the MIT Course 6 LaTeX Package to one that is suited for my convenience and purposes. For an example of a product of this package, see my [18.100B Notes](https://tristanchaang.github.io/notes/real_analysis).
+I have modified the MIT Course 6 LaTeX Package to one that is suited for my convenience and purposes. For an example of a product of this package, see my [Real Analysis Notes](https://tristanchaang.github.io/notes/real_analysis) and [Topology Notes](https://tristanchaang.github.io/notes/topology).
 
 To use the package on Overleaf, upload the .cls file onto your project, and type the following into your .tex file:
 
