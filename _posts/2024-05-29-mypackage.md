@@ -53,9 +53,9 @@ These brackets support automatic size correction. E.g. \pr{\sum} will be $\left(
 
 # Symbols
 
-| \emp | \A,\B,... | \eps | \phi |
+| \emp | \A,\B,...,\Z | \eps | \phi |
 |:-:|:-:|:-:|:-:|
-| $\varnothing$ | $\mathbb{A},\mathbb{B},\cdots$ | $\varepsilon$ | $\varphi$ |
+| $\varnothing$ | $\mathbb{A},\mathbb{B},\cdots,\mathbb{Z}$ | $\varepsilon$ | $\varphi$ |
 
 | \\> | \imply | \iff | \qed | \QED | \mod{...} | \df |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -63,9 +63,9 @@ These brackets support automatic size correction. E.g. \pr{\sum} will be $\left(
 
 # Others
 
-| \DS           | \TS        | \cases{abc\\\ xyz\\\ ...} |
-|:-------------:|:----------:|:-:|
-| \displaystyle | \textstyle | $\begin{cases}abc \\\ xyz\\\ \vdots \end{cases}$ |
+| \DS           | \TS        | \cases{abc\\\ xyz\\\ ...} | \ol{abc} | \ol{abc} | \emph{text} | \scr{ABC} |
+|:-------------:|:----------:|:-:|:-:|:-:|:-:|:-:|
+| \displaystyle | \textstyle | $\begin{cases}abc \\\ xyz\\\ \vdots \end{cases}$ | $\overline{abc}$ | $\widetilde{abc}$ | $\textbf{\textit{text}}$ | $\mathscr{ABC}$ |
 
 # Example
 
