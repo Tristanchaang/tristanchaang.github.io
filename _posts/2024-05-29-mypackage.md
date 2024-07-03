@@ -15,6 +15,8 @@ To use the package on Overleaf, upload the .cls file onto your project, and type
 >
 >\author{...}
 >
+>\subtitle{...} % optional
+>
 >\begin{document}
 >
 >...
@@ -51,9 +53,9 @@ These brackets support automatic size correction. E.g. \pr{\sum} will be $\left(
 
 # Symbols
 
-| \emp | \N | \Z | \Q | \R | \C | \eps | \phi |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| $\varnothing$ | $\mathbb{N}$ | $\mathbb{Z}$ | $\mathbb{Q}$ | $\mathbb{R}$ | $\mathbb{C}$ | $\varepsilon$ | $\varphi$ |
+| \emp | \A,\B,... | \eps | \phi |
+|:-:|:-:|:-:|:-:|
+| $\varnothing$ | $\mathbb{A},\mathbb{B},\cdots$ | $\varepsilon$ | $\varphi$ |
 
 | \\> | \imply | \iff | \qed | \QED | \mod{...} | \df |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
