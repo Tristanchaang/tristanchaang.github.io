@@ -53,13 +53,13 @@ These brackets support automatic size correction. E.g. \pr{\sum} will be $\left(
 
 # Symbols
 
-| \emp | \A,\B,...,\Z | \eps | \phi |
-|:-:|:-:|:-:|:-:|
-| $\varnothing$ | $\mathbb{A},\mathbb{B},\cdots,\mathbb{Z}$ | $\varepsilon$ | $\varphi$ |
+| \emp | \A,\B,...,\Z | \eps | \phi | \\> |
+|:-:|:-:|:-:|:-:|:-:|
+| $\varnothing$ | $\mathbb{A},\mathbb{B},\cdots,\mathbb{Z}$ | $\varepsilon$ | $\varphi$ | $\rightarrow$ |
 
-| \\> | \imply | \iff | \qed | \QED | \mod{...} | \df |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| $\rightarrow$ | $\Rightarrow$ | $\Leftrightarrow$ | $\square$ | $\blacksquare$ | $(\mathrm{mod} \ ...)$ | $\mathrm{d}$ |
+| \imply | \Imply | \iff | \Iff | \qed | \QED | \mod{...} | \df |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| $\Rightarrow$ | $\Longrightarrow$ | $\Leftrightarrow$ | $\Longleftrightarrow$ | $\square$ | $\blacksquare$ | $(\mathrm{mod} \ ...)$ | $\mathrm{d}$ |
 
 # Others
 

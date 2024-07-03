@@ -183,6 +183,8 @@
 \newcommand{\ol}{\overline}
 \newcommand{\td}[1]{\widetilde{#1}}
 \renewcommand{\emph}[1]{\textbf{\textit{#1}}}
+\newcommand{\Imply}{\ \Longrightarrow \ }
+\newcommand{\Iff}{\ \Longleftrightarrow \ }
 
 
 \newcommand{\eqnref}[1]     {(\protect\ref{#1})}
