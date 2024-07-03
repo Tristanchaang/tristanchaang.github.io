@@ -153,6 +153,7 @@
 %\renewcommand{\qed}{\hfill\ensuremath{\square}}
 \renewcommand{\mod}[1]{\ \ \pr{\mathrm{mod}\ #1}}
 \newcommand{\imply}{\ \Rightarrow \ }
+\renewcommand{\iff}{\ \Leftrightarrow \ }
 \newcommand{\df}{\mathrm{d}}
 
 
