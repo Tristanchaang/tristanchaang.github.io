@@ -3,7 +3,7 @@ layout: post
 title: "My LaTeX Package"
 ---
 
-<a href="../downloads/natsirt.cls" download="download">Click here</a> to download the zip file that contains 'natsirt.cls'.
+<a href="../downloads/natsirt.cls">Click here</a> to download the zip file that contains 'natsirt.cls'.
 
 I have modified the MIT Course 6 LaTeX Package to one that is suited for my convenience and purposes. For an example of a product of this package, see my [18.100B Notes](https://tristanchaang.github.io/notes/real_analysis).
 
