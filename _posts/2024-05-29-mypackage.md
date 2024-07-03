@@ -63,9 +63,9 @@ These brackets support automatic size correction. E.g. \pr{\sum} will be $\left(
 
 # Others
 
-| \DS           | \TS        | \cases{abc\\\ xyz\\\ ...} | \ol{abc} | \ol{abc} | \emph{text} | \scr{ABC} |
+| \DS           | \TS        | \cases{abc\\\ xyz\\\ ...} | \ol{abc} | \td{abc} | \emph{text} | \scr{ABC} |
 |:-------------:|:----------:|:-:|:-:|:-:|:-:|:-:|
-| \displaystyle | \textstyle | $\begin{cases}abc \\\ xyz\\\ \vdots \end{cases}$ | $\overline{abc}$ | $\widetilde{abc}$ | $\textbf{\textit{text}}$ | $\mathscr{ABC}$ |
+| \displaystyle | \textstyle | $\begin{cases}abc \\\ xyz\\\ \vdots \end{cases}$ | $\overline{abc}$ | $\widetilde{abc}$ | $\textit{\textbf{text}}$ | $\mathscr{ABC}$ |
 
 # Example
 
