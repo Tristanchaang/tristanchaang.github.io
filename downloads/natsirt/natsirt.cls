@@ -21,9 +21,11 @@
 % Document Variables and Functions
 \let\@author\@empty
 \let\@title\@empty
+\let\@subtitle\@empty
 \let\@chapter\@empty
 
 \renewcommand\title[1]{\def\@title{#1}}
+\newcommand\subtitle[1]{\def\@subtitle{#1}}
 
 \newcommand\chapter[1]{%
   \ifx \@chapter \@empty \else \newpage \fi
@@ -43,8 +45,9 @@
   \begin{titlebox}
     {\@author \hfill \@date}
     \\
-    \centering\large\bf\@title
-    \vspace{0.5cm}
+    \centering{\large\bf\@title}
+    \\
+    \hfill\@subtitle
   \end{titlebox}
 }
 
@@ -142,11 +145,32 @@
 % Symbols
 \newcommand{\emp}{\varnothing}
 \newcommand{\eps}{\varepsilon}
-\newcommand{\N}{\mathbb{N}}
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\Q}{\mathbb{Q}}
-\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\B}{\mathbb{B}}
 \newcommand{\C}{\mathbb{C}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\G}{\mathbb{G}}
+\renewcommand{\H}{\mathbb{H}}
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\J}{\mathbb{J}}
+\newcommand{\K}{\mathbb{K}}
+\renewcommand{\L}{\mathbb{L}}
+\newcommand{\M}{\mathbb{M}}
+\newcommand{\N}{\mathbb{N}}
+\renewcommand{\O}{\mathbb{O}}
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\renewcommand{\S}{\mathbb{S}}
+\newcommand{\T}{\mathbb{T}}
+\newcommand{\U}{\mathbb{U}}
+\newcommand{\V}{\mathbb{V}}
+\newcommand{\W}{\mathbb{W}}
+\newcommand{\X}{\mathbb{X}}
+\newcommand{\Y}{\mathbb{Y}}
+\newcommand{\Z}{\mathbb{Z}}
 \renewcommand{\phi}{\varphi}
 \renewcommand{\>}{\rightarrow}
 \newcommand{\QED}{\hfill\ensuremath{\blacksquare}}
@@ -155,6 +179,9 @@
 \newcommand{\imply}{\ \Rightarrow \ }
 \renewcommand{\iff}{\ \Leftrightarrow \ }
 \newcommand{\df}{\mathrm{d}}
+\newcommand{\scr}{\mathscr}
+\newcommand{\ol}{\overline}
+\renewcommand{\emph}[1]{\textbf{\textit{#1}}}
 
 
 \newcommand{\eqnref}[1]     {(\protect\ref{#1})}
