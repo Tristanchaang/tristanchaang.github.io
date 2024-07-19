@@ -4,9 +4,14 @@ title: Handouts
 permalink: /handouts/
 ---
 
+## 20 July 2024 Graph Theory Talk at Kuen Cheng
+
+#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/kcgraph.pptx" download>Slides</a>
+
+
 ## 6 June 2023 Probability Talk at Kuen Cheng
 
-#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/talkkcmath.pptx" download>Slides</a>
+#### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/kcprob.pptx" download>Slides</a>
 
 ## 27 & 28 April 2023 OMK Talk at Sunway
 
