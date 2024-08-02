@@ -36,7 +36,6 @@ minima:
 header_pages:
   - pages/index.md
   - pages/about.md
-  - pages/maths.md
   - pages/handouts.md
   - pages/notes.md
   - pages/privacy.md
