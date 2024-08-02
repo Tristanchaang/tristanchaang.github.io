@@ -38,7 +38,6 @@ header_pages:
   - pages/about.md
   - pages/handouts.md
   - pages/notes.md
-  - pages/privacy.md
 
 # Build settings
 theme: minima
