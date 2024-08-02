@@ -4,6 +4,14 @@ title: Materials
 permalink: /handouts/
 ---
 
+## Problems
+
+Here are some of my favourite problems and some that I have set for BIMO:
+
+### [Self-Made Olympiad-Style Problems](maths1.md)
+
+### [Favourite Problems in General](maths2.md)
+
 ## 20 July 2024 Graph Theory Talk at Kuen Cheng
 
 #### <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/kcgraph.pptx" download>Slides</a>
