@@ -39,6 +39,7 @@ header_pages:
   - pages/handouts.md
   - pages/notes.md
   - pages/privacy.md
+  - https://tristanchaang.github.io/webpage
 
 # Build settings
 theme: minima
