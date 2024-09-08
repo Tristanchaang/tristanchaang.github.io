@@ -29,6 +29,10 @@ To use the package on Overleaf, upload the .cls file onto your project, and type
 
 \chapter{} and \chapterpart{} will create chapter titles. \chapter{} will create a page break for every subsequent chapter.
 
+# New Problem and Subproblems (for Psets)
+
+\problem{Num}{Collaborators} and \problempart{} will create problem titles. \problem{} will create a page break for every subsequent problem.
+
 # Blue, Green, Red and White Boxes
 
 The environment commands \begin{bluebox}, \begin{greenbox}, \begin{redbox} and \begin{whitebox} create a colored box in which you can type paragraphs.
