@@ -23,9 +23,24 @@
 \let\@title\@empty
 \let\@subtitle\@empty
 \let\@chapter\@empty
+\let\@problem\@empty
+\let\@collab\@empty
 
 \renewcommand\title[1]{\def\@title{#1}}
 \newcommand\subtitle[1]{\def\@subtitle{#1}}
+
+\newcommand\problem[2]{%
+  \ifx \@problem \@empty \else \newpage \fi
+  \def\@problem{#1}
+  \def\@collab{#2}
+  \ifx \@problem \@empty
+    \@latexerr{You must include a problem number}
+  \fi
+  \ifx \@collab \@empty
+    \def\@collab{None}
+  \fi
+  \section*{Problem \@problem{} {\small\it (Collaborators: \@collab)}}  
+}
 
 \newcommand\chapter[1]{%
   \ifx \@chapter \@empty \else \newpage \fi
@@ -33,6 +48,10 @@
   \def\@chapter{#1}
 
   \section{\@chapter{} }  
+}
+
+\newcommand{\problempart[1]}{
+  \subsection*{Part \@problem(#1)} 
 }
 
 \newcommand\chapterpart[1]{
@@ -181,7 +200,6 @@
 \newcommand{\df}{\mathrm{d}}
 \newcommand{\scr}{\mathscr}
 \newcommand{\ol}{\overline}
-\newcommand{\td}[1]{\widetilde{#1}}
 \renewcommand{\emph}[1]{\textbf{\textit{#1}}}
 \newcommand{\Imply}{\ \Longrightarrow \ }
 \newcommand{\Iff}{\ \Longleftrightarrow \ }
