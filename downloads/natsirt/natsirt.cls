@@ -50,7 +50,7 @@
   \section{\@chapter{} }  
 }
 
-\newcommand{\problempart[1]}{
+\newcommand{\problempart}[1]{
   \subsection*{Part \@problem(#1)} 
 }
 
