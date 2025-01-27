@@ -5,5 +5,6 @@ permalink: /misc/
 ---
 
 
-Integral | Time |
-$$ \int x^2 $$ | 1 |
+| Integral | Time(s) |
+| $$ \int x^2 $$ | 1 |
+| $$ \int x^2 $$ | 3.8 |
