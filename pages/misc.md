@@ -15,3 +15,9 @@ permalink: /misc/
 | $$ \int _0^\infty \frac{1}{(x+1+2\sqrt{x})^2} $$ | 110.2 | x |
 | $$ \int \cdots $$ | 53.7 |  |
 | $$ \int x^2 \cos(\csc^{-1}(x)) $$ | 41.2 |  |
+| $$ \int _0^{\frac{1}{2025}}(\sum_{k=1}^\infty \frac{(2025x)^k e^{-2025x}}{k!}) $$ | 42.8 |  |
+| $$ \int \frac{1}{1-x^4} $$ | 27.7 |  |
+| $$ \int _{-\pi/2}^{\pi/2}\cos(20x)\cos(25x) $$ | 62.8 |  |
+| $$ \int _{-2}^2 \max(x,x^2,x^3) $$ | 52.9 |  |
+| $$ \int _0^{2025} \{\sqrt{x}\} $$ | 135.2 | x |
+| $$ \int \cdots $$ | 199.6 | x |
