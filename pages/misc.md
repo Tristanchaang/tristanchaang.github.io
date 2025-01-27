@@ -21,3 +21,5 @@ permalink: /misc/
 | $$ \int _{-2}^2 \max(x,x^2,x^3) $$ | 52.9 |  |
 | $$ \int _0^{2025} \{\sqrt{x}\} $$ | 135.2 | x |
 | $$ \int \cdots $$ | 199.6 | x |
+| $$ \int \cdots $$ | 71.6 | x |
+| $$ \int \cdots $$ | 103.0 |  |
