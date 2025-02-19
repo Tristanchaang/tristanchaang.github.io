@@ -12,6 +12,8 @@ permalink: /notes/
 
 # [Topology (18.901)](https://tristanchaang.github.io/notes/topology)
 
+# [Lie Algebra (Official Lecture Notes)](https://tristanchaang.github.io/notes/lie_algebras)
+
 ## Computer Science
 
 # [Algorithms (6.1210/6.1220)](https://tristanchaang.github.io/notes/algorithms)
