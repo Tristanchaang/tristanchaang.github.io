@@ -60,10 +60,9 @@ footer > a {
     justify-items: center;
     align-items: center;
     column-gap: 5px;
-    row-gap: 0px;
+    row-gap: 5px;
     width: 50px;
     height: 40px;
-    font-size: 0.8rem;
 }
 
 #langselect > a {

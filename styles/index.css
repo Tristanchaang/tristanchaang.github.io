@@ -21,6 +21,10 @@ body > div > div {
     padding: 20px 100px 20px 100px;
 }
 
+body p {
+    font-size: 1.2rem;
+}
+
 body a {
     color: inherit;
 }
@@ -28,6 +32,8 @@ body a {
 #welcome {
     background: linear-gradient(to right, lightgreen, rgb(170, 214, 190));
     color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 table {

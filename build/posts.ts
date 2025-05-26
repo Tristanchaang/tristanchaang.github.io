@@ -33,7 +33,12 @@ const postTitleHTMLs = (await Promise.all(fileNames.map(async (file) => parsePos
 
 export const postIndexHTML = `
     <div id="posts" style="position: relative">
-        <h1>Posts</h1>
+        <h1 lang="en">Posts</h1>
+        <h1 lang="my">Siaran-Siaran</h1>
+        <h1 lang="zh">贴文</h1>
+        <h1 lang="hk">貼文</h1>
+        <h1 lang="fr">Publications</h1>
+        <h1 lang="jp">投稿</h1>
         <div id="postWindow">${postTitleHTMLs.join("")}</div>
         <img id="postBg" src="/assets/file-pen-solid.svg" alt="Posts Icon">
     </div>

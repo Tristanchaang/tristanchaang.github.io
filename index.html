@@ -23,43 +23,75 @@
 <body>
     
     <nav>
-        <a onclick="directIndexSection('body')" style="font-size: 1.5rem; cursor: pointer">Tristan Chaang's Page</a>
+        <a onclick="directIndexSection('body')" style="font-size: 1.5rem; cursor: pointer">
+            <span lang="en">Tristan Chaang's Page</span>
+            <span lang="my">Laman Tristan Chaang</span>
+            <span lang="zh">曾子宸的网站</span>
+            <span lang="hk">曾子宸嘅網站</span>
+            <span lang="fr">La page de Tristan Chaang</span>
+            <span lang="jp">トリ・チャーンのペイジ</span>
+        </a>
         <div id=navmenu style="display: flex; gap: 20px; align-items: center; gap: 2rem;" >
-            <a onclick="directIndexSection('#about')" style="cursor: pointer">About</a><a onclick="directIndexSection('#materials')" style="cursor: pointer">Materials</a><a href="/materials/mitnotes.html" style="cursor: pointer">MIT</a><a href="/webpage/" style="cursor: pointer">Games</a>
+            
+                <a onclick="directIndexSection('#about')" style="cursor: pointer" lang="en">About</a>
+                <a onclick="directIndexSection('#about')" style="cursor: pointer" lang="my">Tentang Saya</a>
+                <a onclick="directIndexSection('#about')" style="cursor: pointer" lang="zh">关于我</a>
+                <a onclick="directIndexSection('#about')" style="cursor: pointer" lang="hk">關於我</a>
+                <a onclick="directIndexSection('#about')" style="cursor: pointer" lang="fr">Sur Moi</a>
+                <a onclick="directIndexSection('#about')" style="cursor: pointer" lang="jp">僕について</a>
+                
+                <a onclick="directIndexSection('#materials')" style="cursor: pointer" lang="en">Materials</a>
+                <a onclick="directIndexSection('#materials')" style="cursor: pointer" lang="my">Bahan</a>
+                <a onclick="directIndexSection('#materials')" style="cursor: pointer" lang="zh">资料</a>
+                <a onclick="directIndexSection('#materials')" style="cursor: pointer" lang="hk">資料</a>
+                <a onclick="directIndexSection('#materials')" style="cursor: pointer" lang="fr">Matériaux</a>
+                <a onclick="directIndexSection('#materials')" style="cursor: pointer" lang="jp">資料</a>
+                
+                <a href="/materials/mitnotes.html" style="cursor: pointer" lang="en">MIT</a>
+                <a href="/materials/mitnotes.html" style="cursor: pointer" lang="my">MIT</a>
+                <a href="/materials/mitnotes.html" style="cursor: pointer" lang="zh">MIT</a>
+                <a href="/materials/mitnotes.html" style="cursor: pointer" lang="hk">MIT</a>
+                <a href="/materials/mitnotes.html" style="cursor: pointer" lang="fr">MIT</a>
+                <a href="/materials/mitnotes.html" style="cursor: pointer" lang="jp">MIT</a>
+                
+                <a href="/webpage/" style="cursor: pointer" lang="en">Games</a>
+                <a href="/webpage/" style="cursor: pointer" lang="my">Permainan</a>
+                <a href="/webpage/" style="cursor: pointer" lang="zh">游戏</a>
+                <a href="/webpage/" style="cursor: pointer" lang="hk">遊戲</a>
+                <a href="/webpage/" style="cursor: pointer" lang="fr">Jeux</a>
+                <a href="/webpage/" style="cursor: pointer" lang="jp">ゲーム</a>
+                
             <div id=langselect>
-            <a href="/?lang=en"><img src="assets/gb.svg" alt="English" width="24" height="16" style="vertical-align: middle;" /></a>
-            <a href="/?lang=my"><img src="assets/my.svg" alt="Malay" width="24" height="16" style="vertical-align: middle;" /></a>
-            <a href="/?lang=zh"><img src="assets/cn.svg" alt="Mandarin" width="24" height="16" style="vertical-align: middle;" /></a>
-            <a href="/?lang=hk"><img src="assets/hk.svg" alt="Cantonese" width="24" height="16" style="vertical-align: middle;" /></a>
-            <a href="/?lang=fr"><img src="assets/fr.svg" alt="French" width="24" height="16" style="vertical-align: middle;" /></a>
-            <a href="/?lang=jp"><img src="assets/jp.svg" alt="Japanese" width="24" height="16" style="vertical-align: middle;" /></a>
+            <a href="/?lang=en"><img src="/assets/gb.svg" alt="English" width="24" height="16" style="vertical-align: middle;" /></a>
+            <a href="/?lang=my"><img src="/assets/my.svg" alt="Malay" width="24" height="16" style="vertical-align: middle;" /></a>
+            <a href="/?lang=zh"><img src="/assets/cn.svg" alt="Mandarin" width="24" height="16" style="vertical-align: middle;" /></a>
+            <a href="/?lang=hk"><img src="/assets/hk.svg" alt="Cantonese" width="24" height="16" style="vertical-align: middle;" /></a>
+            <a href="/?lang=fr"><img src="/assets/fr.svg" alt="French" width="24" height="16" style="vertical-align: middle;" /></a>
+            <a href="/?lang=jp"><img src="/assets/jp.svg" alt="Japanese" width="24" height="16" style="vertical-align: middle;" /></a>
         </div>
         </div> 
         
     </nav>
 
     <div>
-    <div id="welcome" lang="en">
-        <p>Welcome to my personal page! Here I write about myself and all kinds of stuff I want to share. This is a new version of my website, and may have bugs.</p>
+    
+    <div id="welcome">
+        <p lang="en">Welcome to my personal page! Here I write about myself and all kinds of stuff I want to share. This is a new version of my website, and may have bugs.</p>
+        <p lang="my">Selamat datang ke laman web saya! Di sini saya menulis tentang saya dan berkongsi apa-apa perkara yang menarik. Versi laman web ini adalah terbaharu, jadi ia mungkin ada kerosakan.</p>
+        <p lang="zh">欢迎来到我的网站！我在这里写一些关于自己的东西和我想分享的事物。这是网站的最新版本，所以可能会有漏洞。</p>
+        <p lang="hk">歡迎嚟到我嘅網站！我係呢度寫關於我嘅嘢同埋我想分享嘅事。呢個網站係最新嘅版本，所以可能有漏洞。</p>
+        <p lang="fr">Bienvenue sur mon site ! Ici, j'écris sur moi, et sur tout ce que je souhaite partager. Cette page-ci est une nouvelle version de mon site web, donc elle peut avoir des bugs.</p>
+        <p lang="jp">僕のウェブサイトへようこそ！ここで、自身のこととみんなさんにシェアしたい色々なことについてか書いています。このページは、新しいバージョンなので、バグがある可能性があります。</p>
     </div>
-    <div id="welcome" lang="my">
-        <p>Selamat datang ke laman web saya! Di sini saya menulis tentang saya dan berkongsi apa-apa perkara yang menarik. Versi laman web ini adalah terbaharu, jadi ia mungkin ada kerosakan.</p>
-    </div>
-    <div id="welcome" lang="zh">
-        <p>欢迎来到我的网站！我在这里写一些关于自己的东西和我想分享的事物。这是网站的最新版本，所以可能会有漏洞。</p>
-    </div>
-    <div id="welcome" lang="hk">
-        <p>歡迎嚟到我嘅網站！我係呢度寫關於我嘅嘢同埋我想分享嘅事。呢個網站係最新嘅版本，所以可能有漏洞。</p>
-    </div>
-    <div id="welcome" lang="fr">
-        <p>Bienvenue sur mon site ! Ici, j'écris sur moi, et sur tout ce que je souhaite partager. Cette page-ci est une nouvelle version de mon site web, donc elle peut avoir des bugs.</p>
-    </div>
-    <div id="welcome" lang="jp">
-        <p>僕のウェブサイトへようこそ！ここで、自身のこととみんなさんにシェアしたい色々なことについてか書いています。このページは、新しいバージョンなので、バグがある可能性があります。</p>
-    </div>
+
     
     <div id="posts" style="position: relative">
-        <h1>Posts</h1>
+        <h1 lang="en">Posts</h1>
+        <h1 lang="my">Siaran-Siaran</h1>
+        <h1 lang="zh">贴文</h1>
+        <h1 lang="hk">貼文</h1>
+        <h1 lang="fr">Publications</h1>
+        <h1 lang="jp">投稿</h1>
         <div id="postWindow"><a class="postThumbnail" href="/posts/2024-05-29-mypackage.html">
                             <span style="font-size: 1.3rem; width:auto">My \(\LaTeX\) Package</span>
                             <span style="min-width:135px; text-align: right;">May 29, 2024</span>
@@ -160,7 +192,7 @@
 </div>
 
     
-    <div id="materials">
+    <div id="materials" style="position: relative;">
         <h1>Materials</h1>
         <div class="thumbnailWindow"><a class="materialThumbnail" href="/materials/random.html">
                             <img src="/assets/folder-closed-solid.svg" alt="Folder Icon" class="materialIcon" style="width:2rem; height:2rem; margin-right:1rem; vertical-align:middle;" />
@@ -187,6 +219,7 @@
                             <img src="/assets/folder-closed-solid.svg" alt="Folder Icon" class="materialIcon" style="width:2rem; height:2rem; margin-right:1rem; vertical-align:middle;" />
                             <span style="font-size: 1.3rem; width:auto">MIT</span>
                         </a></div>
+        <img id="materialBg" src="/assets/folder-open-solid.svg" alt="Materials Icon">
     </div>
 
     <div id="games">
@@ -200,7 +233,7 @@
     </div>
     <div id="aboutwebsite">
         <h2>About This Website</h2>
-        This webpage is built completely with HTML, CSS, and (npm) Typescript. No advanced frameworks were used. This site is run on Github Pages (<a href="https://docs.github.com/en/github/site-policy/github-privacy-statement">Privacy Statement</a>) and uses <a href="https://analytics.google.com/">Google Analytics</a> (<a href="https://policies.google.com/privacy">Privacy Statement</a>). This webpage is merely a personal project, and I think it is kind of fun. I am also using this website to practice writing different languages.
+        <p>This webpage is built completely with HTML, CSS, and (npm) Typescript. No advanced frameworks were used. This site is run on Github Pages (<a href="https://docs.github.com/en/github/site-policy/github-privacy-statement">Privacy Statement</a>) and uses <a href="https://analytics.google.com/">Google Analytics</a> (<a href="https://policies.google.com/privacy">Privacy Statement</a>). This webpage is merely a personal project, and I think it is kind of fun. I am also using this website to practice coding, and typing in different languages.</p>
     </div>
     <br><br>
     </div>

@@ -16,9 +16,10 @@ const materialHTMLs = Object.entries(MATERIALS).map(([title, link]) => `
                             <span style="font-size: 1.3rem; width:auto">${title}</span>
                         </a>`.trim());
 export const materialsIndexHTML = `
-    <div id="materials">
+    <div id="materials" style="position: relative;">
         <h1>Materials</h1>
         <div class="thumbnailWindow">${materialHTMLs.join("")}</div>
+        <img id="materialBg" src="/assets/folder-open-solid.svg" alt="Materials Icon">
     </div>
 `;
 function mitThumbnailize(md) {
