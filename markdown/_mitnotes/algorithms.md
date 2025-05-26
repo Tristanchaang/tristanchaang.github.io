@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Algorithms"
+title: Algorithms
 ---
 
 # Max-Flow Min-Cut

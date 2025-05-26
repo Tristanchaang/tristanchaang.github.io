@@ -1,7 +1,6 @@
 ---
 layout: page
-title: "Topology"
-permalink: /notes/topology
+title: Topology
 ---
 
 # Full Notes

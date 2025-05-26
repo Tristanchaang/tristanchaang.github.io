@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Linguistics"
+title: Linguistics
 ---
 
 # Final Paper

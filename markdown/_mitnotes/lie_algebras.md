@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Lie Algebras"
+title: Lie Algebras
 ---
 
 Here are the official notes of [Prof. Victor Kac](https://en.wikipedia.org/wiki/Victor_Kac)'s semester course in Lie algebras, that I was appointed to write:
