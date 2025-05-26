@@ -27,7 +27,7 @@ export const aboutIndexHTML = `
             </div>`).join("")}
     </div>
     <div class="thumbnailWindow">
-        <a class="eduThumbnail" href="/posts/2025-05-26-resume.html">
+        <a class="eduThumbnail" href="/materials/resume.html">
             <img src="/assets/file-solid.svg" alt="Folder Icon" class="materialIcon" style="width:2rem; height:2rem; margin-right:1rem; vertical-align:middle;" />
             <span style="font-size: 1.3rem; width:auto">Latest CV/Resume</span>
         </a>

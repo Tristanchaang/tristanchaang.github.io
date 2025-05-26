@@ -7,6 +7,7 @@ const MATERIALS = {
     "Olympiads": "olympiads",
     "Non-Olympiads": "nonolympiads",
     "SPM Chemistry": "spmchemistry",
+    "Latest CV/Resume": "resume",
     "MIT": "mitnotes"
 };
 const materialHTMLs = Object.entries(MATERIALS).map(([title, link]) => `
@@ -29,7 +30,7 @@ function mitThumbnailize(md) {
 }
 function thumbnailize(md) {
     return md.replaceAll(/<li><a (?<att>.*)>(?<title>[^\n]*)<\/a><\/li>/g, `<a class="thumbnail" $<att>>
-            <img src="/assets/file-solid.svg" alt="Folder Icon" class="materialIcon" style="width:2rem; height:2rem; margin-right:1rem; vertical-align:middle;" />
+            <img src="/assets/file-arrow-down-solid.svg" alt="Folder Icon" class="materialIcon" style="width:2rem; height:2rem; margin-right:1rem; vertical-align:middle;" />
             <span style="font-size: 1.3rem; width:auto">$<title></span>
         </a>`).replaceAll(/<ul>/g, `<div class="thumbnailWindow">`).replaceAll(/<\/ul>/g, `</div>`);
 }
