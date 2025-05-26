@@ -2,7 +2,7 @@ const NAVBAR_TABS = {
     About: `onclick="directIndexSection('#about')"`,
     Materials: `onclick="directIndexSection('#materials')"`,
     MIT: `href="/materials/mitnotes.html"`,
-    Games: `href="/website/""`
+    Games: `href="/webpage/"`
 }
 
 const SOCMED = {
