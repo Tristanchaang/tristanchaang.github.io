@@ -1,0 +1,32 @@
+#education {
+    width: 100%;
+    display: flex; 
+    position: relative;
+    gap: 2rem;
+    justify-content: space-between;
+    flex: 1 1 1;
+}
+
+#education > div {
+    position: relative;
+    color: white;
+    height: 150px;
+    width: 100%;
+}
+
+#education > div > div {
+    position: relative;
+    color: white;
+    height: 150px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.5);
+}
+
+.eduThumbnail {
+    background: linear-gradient(to right, rgb(156, 250, 211), rgb(205, 255, 251));
+    width: 300px;
+    margin-top: 20px;
+}

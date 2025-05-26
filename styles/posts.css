@@ -1,0 +1,17 @@
+#postWindow {
+    height: 300px;
+    margin-right: 200px;
+    overflow: scroll;
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+.postThumbnail {
+    background: linear-gradient(to right, rgb(160, 244, 240), rgb(205, 240, 255));
+    margin-bottom: 20px;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.postThumbnail > span {
+    color: black;
+}

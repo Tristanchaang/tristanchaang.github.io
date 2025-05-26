@@ -1,0 +1,43 @@
+@import url("./header-footer.css");
+@import url("./posts.css");
+@import url("./about.css");
+@import url("./materials.css");
+@import url("./general.css");
+
+body {
+    margin: 0px;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: black;
+}
+
+body > div {
+    min-height: calc(100vh - 130px);
+}
+
+body > div > div {
+    padding: 20px 100px 20px 100px;
+}
+
+body a {
+    color: inherit;
+}
+
+#welcome {
+    background: linear-gradient(to right, lightgreen, rgb(170, 214, 190));
+    color: black;
+}
+
+table {
+    table-layout: fixed;
+    border: 1px solid white;
+    border-collapse:collapse;
+    margin: 10px;
+}
+
+table th, table td {
+    width: 200px;
+    border: 1px solid white;
+    padding: 10px;
+}
