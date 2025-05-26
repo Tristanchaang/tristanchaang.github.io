@@ -3,7 +3,7 @@ layout: page
 title: Quantum Mechanics
 ---
 
-# Finals Cheatsheet
+## Finals Cheatsheet
 
 <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/pages/notes/quantum_mechanics/805cheatsheet.pdf" download>Click here</a> to download, or read it here:
 
