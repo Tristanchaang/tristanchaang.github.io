@@ -15,3 +15,14 @@
 .postThumbnail > span {
     color: black;
 }
+
+#postBg {
+    position: absolute; 
+    height: 320px; 
+    top: 120px; 
+    right: 60px; 
+    z-index: -1; 
+    transform: rotate(10deg);
+    filter: invert(40%);
+    mask-image: linear-gradient(to left, black 60%, transparent 100%);
+}

@@ -24,9 +24,10 @@ const postTitleHTMLs = (await Promise.all(fileNames.map(async (file) => parsePos
                             <span style="min-width:135px; text-align: right;">${engMonth(file.date.getMonth())} ${file.date.getDate() + 1}, ${file.date.getFullYear()}</span>
                         </a>`.trim());
 export const postIndexHTML = `
-    <div id="posts">
+    <div id="posts" style="position: relative">
         <h1>Posts</h1>
         <div id="postWindow">${postTitleHTMLs.join("")}</div>
+        <img id="postBg" src="/assets/file-pen-solid.svg" alt="Posts Icon">
     </div>
 `;
 //# sourceMappingURL=posts.js.map

@@ -32,8 +32,9 @@ const postTitleHTMLs = (await Promise.all(fileNames.map(async (file) => parsePos
                         </a>`.trim());
 
 export const postIndexHTML = `
-    <div id="posts">
+    <div id="posts" style="position: relative">
         <h1>Posts</h1>
         <div id="postWindow">${postTitleHTMLs.join("")}</div>
+        <img id="postBg" src="/assets/file-pen-solid.svg" alt="Posts Icon">
     </div>
 `;
