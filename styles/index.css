@@ -10,6 +10,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     background-color: black;
+    visibility: hidden;
 }
 
 body > div {

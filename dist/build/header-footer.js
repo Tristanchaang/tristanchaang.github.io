@@ -15,12 +15,12 @@ export const headerHTML = `
         <div id=navmenu style="display: flex; gap: 20px; align-items: center; gap: 2rem;" >
             ${Object.entries(NAVBAR_TABS).map(([tabname, link]) => `<a ${link} style="cursor: pointer">${tabname}</a>`).join("")}
             <div id=langselect>
-            <span>&bullet;</span>
-            <span>&bullet;</span>
-            <span>&bullet;</span>
-            <span>&bullet;</span>
-            <span>&bullet;</span>
-            <span>&bullet;</span>
+            <a href="/?lang=en"><img src="assets/gb.svg" alt="English" width="24" height="16" style="vertical-align: middle;" /></a>
+            <a href="/?lang=my"><img src="assets/my.svg" alt="Malay" width="24" height="16" style="vertical-align: middle;" /></a>
+            <a href="/?lang=zh"><img src="assets/cn.svg" alt="Mandarin" width="24" height="16" style="vertical-align: middle;" /></a>
+            <a href="/?lang=hk"><img src="assets/hk.svg" alt="Cantonese" width="24" height="16" style="vertical-align: middle;" /></a>
+            <a href="/?lang=fr"><img src="assets/fr.svg" alt="French" width="24" height="16" style="vertical-align: middle;" /></a>
+            <a href="/?lang=jp"><img src="assets/jp.svg" alt="Japanese" width="24" height="16" style="vertical-align: middle;" /></a>
         </div>
         </div> 
         

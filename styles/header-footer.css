@@ -65,3 +65,10 @@ footer > a {
     height: 40px;
     font-size: 0.8rem;
 }
+
+#langselect > a {
+    display: flex;
+    width: 25px;
+    height: 20px;
+    align-items: center;
+}

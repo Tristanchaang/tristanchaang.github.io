@@ -4519,17 +4519,32 @@
     window.scrollTo({ top: offsetPosition, behavior: "smooth" });
   }
 
+  // src/lang.ts
+  function chooseLang(lang) {
+    document.querySelectorAll("[lang]").forEach((el) => {
+      if (el.getAttribute("lang") !== lang) {
+        el.remove();
+      }
+    });
+  }
+
   // src/index.ts
-  window.directIndexSection = (tag) => {
-    if (window.location.pathname === "/") toIndexSection(tag);
-    else window.location.href = tag === "body" ? `/` : `/?scroll=${tag.slice(1)}`;
-  };
   async function main() {
+    window.directIndexSection = (tag) => {
+      if (window.location.pathname === "/") toIndexSection(tag);
+      else window.location.href = tag === "body" ? `/` : `/?scroll=${tag.slice(1)}`;
+    };
+    const params = new URLSearchParams(window.location.search);
+    const lang = params.get("lang") ?? "en";
+    chooseLang(lang);
     document.addEventListener("DOMContentLoaded", () => {
-      const params = new URLSearchParams(window.location.search);
       const scrollTarget = params.get("scroll");
       if (scrollTarget) toIndexSection("#" + scrollTarget);
     });
+    setTimeout(() => {
+      const theWholeThing = document.querySelector("body") ?? exports4.fail();
+      theWholeThing.style.visibility = "visible";
+    }, 0);
   }
   void main();
 })();
