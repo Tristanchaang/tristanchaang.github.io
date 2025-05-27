@@ -13,7 +13,7 @@ const postTitleHTMLs =
                             <span style="font-size: 1.3rem; width:auto">
                                 ${spanLang(file.titleLangs)}
                             </span>
-                            <span style="min-width:135px; text-align: right;">
+                            <span style="min-width:150px; text-align: right;">
                                 ${spanLang(dateLangs(file.date))}
                             </span>
                         </a>`.trim());
