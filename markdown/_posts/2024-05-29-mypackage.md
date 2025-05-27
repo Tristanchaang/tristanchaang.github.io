@@ -1,6 +1,11 @@
 ---
 layout: post
-title: My \(\LaTeX\) Package
+title: My $\LaTeX$ Package
+titleMY: Pakej $\LaTeX$ Saya
+titleZH: 我的$\LaTeX$宏包
+titleHK: 我嘅$\LaTeX$宏包
+titleFR: Mon package $\LaTeX$
+titleJP: 僕の$\LaTeX$のパッケージ
 ---
 
 <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/natsirt.zip" download="download">Click here</a> to download the zip file that contains 'natsirt.cls'.

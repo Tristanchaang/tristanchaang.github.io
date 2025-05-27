@@ -48,7 +48,8 @@ export const HTMLize = (title, insert) => `
 <html>
 <head>
     <meta charset="utf-8">
-    <title>${title}</title>
+    ${(title instanceof Object) ?
+    Object.entries(title).reduce((s, [l, t]) => s + `<title lang="${l}">${t}</title>`, ``) : `<title>${title}</title>`}
     <link rel="stylesheet" href="/styles/index.css">
     <script src="/dist/client-bundle.js" defer></script>
     <script src="/dist/mathjax-config.js" defer></script>

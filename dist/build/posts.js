@@ -6,13 +6,25 @@ async function parsePost(mdName) {
     const { meta, interior } = parseJMD(mdContent);
     const content = HTMLize(meta.title, `
         <div style='${("font" in meta) ? `font-family: ${meta.font};` : ""} padding-left: 200px; padding-right: 200px'>
-            <h1>${meta.title}</h1>
+            <h1 lang="en">${meta.title}</h1>
+            <h1 lang="my">${meta.titleMY ?? meta.title}</h1>
+            <h1 lang="zh">${meta.titleZH ?? meta.title}</h1>
+            <h1 lang="hk">${meta.titleHK ?? meta.title}</h1>
+            <h1 lang="fr">${meta.titleFR ?? meta.title}</h1>
+            <h1 lang="jp">${meta.titleJP ?? meta.title}</h1>
             ${interior}
         </div>
         `);
     const htmlName = mdName.replace(/\.md$/, ".html");
     write("posts/" + htmlName, content);
-    return { date: new Date(date), content: content, title: meta.title, filename: htmlName };
+    return { date: new Date(date), content: content, filename: htmlName,
+        title: meta.title,
+        titleMY: meta.titleMY ?? meta.title,
+        titleZH: meta.titleZH ?? meta.title,
+        titleHK: meta.titleHK ?? meta.title,
+        titleFR: meta.titleFR ?? meta.title,
+        titleJP: meta.titleJP ?? meta.title,
+    };
 }
 const fileNames = (await fs.promises.readdir("markdown/_posts")).filter(f => f.endsWith(".md"));
 const engMonth = (monthNum) => ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][monthNum];
@@ -20,7 +32,14 @@ const postTitleHTMLs = (await Promise.all(fileNames.map(async (file) => parsePos
     .sort((a, b) => (a.date < b.date) ? 1 : -1)
     .map(file => `
                         <a class="postThumbnail" href="/posts/${file.filename}">
-                            <span style="font-size: 1.3rem; width:auto">${file.title}</span>
+                            <span style="font-size: 1.3rem; width:auto">
+                                <span lang="en">${file.title}</span>
+                                <span lang="my">${file.titleMY}</span>
+                                <span lang="zh">${file.titleZH}</span>
+                                <span lang="hk">${file.titleHK}</span>
+                                <span lang="fr">${file.titleFR}</span>
+                                <span lang="jp">${file.titleJP}</span>
+                            </span>
                             <span style="min-width:135px; text-align: right;">${engMonth(file.date.getMonth())} ${file.date.getDate() + 1}, ${file.date.getFullYear()}</span>
                         </a>`.trim());
 export const postIndexHTML = `

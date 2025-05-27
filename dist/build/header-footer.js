@@ -1,35 +1,30 @@
 const NAVBAR_TABS = [
-    [
-        { en: "About", zh: "关于我", hk: "關於我", my: "Tentang Saya", fr: "Sur Moi", jp: "僕について" },
-        `onclick="directIndexSection('#about')"`
-    ],
-    [
-        { en: "Materials", zh: "资料", hk: "資料", my: "Bahan", fr: "Matériaux", jp: "資料" },
-        `onclick="directIndexSection('#materials')"`
-    ],
-    [
-        { en: "MIT", zh: "MIT", hk: "MIT", my: "MIT", fr: "MIT", jp: "MIT" },
-        `href="/materials/mitnotes.html"`
-    ],
-    [
-        { en: "Games", zh: "游戏", hk: "遊戲", my: "Permainan", fr: "Jeux", jp: "ゲーム" },
-        `href="/webpage/"`
-    ]
+    [{ en: "About", zh: "关于我", hk: "關於我", my: "Tentang Saya", fr: "Sur Moi", jp: "僕について" },
+        `onclick="directIndexSection('#about')"`],
+    [{ en: "Materials", zh: "资料", hk: "資料", my: "Bahan", fr: "Matériaux", jp: "資料" },
+        `onclick="directIndexSection('#materials')"`],
+    [{ en: "MIT", zh: "MIT", hk: "MIT", my: "MIT", fr: "MIT", jp: "MIT" },
+        `href="/materials/mitnotes.html"`],
+    [{ en: "Games", zh: "游戏", hk: "遊戲", my: "Permainan", fr: "Jeux", jp: "ゲーム" },
+        `href="/webpage/"`]
 ];
 const SOCMED = {
     github: "https://github.com/Tristanchaang",
     youtube: "https://www.youtube.com/016tristan",
     linkedin: "https://www.linkedin.com/in/tchaang/"
 };
+export const TITLE_LANGS = {
+    en: "Tristan Chaang's Page",
+    my: "Laman Tristan Chaang",
+    zh: "曾子宸的网站",
+    hk: "曾子宸嘅網站",
+    fr: "La page de Tristan Chaang",
+    jp: "トリ・チャーンのペイジ"
+};
 export const headerHTML = `
     <nav>
         <a onclick="directIndexSection('body')" style="font-size: 1.5rem; cursor: pointer">
-            <span lang="en">Tristan Chaang's Page</span>
-            <span lang="my">Laman Tristan Chaang</span>
-            <span lang="zh">曾子宸的网站</span>
-            <span lang="hk">曾子宸嘅網站</span>
-            <span lang="fr">La page de Tristan Chaang</span>
-            <span lang="jp">トリ・チャーンのペイジ</span>
+            ${Object.entries(TITLE_LANGS).map(([l, t]) => `<span lang="${l}">${t}</span>`).join("")}
         </a>
         <div id=navmenu style="display: flex; gap: 20px; align-items: center; gap: 2rem;" >
             ${NAVBAR_TABS.map(([tabname, link]) => `

@@ -2,7 +2,9 @@ import * as fs from "fs";
 import MarkdownIt from "markdown-it";
 import assert from "assert";
 
-import { headerHTML, footerHTML } from "./header-footer.js";
+import { LangString, headerHTML, footerHTML, TITLE_LANGS } from "./header-footer.js";
+
+
 
 const mdParser = new MarkdownIt();
 
@@ -56,13 +58,18 @@ export function parseJMD(md: string) {
 export const read = async (filepath: string) => fs.promises.readFile(filepath, { encoding: "utf8" });
 export const write = async (filepath: string, content: string) => fs.promises.writeFile(filepath, content, { encoding: "utf8" });
 
-export const HTMLize = (title: string, insert: string) =>
+export const HTMLize = (title: string | LangString, insert: string) =>
 `
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
-    <title>${title}</title>
+    ${
+        (title instanceof Object) ?  
+        Object.entries(title).reduce((s, [l, t])=>
+            s + `<title lang="${l}">${t}</title>`
+        , ``) : `<title>${title}</title>`
+    }
     <link rel="stylesheet" href="/styles/index.css">
     <script src="/dist/client-bundle.js" defer></script>
     <script src="/dist/mathjax-config.js" defer></script>
