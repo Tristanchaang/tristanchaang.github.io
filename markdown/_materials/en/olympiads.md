@@ -1,6 +1,6 @@
 ---
 layout: page
-title: General Olympiad Materials
+title: Olympiads
 ---
 
 - <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/pages/handouts/Olympiad/Projective-Geometry.pdf" download>Projective Geometry</a>

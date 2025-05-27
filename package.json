@@ -7,7 +7,7 @@
   },
   "scripts": {
     "compile": "tsc && esbuild src/index.ts --bundle --sourcemap --outfile=dist/client-bundle.js --platform=browser && node dist/build/app.js",
-    "test": "tsc || exit ; eslint ; mocha --require source-map-support/register dist/test",
+    "test": "tsc || exit ; mocha --require source-map-support/register dist/test",
     "lint": "tsc && eslint",
     "server": "tsc && node --require source-map-support/register dist/src/starb-server.js",
     "watch-client": "tsc --noEmit --watch --preserveWatchOutput & esbuild src/index.ts --bundle --sourcemap --outfile=dist/client-bundle.js --platform=browser --watch & node build/app.js"

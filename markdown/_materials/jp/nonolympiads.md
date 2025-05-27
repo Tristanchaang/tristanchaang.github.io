@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Non-Olympiad Math
+title: 非オリンピック
 ---
 
 - <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/pages/handouts/Non-Olympiad/On-Continuous-Distributions.pdf" download>Continuous Distributions</a>

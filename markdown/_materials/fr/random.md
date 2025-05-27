@@ -1,7 +1,7 @@
 ---
 layout: page
 font: Times New Roman
-title: Random Problems
+title: Problèmes Intéressants
 ---
 
 ### BIMO Junior Proposal

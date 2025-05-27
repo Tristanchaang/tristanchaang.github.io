@@ -1,6 +1,6 @@
 ---
 layout: page
-title: SPM Chemistry
+title: SPM 化学
 ---
 
 - <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/pages/handouts/ChemistrySPM/Chemicals.pdf" download>SPM Chemicals</a>

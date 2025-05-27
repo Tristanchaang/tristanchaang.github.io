@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CV and Resume
+title: Latest CV/Resume
 ---
 
 - <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/resume.pdf" download>Resume</a>

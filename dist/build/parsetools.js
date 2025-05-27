@@ -63,7 +63,7 @@ export async function writeMultiLangJMD(mdName, folderName, callbackOnInterior, 
                 <h1>${bundle.title}</h1>
                 ${(callbackOnInterior.get(bundle.meta.title) ?? defaultCallback)(bundle.interior)}
             </div>`);
-    const content = buildPage(componentLang(titleLangs, "title"), spanLang(contentLangs));
+    const content = buildPage(titleLangs, spanLang(contentLangs) + "</br></br>");
     const htmlName = mdName.replace(/\.md$/, ".html");
     write(`${folderName}/${htmlName}`, content);
     return { date: new Date(date), filename: htmlName, titleLangs: titleLangs };
@@ -87,18 +87,12 @@ export const buildPage = (title, insert) => `
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-PH72KY1MTT');
     </script>
     <link rel="icon" href="/assets/circle-user-solid.svg" type="image/svg">
 </head>
-
 <body>
-    ${headerHTML}
-    <div>
-        ${insert}
-    </div>
-    ${footerHTML}
+    ${headerHTML}<div>${insert}</div>${footerHTML}
 </body>
 </html>
 `;

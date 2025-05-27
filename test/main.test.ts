@@ -19,3 +19,14 @@ console.log(x.replaceAll(
 const y = {a: "asas"};
 
 assert(("a" in y) && !("b" in y));
+
+
+const z = `<li><a href="/">hi|Balls<\/a><\/li>`.replaceAll(
+        
+        /<li><a (?<att>.*)>(?<icon>.*)\|(?<title>[^(]*)(\((?<code>[^()]*)\))?<\/a><\/li>/g, 
+    
+        `A: $<att>\n B: $<icon>\n C: $<title>\n ${(`$<code>`.length > 0) ? `D: $<code>`: ``}`
+    
+    )
+
+    console.log(z)

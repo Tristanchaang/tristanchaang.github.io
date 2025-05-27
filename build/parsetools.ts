@@ -80,7 +80,7 @@ export async function writeMultiLangJMD(mdName: string, folderName: string, call
             </div>`
         );
 
-    const content = buildPage(componentLang(titleLangs, "title"), spanLang(contentLangs));
+    const content = buildPage(titleLangs, spanLang(contentLangs)+"</br></br>");
 
     const htmlName = mdName.replace(/\.md$/, ".html");
     write(`${folderName}/${htmlName}`, content);
@@ -91,7 +91,6 @@ export async function writeMultiLangJMD(mdName: string, folderName: string, call
 
 export const read = async (filepath: string) => fs.promises.readFile(filepath, { encoding: "utf8" });
 export const write = async (filepath: string, content: string) => fs.promises.writeFile(filepath, content, { encoding: "utf8" });
-
 
 
 export const buildPage = (title: string | LangString, insert: string) =>
@@ -112,18 +111,12 @@ export const buildPage = (title: string | LangString, insert: string) =>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-PH72KY1MTT');
     </script>
     <link rel="icon" href="/assets/circle-user-solid.svg" type="image/svg">
 </head>
-
 <body>
-    ${headerHTML}
-    <div>
-        ${insert}
-    </div>
-    ${footerHTML}
+    ${headerHTML}<div>${insert}</div>${footerHTML}
 </body>
 </html>
 `

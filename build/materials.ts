@@ -1,4 +1,4 @@
-import { buildPage, read, write, parseJMD, writeMultiLangJMD } from "./parsetools.js";
+import { writeMultiLangJMD } from "./parsetools.js";
 import { spanLang, LangString } from "./langtools.js";
 import * as fs from "fs";
 
@@ -27,56 +27,28 @@ export const materialsIndexHTML = `
     </div>
 `;
 
-function mitThumbnailize(md: string) {
-    return md.replaceAll(
+function thumbnailize(className: string) {
+    return (md: string) => md.replaceAll(
         
-        /<li><a (?<att>.*)>(?<icon>.*)\|(?<title>[^(]*)\((?<code>[^()]*)\)<\/a><\/li>/g, 
-    
-        `<a class="mitThumbnail local" $<att>>
-            <img src="/assets/$<icon>.svg" alt="Folder Icon" class="materialIcon" style="width:2rem; height:2rem; margin-right:1rem; vertical-align:middle;" />
-            <span style="font-size: 1.3rem; width:auto">$<title></span>
-            <span style="font-size: 0.8rem; position: absolute; bottom: 5px; right: 5px; font-style: italic; color: gray;">$<code></span>
-        </a>`
-    
-    ).replaceAll(/<ul>/g, `<div class="thumbnailWindow">`).replaceAll(/<\/ul>/g, `</div>`);
+            /<li><a (?<att>.*)>((?<icon>.*)\|)?(?<title>[^\n\[\]\|]*)(\[(?<subtitle>[^\[\]]*)\])?<\/a><\/li>/g, 
+        
+            `<a class="${className} local" $<att>>
+                <insertNTG $<icon>>
+                <span style="font-size: 1.3rem; width:auto">$<title></span>
+                <span style="font-size: 0.8rem; position: absolute; bottom: 5px; right: 5px; font-style: italic; color: gray;">$<subtitle></span>
+            </a>`
+        
+        )
+        .replaceAll(/<insertNTG >/g, `<insertNTG file-arrow-down-solid>`)
+        .replaceAll(/<insertNTG (?<icon>.*)>/g, `<img src="/assets/$<icon>.svg" alt="Folder Icon" class="materialIcon" style="width:2rem; height:2rem; margin-right:1rem; vertical-align:middle;" />`)
+        .replaceAll(/<ul>/g, `<div class="thumbnailWindow">`).replaceAll(/<\/ul>/g, `</div>`);
 }
 
-function thumbnailize(md: string) {
-    return md.replaceAll(
-        
-        /<li><a (?<att>.*)>(?<title>[^\n]*)<\/a><\/li>/g, 
-    
-        `<a class="thumbnail local" $<att>>
-            <img src="/assets/file-arrow-down-solid.svg" alt="Folder Icon" class="materialIcon" style="width:2rem; height:2rem; margin-right:1rem; vertical-align:middle;" />
-            <span style="font-size: 1.3rem; width:auto">$<title></span>
-        </a>`
-    
-    ).replaceAll(/<ul>/g, `<div class="thumbnailWindow">`).replaceAll(/<\/ul>/g, `</div>`);
-}
+const fileNames = (await fs.promises.readdir("markdown/_materials/en")).filter(f => f.endsWith(".md"));
 
-function talksThumbnailize(md: string) {
-    return md.replaceAll(
-        
-        /<li><a (?<att>.*)>(?<title>[^\n]*)\((?<code>[^()]*)\)<\/a><\/li>/g, 
-    
-        `<a class="thumbnail local" $<att>>
-            <img src="/assets/file-solid.svg" alt="Folder Icon" class="materialIcon" style="width:2rem; height:2rem; margin-right:1rem; vertical-align:middle;" />
-            <span style="font-size: 1.3rem; width:auto">$<title></span>
-            <span style="font-size: 0.8rem; position: absolute; bottom: 5px; right: 5px; font-style: italic; color: gray;">$<code></span>
-        </a>`
-    
-    ).replaceAll(/<ul>/g, `<div class="thumbnailWindow">`).replaceAll(/<\/ul>/g, `</div>`);
-}
-
-async function parseMaterial(mdName: string) {
-    writeMultiLangJMD(mdName, "materials", 
+await Promise.all(fileNames.map(async (file) => 
+    writeMultiLangJMD(file, "materials", 
         new Map([
-            ["MIT Notes", mitThumbnailize],
-            ["MIT Talks", talksThumbnailize]
-        ]), thumbnailize
-    )
-}
-
-const fileNames = (await fs.promises.readdir("markdown/_materials")).filter(f => f.endsWith(".md"));
-
-await Promise.all(fileNames.map(async (file) => parseMaterial(file)));
+            ["MIT Notes", thumbnailize("mitThumbnail")],
+        ]), thumbnailize("thumbnail")
+    )));

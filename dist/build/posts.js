@@ -1,11 +1,8 @@
 import * as fs from "fs";
 import { writeMultiLangJMD } from "./parsetools.js";
 import { spanLang, dateLangs } from "./langtools.js";
-async function parsePost(mdName) {
-    return writeMultiLangJMD(mdName, "posts", new Map(), ((s) => s));
-}
 const fileNames = (await fs.promises.readdir("markdown/_posts/en")).filter(f => f.endsWith(".md"));
-const postTitleHTMLs = (await Promise.all(fileNames.map(async (file) => parsePost(file))))
+const postTitleHTMLs = (await Promise.all(fileNames.map(async (file) => writeMultiLangJMD(file, "posts", new Map(), ((s) => s)))))
     .sort((a, b) => (a.date < b.date) ? 1 : -1)
     .map(file => `
                         <a class="postThumbnail local" href="/posts/${file.filename}">

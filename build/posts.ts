@@ -3,13 +3,10 @@ import assert from "assert";
 import { writeMultiLangJMD } from "./parsetools.js";
 import { spanLang, dateLangs } from "./langtools.js";
 
-async function parsePost(mdName: string) {
-    return writeMultiLangJMD(mdName, "posts", new Map(), ((s: string)=>s))
-}
-
 const fileNames = (await fs.promises.readdir("markdown/_posts/en")).filter(f => f.endsWith(".md"));
 
-const postTitleHTMLs = (await Promise.all(fileNames.map(async (file) => parsePost(file))))
+const postTitleHTMLs = 
+    (await Promise.all(fileNames.map(async (file) => writeMultiLangJMD(file, "posts", new Map(), ((s: string)=>s)) )))
                     .sort((a,b) => (a.date < b.date) ? 1 : -1)   
                     .map(file => `
                         <a class="postThumbnail local" href="/posts/${file.filename}">
