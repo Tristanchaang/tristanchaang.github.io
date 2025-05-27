@@ -1,3 +1,5 @@
+import assert from "assert";
+export const LANGS = ["en", "my", "zh", "hk", "fr", "jp"];
 /**
  * Generates an HTML string containing each translation wrapped in a <comp> with the appropriate language attribute.
  *
@@ -44,5 +46,33 @@ export function dateLangs(date) {
         fr: `${date.getDate() + 1} ${frenchMonths[date.getMonth()]} ${date.getFullYear()}`,
         jp: `${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate() + 1}日`
     };
+}
+/**
+ * @param ls Original LangString
+ * @param func function for mapping
+ * @returns LangString {en: func("en", ls.en), ...}
+ */
+export function langMap(ls, func) {
+    return {
+        en: func("en", ls.en),
+        my: func("my", ls.my),
+        zh: func("zh", ls.zh),
+        hk: func("hk", ls.hk),
+        fr: func("fr", ls.fr),
+        jp: func("jp", ls.jp),
+    };
+}
+/**
+ * Promise to return {en: func("en"), ...} where each func is asynchronous and run concurrently
+ * @param func
+ * @returns Promise({en: func("en"), ...})
+ */
+export async function langPromise(func) {
+    const returnedStrings = { en: "", my: "", zh: "", hk: "", fr: "", jp: "" };
+    const mdContentList = await Promise.all(LANGS.map(func));
+    LANGS.forEach((lang, i) => {
+        returnedStrings[lang] = mdContentList[i] ?? assert.fail();
+    });
+    return returnedStrings;
 }
 //# sourceMappingURL=langtools.js.map

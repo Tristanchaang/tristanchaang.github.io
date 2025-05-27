@@ -1,7 +1,7 @@
 import * as fs from "fs";
 import MarkdownIt from "markdown-it";
 import assert from "assert";
-import { LangString, spanLang, componentLang } from "./langtools.js";
+import { LangString, spanLang, componentLang, langPromise, langMap } from "./langtools.js";
 import { headerHTML, footerHTML } from "./header-footer.js";
 
 const mdParser = new MarkdownIt();
@@ -50,19 +50,49 @@ export function parseJMD(md: string) {
                     return [key?.trim(), rest.join(':').trim()];
                 })
         );
-    const titleLangs: LangString = {
-        en: meta.title,
-        my: meta.titleMY ?? meta.title,
-        zh: meta.titleZH ?? meta.title,
-        hk: meta.titleHK ?? meta.title,
-        fr: meta.titleFR ?? meta.title,
-        jp: meta.titleJP ?? meta.title,
-    }
-    return { meta: meta, titleLangs: titleLangs, interior: parseMD(body ?? assert.fail()) };
+    return { meta: meta, title: meta.title, interior: parseMD(body ?? assert.fail()) };
 }
+
+/**
+ * Writes a multi-language Jekyll-style markdown file as an HTML page.
+ * 
+ * Reads markdown files for each language, parses their front matter and content,
+ * and generates a localized HTML page with language switching support.
+ * 
+ * @param mdName - The markdown filename (e.g., "2024-06-01-my-post.md").
+ * @param folderName - The output folder name (used for both input and output paths).
+ * @param callbackOnInterior - Optional callback to transform the parsed HTML content before insertion.
+ * @returns An object containing the post date, output HTML filename, and a mapping of titles per language.
+ */
+export async function writeMultiLangJMD(mdName: string, folderName: string, callbackOnInterior: Map<string, (s:string)=>string>, defaultCallback: (s:string)=>string) {
+    const date = mdName.slice(0,10);
+    
+    const mdContentLangs: LangString = await langPromise((lang: string) => read(`markdown/_${folderName}/${lang}/${mdName}`));
+    
+    const bundleLangs = langMap(mdContentLangs, (_, val) => parseJMD(val));
+
+    const titleLangs = langMap(bundleLangs, (_, bundle) => bundle.title);
+
+    const contentLangs = langMap(bundleLangs, (_, bundle) => `
+            <div style='${("font" in bundle.meta) ? `font-family: ${bundle.meta.font};` : ``} padding-left: 200px; padding-right: 200px'>
+                <h1>${bundle.title}</h1>
+                ${(callbackOnInterior.get(bundle.meta.title) ?? defaultCallback)(bundle.interior)}
+            </div>`
+        );
+
+    const content = buildPage(componentLang(titleLangs, "title"), spanLang(contentLangs));
+
+    const htmlName = mdName.replace(/\.md$/, ".html");
+    write(`${folderName}/${htmlName}`, content);
+    return { date: new Date(date), filename: htmlName, titleLangs: titleLangs };
+}
+
+
 
 export const read = async (filepath: string) => fs.promises.readFile(filepath, { encoding: "utf8" });
 export const write = async (filepath: string, content: string) => fs.promises.writeFile(filepath, content, { encoding: "utf8" });
+
+
 
 export const buildPage = (title: string | LangString, insert: string) =>
 `

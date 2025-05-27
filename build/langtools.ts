@@ -1,3 +1,7 @@
+import assert from "assert";
+
+export const LANGS = ["en", "my", "zh", "hk", "fr", "jp"];
+
 /**
  * Represents a set of translations for a string in multiple languages.
  * 
@@ -8,15 +12,9 @@
  * @property fr - The French translation.
  * @property jp - The Japanese translation.
  */
-export type LangString = {
-    en: string, 
-    my: string, 
-    zh: string, 
-    hk: string, 
-    fr: string, 
-    jp: string
-};
+export type Lang<T> = {en: T, my: T, zh: T, hk: T, fr: T, jp: T};
 
+export type LangString = Lang<string>;
 
 /**
  * Generates an HTML string containing each translation wrapped in a <comp> with the appropriate language attribute.
@@ -69,4 +67,36 @@ export function dateLangs(date: Date): LangString {
         fr: `${date.getDate() + 1} ${frenchMonths[date.getMonth()]} ${date.getFullYear()}`,
         jp: `${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate() + 1}日`
     }
+}
+
+/**
+ * @param ls Original LangString
+ * @param func function for mapping
+ * @returns LangString {en: func("en", ls.en), ...}
+ */
+export function langMap<T,U>(ls: Lang<T>, func: (lang: string, value: T) => U): Lang<U> {
+    return {
+        en: func("en", ls.en),
+        my: func("my", ls.my),
+        zh: func("zh", ls.zh),
+        hk: func("hk", ls.hk),
+        fr: func("fr", ls.fr),
+        jp: func("jp", ls.jp),
+    }
+}
+
+/**
+ * Promise to return {en: func("en"), ...} where each func is asynchronous and run concurrently
+ * @param func 
+ * @returns Promise({en: func("en"), ...})
+ */
+export async function langPromise(func: (lang: string) => Promise<string>): Promise<LangString> {
+
+    const returnedStrings = {en: "", my: "", zh: "", hk: "", fr: "", jp: ""};
+    
+    const mdContentList = await Promise.all(LANGS.map(func));
+    LANGS.forEach((lang, i) => { 
+        returnedStrings[lang as keyof LangString] = mdContentList[i] ?? assert.fail(); 
+    });
+    return returnedStrings;
 }

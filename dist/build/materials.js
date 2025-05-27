@@ -1,4 +1,4 @@
-import { buildPage, read, write, parseJMD } from "./parsetools.js";
+import { writeMultiLangJMD } from "./parsetools.js";
 import { spanLang } from "./langtools.js";
 import * as fs from "fs";
 const MATERIALS = {
@@ -44,25 +44,10 @@ function talksThumbnailize(md) {
         </a>`).replaceAll(/<ul>/g, `<div class="thumbnailWindow">`).replaceAll(/<\/ul>/g, `</div>`);
 }
 async function parseMaterial(mdName) {
-    const date = mdName.slice(0, 10);
-    const mdContent = await read("markdown/_materials/" + mdName);
-    const { meta, titleLangs, interior } = parseJMD(mdContent);
-    let thumbnailed;
-    if (meta.title === "MIT Notes")
-        thumbnailed = mitThumbnailize(interior);
-    else if (meta.title === "Talks")
-        thumbnailed = talksThumbnailize(interior);
-    else
-        thumbnailed = thumbnailize(interior);
-    const content = buildPage(meta.title, `
-        <div style='${("font" in meta) ? `font-family: ${meta.font};` : ""} padding-left: 200px; padding-right: 200px'>
-            <h1>${spanLang(titleLangs)}</h1>
-            ${thumbnailed}
-        </div>
-        `);
-    const htmlName = mdName.replace(/\.md$/, ".html");
-    write("materials/" + htmlName, content);
-    return { date: new Date(date), content: content, title: meta.title, filename: htmlName };
+    writeMultiLangJMD(mdName, "materials", new Map([
+        ["MIT Notes", mitThumbnailize],
+        ["MIT Talks", talksThumbnailize]
+    ]), thumbnailize);
 }
 const fileNames = (await fs.promises.readdir("markdown/_materials")).filter(f => f.endsWith(".md"));
 await Promise.all(fileNames.map(async (file) => parseMaterial(file)));

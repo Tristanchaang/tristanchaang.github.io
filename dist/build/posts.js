@@ -1,21 +1,10 @@
 import * as fs from "fs";
-import { buildPage, read, write, parseJMD } from "./parsetools.js";
+import { writeMultiLangJMD } from "./parsetools.js";
 import { spanLang, dateLangs } from "./langtools.js";
 async function parsePost(mdName) {
-    const date = mdName.slice(0, 10);
-    const mdContent = await read("markdown/_posts/" + mdName);
-    const { meta, titleLangs, interior } = parseJMD(mdContent);
-    const content = buildPage(meta.title, `
-        <div style='${("font" in meta) ? `font-family: ${meta.font};` : ``} padding-left: 200px; padding-right: 200px'>
-            <h1>${spanLang(titleLangs)}</h1>
-            ${interior}
-        </div>
-        `);
-    const htmlName = mdName.replace(/\.md$/, ".html");
-    write("posts/" + htmlName, content);
-    return { date: new Date(date), content: content, filename: htmlName, titleLangs: titleLangs };
+    return writeMultiLangJMD(mdName, "posts", new Map(), ((s) => s));
 }
-const fileNames = (await fs.promises.readdir("markdown/_posts")).filter(f => f.endsWith(".md"));
+const fileNames = (await fs.promises.readdir("markdown/_posts/en")).filter(f => f.endsWith(".md"));
 const postTitleHTMLs = (await Promise.all(fileNames.map(async (file) => parsePost(file))))
     .sort((a, b) => (a.date < b.date) ? 1 : -1)
     .map(file => `
