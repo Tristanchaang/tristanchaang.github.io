@@ -64,6 +64,7 @@ export const HTMLize = (title: string | LangString, insert: string) =>
 <html>
 <head>
     <meta charset="utf-8">
+    <meta property="og:image" content="/assets/screenshot.png" />
     ${
         (title instanceof Object) ?  
         Object.entries(title).reduce((s, [l, t])=>
