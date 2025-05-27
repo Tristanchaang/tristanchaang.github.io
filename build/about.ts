@@ -76,7 +76,12 @@ export const aboutIndexHTML = `
         </div>
         <img src="/assets/ProfilePic.jpg" alt="Profile Picture" style="height: 180px; width: 180px; margin-left: 50px;"/>
     </div>
-    <h4>Education</h4>
+    <h4 lang="en">Education</h4>
+    <h4 lang="my">Pelajaran</h4>
+    <h4 lang="zh">教育</h4>
+    <h4 lang="hk">教育</h4>
+    <h4 lang="fr">Éducation</h4>
+    <h4 lang="jp">教育</h4>
     <div id="education">
         ${EDU.map(([year,school,exam,pic]) =>`
             <div>

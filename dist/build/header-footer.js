@@ -36,13 +36,13 @@ export const headerHTML = `
                 <a ${link} style="cursor: pointer" lang="jp">${tabname.jp}</a>
                 `).join("")}
             <div id=langselect>
-            <a class="langButton" href="?lang=en"><img src="/assets/gb.svg" alt="English" width="24" height="16" style="vertical-align: middle;" /></a>
-            <a class="langButton" href="?lang=my"><img src="/assets/my.svg" alt="Malay" width="24" height="16" style="vertical-align: middle;" /></a>
-            <a class="langButton" href="?lang=zh"><img src="/assets/cn.svg" alt="Mandarin" width="24" height="16" style="vertical-align: middle;" /></a>
-            <a class="langButton" href="?lang=hk"><img src="/assets/hk.svg" alt="Cantonese" width="24" height="16" style="vertical-align: middle;" /></a>
-            <a class="langButton" href="?lang=fr"><img src="/assets/fr.svg" alt="French" width="24" height="16" style="vertical-align: middle;" /></a>
-            <a class="langButton" href="?lang=jp"><img src="/assets/jp.svg" alt="Japanese" width="24" height="16" style="vertical-align: middle;" /></a>
-        </div>
+                <a class="langButton" href="?lang=en"><img src="/assets/gb.svg" alt="English" width="24" height="16" style="vertical-align: middle;" /></a>
+                <a class="langButton" href="?lang=my"><img src="/assets/my.svg" alt="Malay" width="24" height="16" style="vertical-align: middle;" /></a>
+                <a class="langButton" href="?lang=zh"><img src="/assets/cn.svg" alt="Mandarin" width="24" height="16" style="vertical-align: middle;" /></a>
+                <a class="langButton" href="?lang=hk"><img src="/assets/hk.svg" alt="Cantonese" width="24" height="16" style="vertical-align: middle;" /></a>
+                <a class="langButton" href="?lang=fr"><img src="/assets/fr.svg" alt="French" width="24" height="16" style="vertical-align: middle;" /></a>
+                <a class="langButton" href="?lang=jp"><img src="/assets/jp.svg" alt="Japanese" width="24" height="16" style="vertical-align: middle;" /></a>
+            </div>
         </div> 
         
     </nav>
