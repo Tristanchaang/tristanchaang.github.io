@@ -104,7 +104,7 @@ export const aboutIndexHTML = `
             </div>`).join("")}
     </div>
     <div class="thumbnailWindow">
-        <a class="eduThumbnail" href="/materials/resume.html">
+        <a class="eduThumbnail local" href="/materials/resume.html">
             <img src="/assets/file-solid.svg" alt="Folder Icon" class="materialIcon" style="width:2rem; height:2rem; margin-right:1rem; vertical-align:middle;" />
             <span style="font-size: 1.3rem; width:auto">
                 <span lang="en">Latest CV/Resume</span>
@@ -115,7 +115,7 @@ export const aboutIndexHTML = `
                 <span lang="jp">最新職務経歴書/履歴書</span>
             </span>
         </a>
-        <a class="eduThumbnail" href="/posts/2022-05-19-my-book.html">
+        <a class="eduThumbnail local" href="/posts/2022-05-19-my-book.html">
             <img src="/assets/book-solid.svg" alt="Folder Icon" class="materialIcon" style="width:2rem; height:2rem; margin-right:1rem; vertical-align:middle;" />
             <span style="font-size: 1.3rem; width:auto">
                 <span lang="en">My Math Book</span>

@@ -28,18 +28,18 @@ export const TITLE_LANGS: LangString = {
 
 export const headerHTML = `
     <nav>
-        <a onclick="directIndexSection('body')" style="font-size: 1.5rem; cursor: pointer">
+        <a class="local" onclick="directIndexSection('body')" style="font-size: 1.5rem; cursor: pointer">
             ${Object.entries(TITLE_LANGS).map(([l, t]) => `<span lang="${l}">${t}</span>`).join("")}
         </a>
         <div id=navmenu style="display: flex; gap: 20px; align-items: center; gap: 2rem;" >
             ${NAVBAR_TABS.map(
                 ([tabname, link]) => `
-                <a ${link} style="cursor: pointer" lang="en">${tabname.en}</a>
-                <a ${link} style="cursor: pointer" lang="my">${tabname.my}</a>
-                <a ${link} style="cursor: pointer" lang="zh">${tabname.zh}</a>
-                <a ${link} style="cursor: pointer" lang="hk">${tabname.hk}</a>
-                <a ${link} style="cursor: pointer" lang="fr">${tabname.fr}</a>
-                <a ${link} style="cursor: pointer" lang="jp">${tabname.jp}</a>
+                <a class="local" ${link} style="cursor: pointer" lang="en">${tabname.en}</a>
+                <a class="local" ${link} style="cursor: pointer" lang="my">${tabname.my}</a>
+                <a class="local" ${link} style="cursor: pointer" lang="zh">${tabname.zh}</a>
+                <a class="local" ${link} style="cursor: pointer" lang="hk">${tabname.hk}</a>
+                <a class="local" ${link} style="cursor: pointer" lang="fr">${tabname.fr}</a>
+                <a class="local" ${link} style="cursor: pointer" lang="jp">${tabname.jp}</a>
                 `
             ).join("")}
             <div id=langselect>

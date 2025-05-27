@@ -23,7 +23,7 @@ async function main(): Promise<void> {
         const scrollTarget = params.get("scroll");
         if (scrollTarget) toIndexSection("#"+scrollTarget);
 
-        document.querySelectorAll<HTMLAnchorElement>('a:not(.langButton)').forEach(a => {
+        document.querySelectorAll<HTMLAnchorElement>('.local').forEach(a => {
             const href = a.getAttribute('href');
             if (href && !href.startsWith('javascript:') && !href.startsWith('#')) {
                 const url = new URL(href, window.location.origin);

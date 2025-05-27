@@ -69,7 +69,7 @@ const MATERIALS = {
 };
 
 const materialHTMLs = Object.entries(MATERIALS).map(([link, titles]) => `
-                        <a class="materialThumbnail" href="/materials/${link}.html">
+                        <a class="materialThumbnail local" href="/materials/${link}.html">
                             <img src="/assets/folder-closed-solid.svg" alt="Folder Icon" class="materialIcon" style="width:2rem; height:2rem; margin-right:1rem; vertical-align:middle;" />
                             <span style="font-size: 1.3rem; width:auto">
                                 <span lang="en">${titles.en}</span>
@@ -99,7 +99,7 @@ function mitThumbnailize(md: string) {
         
         /<li><a (?<att>.*)>(?<icon>.*)\|(?<title>[^(]*)\((?<code>[^()]*)\)<\/a><\/li>/g, 
     
-        `<a class="mitThumbnail" $<att>>
+        `<a class="mitThumbnail local" $<att>>
             <img src="/assets/$<icon>.svg" alt="Folder Icon" class="materialIcon" style="width:2rem; height:2rem; margin-right:1rem; vertical-align:middle;" />
             <span style="font-size: 1.3rem; width:auto">$<title></span>
             <span style="font-size: 0.8rem; position: absolute; bottom: 5px; right: 5px; font-style: italic; color: gray;">$<code></span>
@@ -113,7 +113,7 @@ function thumbnailize(md: string) {
         
         /<li><a (?<att>.*)>(?<title>[^\n]*)<\/a><\/li>/g, 
     
-        `<a class="thumbnail" $<att>>
+        `<a class="thumbnail local" $<att>>
             <img src="/assets/file-arrow-down-solid.svg" alt="Folder Icon" class="materialIcon" style="width:2rem; height:2rem; margin-right:1rem; vertical-align:middle;" />
             <span style="font-size: 1.3rem; width:auto">$<title></span>
         </a>`
@@ -126,7 +126,7 @@ function talksThumbnailize(md: string) {
         
         /<li><a (?<att>.*)>(?<title>[^\n]*)\((?<code>[^()]*)\)<\/a><\/li>/g, 
     
-        `<a class="thumbnail" $<att>>
+        `<a class="thumbnail local" $<att>>
             <img src="/assets/file-solid.svg" alt="Folder Icon" class="materialIcon" style="width:2rem; height:2rem; margin-right:1rem; vertical-align:middle;" />
             <span style="font-size: 1.3rem; width:auto">$<title></span>
             <span style="font-size: 0.8rem; position: absolute; bottom: 5px; right: 5px; font-style: italic; color: gray;">$<code></span>
