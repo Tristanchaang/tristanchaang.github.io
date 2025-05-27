@@ -1,6 +1,11 @@
 ---
 layout: post
 title: Multivariate Calculus
+titleMY: Kalkulus Multivariat
+titleZH: 多元微积分
+titleHK: 多元微積分
+titleFR: Calcul différentiel multivarié
+titleJP: 多変数微積分
 ---
 
 I'm back! Apologies as I was preparing for A Levels and the IMO. Here is a new handout on a new topic: Multivariate Calculus.

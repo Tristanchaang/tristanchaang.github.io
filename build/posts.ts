@@ -35,6 +35,32 @@ const fileNames = (await fs.promises.readdir("markdown/_posts")).filter(f => f.e
 const engMonth = (monthNum: number) => 
     ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][monthNum];
 
+const datify = (date: Date, lang: string) => {
+    switch (lang) {
+        case "en":
+            return `${engMonth(date.getMonth())} ${date.getDate() + 1}, ${date.getFullYear()}`;
+        case "my":
+            // Malay: "1 Januari 2024"
+            const malayMonths = ["Januari", "Februari", "Mac", "April", "Mei", "Jun", "Julai", "Ogos", "September", "Oktober", "November", "Disember"];
+            return `${date.getDate() + 1} ${malayMonths[date.getMonth()]} ${date.getFullYear()}`;
+        case "zh":
+            // Chinese: "2024年1月1日"
+            return `${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate() + 1}日`;
+        case "hk":
+            // Traditional Chinese (HK): "2024年1月1日"
+            return `${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate() + 1}日`;
+        case "fr":
+            // French: "1 Jan 2024"
+            const frenchMonths = ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."];
+            return `${date.getDate() + 1} ${frenchMonths[date.getMonth()]} ${date.getFullYear()}`;
+        case "jp":
+            // Japanese: "2024年1月1日"
+            return `${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate() + 1}日`;
+        default:
+            return date.toDateString();
+    }
+}
+
 const postTitleHTMLs = (await Promise.all(fileNames.map(async (file) => parsePost(file))))
                     .sort((a,b) => (a.date < b.date) ? 1 : -1)   
                     .map(file => `
@@ -47,7 +73,14 @@ const postTitleHTMLs = (await Promise.all(fileNames.map(async (file) => parsePos
                                 <span lang="fr">${file.titleFR}</span>
                                 <span lang="jp">${file.titleJP}</span>
                             </span>
-                            <span style="min-width:135px; text-align: right;">${engMonth(file.date.getMonth())} ${file.date.getDate()+1}, ${file.date.getFullYear()}</span>
+                            <span style="min-width:135px; text-align: right;">
+                                <span lang="en">${datify(file.date,"en")}</span>
+                                <span lang="my">${datify(file.date,"my")}</span>
+                                <span lang="zh">${datify(file.date,"zh")}</span>
+                                <span lang="hk">${datify(file.date,"hk")}</span>
+                                <span lang="fr">${datify(file.date,"fr")}</span>
+                                <span lang="jp">${datify(file.date,"jp")}</span>
+                            </span>
                         </a>`.trim());
 
 export const postIndexHTML = `

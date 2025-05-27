@@ -2,6 +2,11 @@
 layout: post
 font: Times New Roman
 title: Convergence of the Integral of a Decreasing Sinusoidal
+titleMY: Penumpuan Kamiran Fungsi Sinus Berturun
+titleZH: 递减正弦函数积分的收敛性
+titleHK: 遞減正弦函數積分的收斂性
+titleFR: Convergence de l’Intégrale d’une Fonction Sinusoïdale Décroissante
+titleJP: 減少する正弦関数の積分の収束性
 ---
 
 Let $f$ be a continuous decreasing function on $(0,\infty)$ such that $\displaystyle \lim_{x\rightarrow \infty} f(x) = 0$. Then
