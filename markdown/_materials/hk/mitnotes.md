@@ -4,24 +4,24 @@ title: MIT
 ---
 
 
-- [file-lines-solid|My $\LaTeX$ Package []](/posts/2024-05-29-mypackage.html)
+- [file-lines-solid|我嘅$\LaTeX$宏包 []](/posts/2024-05-29-mypackage.html)
 
-## Mathematics
+## 數學
 
-- [square-root-variable-solid|Real Analysis [18.100B]](/materials/real_analysis)
-- [square-root-variable-solid|Topology [18.901]](/materials/topology)
-- [square-root-variable-solid|Lie Algebras []](/materials/lie_algebras)
+- [square-root-variable-solid|實分析 [18.100B]](/materials/real_analysis)
+- [square-root-variable-solid|拓撲學 [18.901]](/materials/topology)
+- [square-root-variable-solid|李代數 []](/materials/lie_algebras)
 
-## Computer Science
+## 電腦科學
 
-- [code-solid|Algorithms [6.1210/6.1220]](/materials/algorithms/)
-- [code-solid|Machine Learning [6.3900]](/materials/machine_learning)
+- [code-solid|算法學 [6.1210/6.1220]](/materials/algorithms/)
+- [code-solid|機器學習 [6.3900]](/materials/machine_learning)
 
-## Physics
+## 物理學
 
-- [atom-solid|Quantum Mechanics [8.05]](/materials/quantum_mechanics)
+- [atom-solid|量子力學 [8.05]](/materials/quantum_mechanics)
 
-## Linguistics
+## 語言學
 
-- [language-solid|Linguistics [24.900]](/materials/linguistics)
+- [language-solid|語言學 [24.900]](/materials/linguistics)
 

@@ -6,22 +6,22 @@ title: MIT
 
 - [file-lines-solid|My $\LaTeX$ Package []](/posts/2024-05-29-mypackage.html)
 
-## Mathematics
+## 数学
 
 - [square-root-variable-solid|Real Analysis [18.100B]](/materials/real_analysis)
 - [square-root-variable-solid|Topology [18.901]](/materials/topology)
 - [square-root-variable-solid|Lie Algebras []](/materials/lie_algebras)
 
-## Computer Science
+## 計算機科学
 
 - [code-solid|Algorithms [6.1210/6.1220]](/materials/algorithms/)
 - [code-solid|Machine Learning [6.3900]](/materials/machine_learning)
 
-## Physics
+## 物理学
 
 - [atom-solid|Quantum Mechanics [8.05]](/materials/quantum_mechanics)
 
-## Linguistics
+## 言語学
 
 - [language-solid|Linguistics [24.900]](/materials/linguistics)
 

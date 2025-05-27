@@ -35,6 +35,6 @@ function thumbnailize(className) {
 }
 const fileNames = (await fs.promises.readdir("markdown/_materials/en")).filter(f => f.endsWith(".md"));
 await Promise.all(fileNames.map(async (file) => writeMultiLangJMD(file, "materials", new Map([
-    ["MIT Notes", thumbnailize("mitThumbnail")],
+    ["MIT", thumbnailize("mitThumbnail")],
 ]), thumbnailize("thumbnail"))));
 //# sourceMappingURL=materials.js.map

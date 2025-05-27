@@ -64,8 +64,8 @@ export async function writeMultiLangJMD(mdName, folderName, callbackOnInterior, 
                 ${(callbackOnInterior.get(bundle.meta.title) ?? defaultCallback)(bundle.interior)}
             </div>`);
     const content = buildPage(titleLangs, spanLang(contentLangs) + "</br></br>");
-    const htmlName = mdName.replace(/\.md$/, ".html");
-    write(`${folderName}/${htmlName}`, content);
+    const htmlName = mdName.replace(/\.md$/, (folderName === "mitnotes") ? "/index.html" : ".html");
+    write(`${(folderName === "mitnotes") ? "materials" : folderName}/${htmlName}`, content);
     return { date: new Date(date), filename: htmlName, titleLangs: titleLangs };
 }
 export const read = async (filepath) => fs.promises.readFile(filepath, { encoding: "utf8" });
