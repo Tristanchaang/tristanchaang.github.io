@@ -1,6 +1,8 @@
 import * as fs from "fs";
 import MarkdownIt from "markdown-it";
 import assert from "assert";
+import { componentLang } from "./langtools.js";
+import { headerHTML, footerHTML } from "./header-footer.js";
 const mdParser = new MarkdownIt();
 const PREPARSE_REPLACEMENTS = [
     ["\\\\", "\\\\\\\\"], // change \\ to \\\\
@@ -38,18 +40,25 @@ export function parseJMD(md) {
         const [key, ...rest] = line.split(':');
         return [key?.trim(), rest.join(':').trim()];
     }));
-    return { meta: meta, interior: parseMD(body ?? assert.fail()) };
+    const titleLangs = {
+        en: meta.title,
+        my: meta.titleMY ?? meta.title,
+        zh: meta.titleZH ?? meta.title,
+        hk: meta.titleHK ?? meta.title,
+        fr: meta.titleFR ?? meta.title,
+        jp: meta.titleJP ?? meta.title,
+    };
+    return { meta: meta, titleLangs: titleLangs, interior: parseMD(body ?? assert.fail()) };
 }
 export const read = async (filepath) => fs.promises.readFile(filepath, { encoding: "utf8" });
 export const write = async (filepath, content) => fs.promises.writeFile(filepath, content, { encoding: "utf8" });
-export const asHTMLBody = (title, insert) => `
+export const buildPage = (title, insert) => `
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta property="og:image" content="/assets/screenshot.png" />
-    ${(title instanceof Object) ?
-    Object.entries(title).reduce((s, [l, t]) => s + `<title lang="${l}">${t}</title>`, ``) : `<title>${title}</title>`}
+    ${(title instanceof Object) ? componentLang(title, "title") : `<title>${title}</title>`}
     <link rel="stylesheet" href="/styles/index.css">
     <script src="/dist/client-bundle.js" defer></script>
     <script src="/dist/mathjax-config.js" defer></script>
@@ -67,8 +76,12 @@ export const asHTMLBody = (title, insert) => `
 </head>
 
 <body>
-    ${insert}
+    ${headerHTML}
+    <div>
+        ${insert}
+    </div>
+    ${footerHTML}
 </body>
 </html>
 `;
-//# sourceMappingURL=tools.js.map
+//# sourceMappingURL=parsetools.js.map

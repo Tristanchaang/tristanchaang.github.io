@@ -1,11 +1,11 @@
 import * as fs from "fs";
-import { HTMLize, read, write, parseJMD } from "./base.js";
+import { buildPage, read, write, parseJMD } from "./parsetools.js";
 
 async function parseNotes(mdName: string) {
     const date = mdName.slice(0,10);
     const mdContent = await read("markdown/_mitnotes/"+mdName);
     const { meta, interior } = parseJMD(mdContent);
-    const content = HTMLize(meta.title, `
+    const content = buildPage(meta.title, `
         <div style='${("font" in meta) ? `font-family: ${meta.font};` : ""} padding-left: 200px; padding-right: 200px'>
             <h1>${meta.title}</h1>
             ${interior}

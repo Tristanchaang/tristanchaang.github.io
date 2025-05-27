@@ -53,7 +53,7 @@ footer > a {
     gap: 20px;
 }
 
-#langselect {
+#langSelect {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -65,7 +65,7 @@ footer > a {
     height: 50px;
 }
 
-#langselect > a {
+#langSelect > a {
     display: flex;
     width: 25px;
     height: 20px;

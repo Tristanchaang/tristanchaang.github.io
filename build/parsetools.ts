@@ -1,10 +1,8 @@
 import * as fs from "fs";
 import MarkdownIt from "markdown-it";
 import assert from "assert";
-
-import { LangString, headerHTML, footerHTML, TITLE_LANGS } from "./header-footer.js";
-
-
+import { LangString, spanLang, componentLang } from "./langtools.js";
+import { headerHTML, footerHTML } from "./header-footer.js";
 
 const mdParser = new MarkdownIt();
 
@@ -52,25 +50,28 @@ export function parseJMD(md: string) {
                     return [key?.trim(), rest.join(':').trim()];
                 })
         );
-    return { meta: meta, interior: parseMD(body ?? assert.fail()) };
+    const titleLangs: LangString = {
+        en: meta.title,
+        my: meta.titleMY ?? meta.title,
+        zh: meta.titleZH ?? meta.title,
+        hk: meta.titleHK ?? meta.title,
+        fr: meta.titleFR ?? meta.title,
+        jp: meta.titleJP ?? meta.title,
+    }
+    return { meta: meta, titleLangs: titleLangs, interior: parseMD(body ?? assert.fail()) };
 }
 
 export const read = async (filepath: string) => fs.promises.readFile(filepath, { encoding: "utf8" });
 export const write = async (filepath: string, content: string) => fs.promises.writeFile(filepath, content, { encoding: "utf8" });
 
-export const HTMLize = (title: string | LangString, insert: string) =>
+export const buildPage = (title: string | LangString, insert: string) =>
 `
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta property="og:image" content="/assets/screenshot.png" />
-    ${
-        (title instanceof Object) ?  
-        Object.entries(title).reduce((s, [l, t])=>
-            s + `<title lang="${l}">${t}</title>`
-        , ``) : `<title>${title}</title>`
-    }
+    ${(title instanceof Object) ? componentLang(title, "title") : `<title>${title}</title>`}
     <link rel="stylesheet" href="/styles/index.css">
     <script src="/dist/client-bundle.js" defer></script>
     <script src="/dist/mathjax-config.js" defer></script>
@@ -89,7 +90,9 @@ export const HTMLize = (title: string | LangString, insert: string) =>
 
 <body>
     ${headerHTML}
-    <div>${insert}</div>
+    <div>
+        ${insert}
+    </div>
     ${footerHTML}
 </body>
 </html>

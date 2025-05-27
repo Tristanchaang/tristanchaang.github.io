@@ -1,4 +1,4 @@
-export type LangString = {en: string, my: string, zh: string, hk: string, fr: string, jp: string};
+import { LangString, spanLang } from "./langtools.js";
 
 const NAVBAR_TABS: [LangString, string][] = [
     [{ en: "About", zh: "关于我", hk: "關於我", my: "Tentang Saya", fr: "Sur Moi", jp: "僕について" },
@@ -29,26 +29,19 @@ export const TITLE_LANGS: LangString = {
 export const headerHTML = `
     <nav>
         <a class="local" onclick="directIndexSection('body')" style="font-size: 1.5rem; cursor: pointer">
-            ${Object.entries(TITLE_LANGS).map(([l, t]) => `<span lang="${l}">${t}</span>`).join("")}
+            ${spanLang(TITLE_LANGS)}
         </a>
         <div id=navmenu style="display: flex; gap: 20px; align-items: center; gap: 2rem;" >
             ${NAVBAR_TABS.map(
-                ([tabname, link]) => `
-                <a class="local" ${link} style="cursor: pointer" lang="en">${tabname.en}</a>
-                <a class="local" ${link} style="cursor: pointer" lang="my">${tabname.my}</a>
-                <a class="local" ${link} style="cursor: pointer" lang="zh">${tabname.zh}</a>
-                <a class="local" ${link} style="cursor: pointer" lang="hk">${tabname.hk}</a>
-                <a class="local" ${link} style="cursor: pointer" lang="fr">${tabname.fr}</a>
-                <a class="local" ${link} style="cursor: pointer" lang="jp">${tabname.jp}</a>
-                `
+                ([tabname, link]) => `<a class="local" ${link} style="cursor: pointer">${spanLang(tabname)}</a>`
             ).join("")}
-            <div id=langselect>
-                <a class="langButton" href="?lang=en"><img src="/assets/gb.svg" alt="English" width="24" height="16" style="vertical-align: middle;" /></a>
-                <a class="langButton" href="?lang=my"><img src="/assets/my.svg" alt="Malay" width="24" height="16" style="vertical-align: middle;" /></a>
-                <a class="langButton" href="?lang=zh"><img src="/assets/cn.svg" alt="Mandarin" width="24" height="16" style="vertical-align: middle;" /></a>
-                <a class="langButton" href="?lang=hk"><img src="/assets/hk.svg" alt="Cantonese" width="24" height="16" style="vertical-align: middle;" /></a>
-                <a class="langButton" href="?lang=fr"><img src="/assets/fr.svg" alt="French" width="24" height="16" style="vertical-align: middle;" /></a>
-                <a class="langButton" href="?lang=jp"><img src="/assets/jp.svg" alt="Japanese" width="24" height="16" style="vertical-align: middle;" /></a>
+            <div id=langSelect>
+                <a class="langButton" href="?lang=en"><img src="/assets/gb.svg" alt="en" width="24" height="16" style="vertical-align: middle;" /></a>
+                <a class="langButton" href="?lang=my"><img src="/assets/my.svg" alt="my" width="24" height="16" style="vertical-align: middle;" /></a>
+                <a class="langButton" href="?lang=zh"><img src="/assets/cn.svg" alt="zh" width="24" height="16" style="vertical-align: middle;" /></a>
+                <a class="langButton" href="?lang=hk"><img src="/assets/hk.svg" alt="hk" width="24" height="16" style="vertical-align: middle;" /></a>
+                <a class="langButton" href="?lang=fr"><img src="/assets/fr.svg" alt="fr" width="24" height="16" style="vertical-align: middle;" /></a>
+                <a class="langButton" href="?lang=jp"><img src="/assets/jp.svg" alt="jp" width="24" height="16" style="vertical-align: middle;" /></a>
             </div>
         </div> 
         
