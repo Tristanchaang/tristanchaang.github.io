@@ -8,9 +8,7 @@
   "scripts": {
     "compile": "tsc && esbuild src/index.ts --bundle --sourcemap --outfile=dist/client-bundle.js --platform=browser && node dist/build/app.js",
     "test": "tsc || exit ; mocha --require source-map-support/register dist/test",
-    "lint": "tsc && eslint",
-    "server": "tsc && node --require source-map-support/register dist/src/starb-server.js",
-    "watch-client": "tsc --noEmit --watch --preserveWatchOutput & esbuild src/index.ts --bundle --sourcemap --outfile=dist/client-bundle.js --platform=browser --watch & node build/app.js"
+    "lint": "tsc && eslint"
   },
   "mocha": {
     "reporter": "spec",
@@ -26,9 +24,7 @@
     "canvas": "^3.1.0",
     "esbuild": "^0.25.0",
     "express": "^5.0.1",
-    "http-status-codes": "^2.3.0",
     "markdown-it": "^14.1.0",
-    "nodemon": "^3.1.10",
     "parserlib": "file:/./lib/parserlib-4.0.1.tgz"
   },
   "devDependencies": {
@@ -36,7 +32,6 @@
     "@types/markdown-it": "^14.1.2",
     "@types/mocha": "^10.0.10",
     "@types/node": "^22.10.7",
-    "eslint": "^9.20.1",
     "eslint-formatter-checkstyle": "^8.40.0",
     "eslint-plugin-jsdoc": "^50.6.3",
     "mocha": "^11.0.1",

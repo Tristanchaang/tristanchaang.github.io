@@ -4,12 +4,9 @@ font: Times New Roman
 title: Problèmes Intéressants
 ---
 
-### BIMO Junior Proposal
+### Proposition BIMO Junior
 
-Let $k$ be a fixed positive integer and $f$ be a polynomial with integer coefficients such that $f(x) \neq 0$
-for all $x \in \mathbb{Z}$. We know that
-$f(x) \mid f(x + k)$
-for all $x \in \mathbb{Z}$. Prove that $f$ is constant.
+Soit $k$ un entier positif fixe et $f$ un polynôme à coefficients entiers tels que $f(x) \neq 0$ et $f(x) \mid f(x + k)$ pour tout $x \in \mathbb{Z}$. Démontrer que $f$ est constante.
 
 <div class="boxed">
 <details>

@@ -12,11 +12,14 @@ const postTitleHTMLs = (await Promise.all(fileNames.map(async (file) => writeMul
                             <span style="min-width:150px; text-align: right;">
                                 ${spanLang(dateLangs(file.date))}
                             </span>
-                        </a>`.trim());
+                        </a>`)
+    .join(``).trim();
 export const postIndexHTML = `
     <div id="posts" style="position: relative">
         <h1>${spanLang({ en: "Posts", my: "Siaran-Siaran", zh: "贴文", hk: "貼文", fr: "Publications", jp: "投稿" })}</h1>
-        <div id="postWindow">${postTitleHTMLs.join("")}</div>
+        <div id="postWindow">
+            ${postTitleHTMLs}
+        </div>
         <img id="postBg" src="/assets/file-pen-solid.svg" alt="Posts Icon">
     </div>
 `;

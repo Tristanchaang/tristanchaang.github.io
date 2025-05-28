@@ -4,12 +4,10 @@ font: Times New Roman
 title: Masalah Menarik
 ---
 
-### BIMO Junior Proposal
+### Masalah Cadangan BIMO Junior
 
-Let $k$ be a fixed positive integer and $f$ be a polynomial with integer coefficients such that $f(x) \neq 0$
-for all $x \in \mathbb{Z}$. We know that
-$f(x) \mid f(x + k)$
-for all $x \in \mathbb{Z}$. Prove that $f$ is constant.
+Andaikan $k$ ialah suatu integer positif dan $f$ ialah suatu polynomial dengan pekali-pekali integer sehinggakan $f(x) \neq 0$ dan $f(x) \mid f(x + k)$
+bagi semua $x \in \mathbb{Z}$. Buktikan bahawa $f$ adalah malar.
 
 <div class="boxed">
 <details>

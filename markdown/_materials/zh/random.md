@@ -4,12 +4,9 @@ font: Times New Roman
 title: 有趣的题目
 ---
 
-### BIMO Junior Proposal
+### 中级BIMO自写题目
 
-Let $k$ be a fixed positive integer and $f$ be a polynomial with integer coefficients such that $f(x) \neq 0$
-for all $x \in \mathbb{Z}$. We know that
-$f(x) \mid f(x + k)$
-for all $x \in \mathbb{Z}$. Prove that $f$ is constant.
+已知 $k$ 为正整数及$f$为正数系数多项式，使得对于所有 $x \in \mathbb{Z}$，有 $f(x) \neq 0$ 和 $f(x) \mid f(x + k)$。证明 $f$ 为常数多项式。
 
 <div class="boxed">
 <details>
