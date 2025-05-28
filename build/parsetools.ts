@@ -113,7 +113,7 @@ export const buildPage = (title: string | LangString, insert: string) =>
     gtag('js', new Date());
     gtag('config', 'G-PH72KY1MTT');
     </script>
-    <link rel="icon" href="/assets/circle-user-solid.svg" type="image/svg">
+    <link rel="icon" type="image/x-icon" href="/assets/circle-user-solid.ico">
 </head>
 <body>
     ${headerHTML}<div>${insert}</div>${footerHTML}
