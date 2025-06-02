@@ -6,7 +6,7 @@
     "node": "^22.2.x"
   },
   "scripts": {
-    "compile": "tsc && esbuild src/index.ts --bundle --sourcemap --outfile=dist/client-bundle.js --platform=browser && node dist/build/app.js && node translator.js",
+    "compile": "tsc && esbuild src/index.ts --bundle --sourcemap --outfile=dist/client-bundle.js --platform=browser && node dist/build/app.js",
     "test": "tsc || exit ; mocha --require source-map-support/register dist/test",
     "lint": "tsc && eslint"
   },

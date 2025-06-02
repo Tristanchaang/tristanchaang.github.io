@@ -1,7 +1,7 @@
 import assert from 'node:assert';
 import { getElem, getAllElems, appendChild } from './html.js'
 import { toIndexSection } from './header-footer.js';
-import { chooseLang, LANGS } from './lang.js';
+import { chooseLang } from './lang.js';
 
 
 /**
@@ -10,17 +10,14 @@ import { chooseLang, LANGS } from './lang.js';
 async function main(): Promise<void> {
 
     (window as any).directIndexSection = (tag: string, lang: string = "en"): void => {
-        if (LANGS.includes(window.location.pathname.split('/')[1] ?? assert.fail())) {
-            toIndexSection(tag);
-        }
-        else window.location.href = (lang === "en" ? `/` : `/${lang}/`) + (tag==="body") ? `` : `&scroll=${tag.slice(1)}`;
+        if (window.location.pathname === "/") toIndexSection(tag);
+        else window.location.href = (tag==="body") ? `/?lang=${lang}` : `/?lang=${lang}&scroll=${tag.slice(1)}`;
     }
 
     const params = new URLSearchParams(window.location.search);
-    const pathLang = window.location.pathname.split('/')[1] ?? "";
-    const lang = pathLang && LANGS.includes(pathLang) ? pathLang : "en";
+    const lang = params.get("lang") ?? "en";
 
-    // chooseLang(lang);
+    chooseLang(lang);
 
     document.addEventListener("DOMContentLoaded", () => {
         const scrollTarget = params.get("scroll");
@@ -29,9 +26,9 @@ async function main(): Promise<void> {
         document.querySelectorAll<HTMLAnchorElement>('.local').forEach(a => {
             const href = a.getAttribute('href');
             if (href && !href.startsWith('javascript:') && !href.startsWith('#')) {
-                // const url = new URL(href, window.location.origin);
-                // url.searchParams.set('lang', lang);
-                a.setAttribute('href', (lang === "en" ? `` : `/${lang}`) + href);
+                const url = new URL(href, window.location.origin);
+                url.searchParams.set('lang', lang);
+                a.setAttribute('href', url.pathname + url.search + url.hash);
             }
             if (a.hasAttribute('onclick')) {
                 const onclick = a.getAttribute('onclick');
@@ -45,14 +42,6 @@ async function main(): Promise<void> {
                 }
             }
         });
-
-        document.querySelectorAll('.langButton').forEach(a => {
-            const dLang = a.getAttribute('href') ?? assert.fail();
-            if (LANGS.includes(pathLang)) 
-                a.setAttribute('href', (dLang === "en" ? `` : `/${dLang}`) + window.location.pathname.slice(3))
-            else
-                a.setAttribute('href', (dLang === "en" ? `` : `/${dLang}`) + window.location.pathname)
-        })
     });
 
     setTimeout(()=>{

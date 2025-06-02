@@ -12,7 +12,7 @@ import { TITLE_LANGS } from "./header-footer.js";
 
 fileNames;
 
-write("compiled/index.html", buildPage(TITLE_LANGS, 
+write("index.html", buildPage(TITLE_LANGS, 
     `
     ${welcomeHTML}
     ${postIndexHTML}
