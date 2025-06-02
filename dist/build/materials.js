@@ -1,5 +1,5 @@
 import { writeMultiLangJMD } from "./parsetools.js";
-import { spanLang, langMap } from "./langtools.js";
+import { spanLang } from "./langtools.js";
 import * as fs from "fs";
 const MATERIALS = {
     "random": { en: "Random Fun Problems", my: "Masalah Menarik", zh: "有趣的题目", hk: "得意嘅題目", fr: "Problèmes Intéressants", jp: "おもしろい問題" },
@@ -23,17 +23,6 @@ export const materialsIndexHTML = `
         <img id="materialBg" src="/assets/folder-open-solid.svg" alt="Materials Icon">
     </div>
 `;
-export const materialsIndexHTMLLangs = langMap({ en: "Materials", my: "Bahan-Bahan", zh: "资料", hk: "資料", fr: "Matériaux", jp: "資料" }, (lang, title) => `
-    <div id="materials" style="position: relative;">
-        <h1>${title}</h1>
-        <div class="thumbnailWindow">${Object.entries(MATERIALS).map(([link, titles]) => `
-                        <a class="materialThumbnail local" href="/materials/${link}.html">
-                            <img src="/assets/folder-closed-solid.svg" alt="Folder Icon" class="materialIcon" style="width:2rem; height:2rem; margin-right:1rem; vertical-align:middle;" />
-                            <span style="font-size: 1.3rem; width:auto">${titles[lang]}</span>
-                        </a>`.trim()).join("")}</div>
-        <img id="materialBg" src="/assets/folder-open-solid.svg" alt="Materials Icon">
-    </div>
-`);
 function thumbnailize(className) {
     return (md) => md.replaceAll(/<li><a (?<att>.*)>((?<icon>.*)\|)?(?<title>[^\n\[\]\|]*)(\[(?<subtitle>[^\[\]]*)\])?<\/a><\/li>/g, `<a class="${className}${(className === "mitThumbnail") ? ` local` : ``}" $<att>>
                 <insertNTG $<icon>>

@@ -4532,7 +4532,7 @@
   async function main() {
     window.directIndexSection = (tag, lang2 = "en") => {
       if (window.location.pathname === "/") toIndexSection(tag);
-      else window.location.href = `/${lang2 === "en" ? `` : lang2}/` + (tag === "body" ? `` : `index.html&scroll=${tag.slice(1)}`);
+      else window.location.href = tag === "body" ? `/?lang=${lang2}` : `/?lang=${lang2}&scroll=${tag.slice(1)}`;
     };
     const params = new URLSearchParams(window.location.search);
     const lang = params.get("lang") ?? "en";

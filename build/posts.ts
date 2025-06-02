@@ -1,7 +1,7 @@
 import * as fs from "fs";
 import assert from "assert";
 import { writeMultiLangJMD } from "./parsetools.js";
-import { spanLang, dateLangs, langMap, LangString } from "./langtools.js";
+import { spanLang, dateLangs } from "./langtools.js";
 
 const fileNames = (await fs.promises.readdir("markdown/_posts/en")).filter(f => f.endsWith(".md"));
 
@@ -28,29 +28,3 @@ export const postIndexHTML = `
         <img id="postBg" src="/assets/file-pen-solid.svg" alt="Posts Icon">
     </div>
 `;
-
-const x = (await Promise.all(fileNames.map(async (file) => writeMultiLangJMD(file, "posts", new Map(), ((s: string)=>s)) )))
-                    .sort((a,b) => (a.date < b.date) ? 1 : -1)   
-
-const postTitleHTMLLangs = 
-    langMap({ en: "", my: "", zh: "", hk: "", fr: "", jp: "" }, (lang, title) =>
-        x.map(file => `<a class="postThumbnail local" href="/posts/${file.filename}">
-                            <span style="font-size: 1.3rem; width:auto">
-                                ${file.titleLangs[lang as keyof LangString]}
-                            </span>
-                            <span style="min-width:150px; text-align: right;">
-                                ${dateLangs(file.date)[lang as keyof LangString]}
-                            </span>
-                        </a>`).join(""));
-;
-
-export const postIndexHTMLLangs = 
-langMap({ en: "Posts", my: "Siaran-Siaran", zh: "贴文", hk: "貼文", fr: "Publications", jp: "投稿" }, (lang, title) => `
-    <div id="posts" style="position: relative">
-        <h1>${title}</h1>
-        <div id="postWindow">
-            ${postTitleHTMLLangs[lang as keyof LangString]}
-        </div>
-        <img id="postBg" src="/assets/file-pen-solid.svg" alt="Posts Icon">
-    </div>
-`);
