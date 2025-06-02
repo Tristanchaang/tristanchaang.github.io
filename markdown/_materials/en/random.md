@@ -40,7 +40,7 @@ Let $\triangle$ be the triangle with vertices $(0,0),(1,0),(1,1)$.
     &= 4\int_0^{\frac{\pi}{4}} \left[\int_{0}^{\sec\theta} \frac{d(k^2+r^2)}{(k^2+r^2)^{3/2}}\right]  d\theta\\
     &= 8\int_0^{\frac{\pi}{4}} \left[\frac{1}{k} - \frac{1}{\sqrt{k^2+\sec^2\theta}}\right] d\theta\\
     &= \frac{2\pi}{k} - \frac{8}{k}\arctan\left(\frac{k}{\sqrt{k^2+2}}\right)\end{aligned}$$
-Find the electric field at a height $z$ above the center of a square sheet (side $s$) carrying a uniform surface charge $\sigma$.
+At a height $z$ above the center,
   $$\begin{aligned}V(z) &= \frac{1}{4\pi \varepsilon_0} \int_{S} \frac{dq}{r} = \frac{\sigma}{4\pi \varepsilon_0}  \int_S \frac{dx \ dy}{\sqrt{z^2+x^2+y^2}}\\
     E(z) = - \frac{\partial V}{\partial z} &= \frac{\sigma}{4\pi \varepsilon_0} \int_{-s/2}^{s/2}\int_{-s/2}^{s/2} \frac{z\ dx \ dy}{(z^2+x^2+y^2)^{3/2}}\\
     &= \frac{\sigma z}{2\pi \varepsilon_0 s} \int_{-s/2}^{s/2}\int_{-s/2}^{s/2} \frac{d(2x/s) \ d(2y/s)}{((2z/s)^2+(2x/s)^2+(2y/s)^2)^{3/2}}\\

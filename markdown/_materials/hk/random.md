@@ -10,20 +10,20 @@ title: 得意嘅題目
 
 <div class="boxed">
 <details>
-<summary> <span class="click">Click for Solution</span> </summary> 
-Assume $f(x) = a_nx^n + \cdots + a_0$ is nonconstant. Then there exists some $N \in \mathbb{R}$ such that $f|\_{x\geq N}$ is injective. However, $\lim_{x\rightarrow \infty} \frac{f(x+h)}{f(x)}= \frac{a_n}{a_n} = 1$, and since $f(x) \mid f(x + k)$ for all integers $x$, there exists some $M\in \mathbb{R}$ such that $f(x+h)=f(x)$ for all integers $x\geq M$. This contradicts with injectivity.
+<summary> <span class="click">撳掣睇答案</span> </summary> 
+假設 $f(x) = a_nx^n + \cdots + a_0$ 不是常數，則存在正整數 $N$ 使得 $f|\_{x\geq N}$ 為單射函數。但，$\lim_{x\rightarrow \infty} \frac{f(x+h)}{f(x)}= \frac{a_n}{a_n} = 1$, 且對所有整數 $x$ 有 $f(x) \mid f(x + k)$，所以必定存在 $Mqin \m $f(x+h)=f(x)$。這與 $f$ 的單射性質矛盾。
 </details>
 </div>
 
 <hr/>
 
-### Electric Field Above Uniformly Charged Square Plate
+### Electric Field Above Uniformly Charged Square Plate 均勻表面電荷正方形上的電場
 
-(Source: <emph>Introduction to Electrodynamics</emph> by Griffiths, Chapter 2) Find the electric field at a height $z$ above the center of a square sheet (side $s$) carrying a uniform surface charge $\sigma$.
+(Source: <emph>Introduction to Electrodynamics</emph> by Griffiths, 第 2 章節) 計算一具有均勻表面電荷 $\sigma$，邊長為 $s$ 的正方形薄片中心上方高度為 $z$ 處的電場強度。
 
 <div class="boxed">
 <details>
-<summary> <span class="click">Click for Solution</span> </summary>
+<summary> <span class="click">撳掣睇答案</span> </summary>
 <b>Answer:</b> $\frac{\sigma}{2\varepsilon_0}\left[\frac{4}{\pi}\arctan\left(\sqrt{1+s^2/2z^2}\right)-1\right]$
 <hr/>
 <b>Proof:</b>
@@ -33,14 +33,14 @@ Assume $f(x) = a_nx^n + \cdots + a_0$ is nonconstant. Then there exists some $N 
     &= \frac{1}{k}\int_0^{1/\sqrt{2}}\frac{du}{\sqrt{(1+k^{-2} - u^2)}}\\
     &= \frac{1}{k}\arcsin\left(\frac{1/\sqrt{2}}{\sqrt{1+k^{-2}}}\right)\\
     &= \frac{1}{k}\arctan\left(\frac{k}{\sqrt{k^2+2}}\right)\end{aligned}$$
-Let $\triangle$ be the triangle with vertices $(0,0),(1,0),(1,1)$.
+將頂點為 $(0,0),(1,0),(1,1)$ 的三角形寫成 $\triangle$。
   $$\begin{aligned}f(k) & = \int_{-1}^1 \int_{-1}^1 \frac{dx \ dy}{(k^2+x^2+y^2)^{3/2}}\\
     &= 8\iint_{\triangle} \frac{dx \ dy}{(k^2+x^2+y^2)^{3/2}}\\
     &= 8\int_0^{\frac{\pi}{4}} \int_{0}^{\sec\theta} \frac{r \ dr \ d\theta}{(k^2+r^2)^{3/2}}\\
     &= 4\int_0^{\frac{\pi}{4}} \left[\int_{0}^{\sec\theta} \frac{d(k^2+r^2)}{(k^2+r^2)^{3/2}}\right]  d\theta\\
     &= 8\int_0^{\frac{\pi}{4}} \left[\frac{1}{k} - \frac{1}{\sqrt{k^2+\sec^2\theta}}\right] d\theta\\
     &= \frac{2\pi}{k} - \frac{8}{k}\arctan\left(\frac{k}{\sqrt{k^2+2}}\right)\end{aligned}$$
-Find the electric field at a height $z$ above the center of a square sheet (side $s$) carrying a uniform surface charge $\sigma$.
+在高度 $z$，
   $$\begin{aligned}V(z) &= \frac{1}{4\pi \varepsilon_0} \int_{S} \frac{dq}{r} = \frac{\sigma}{4\pi \varepsilon_0}  \int_S \frac{dx \ dy}{\sqrt{z^2+x^2+y^2}}\\
     E(z) = - \frac{\partial V}{\partial z} &= \frac{\sigma}{4\pi \varepsilon_0} \int_{-s/2}^{s/2}\int_{-s/2}^{s/2} \frac{z\ dx \ dy}{(z^2+x^2+y^2)^{3/2}}\\
     &= \frac{\sigma z}{2\pi \varepsilon_0 s} \int_{-s/2}^{s/2}\int_{-s/2}^{s/2} \frac{d(2x/s) \ d(2y/s)}{((2z/s)^2+(2x/s)^2+(2y/s)^2)^{3/2}}\\
