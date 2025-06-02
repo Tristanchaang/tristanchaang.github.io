@@ -17,7 +17,7 @@ title: 得意嘅題目
 
 <hr/>
 
-### Electric Field Above Uniformly Charged Square Plate 均勻表面電荷正方形上的電場
+### 均勻表面電荷正方形上的電場
 
 (Source: <emph>Introduction to Electrodynamics</emph> by Griffiths, 第 2 章節) 計算一具有均勻表面電荷 $\sigma$，邊長為 $s$ 的正方形薄片中心上方高度為 $z$ 處的電場強度。
 

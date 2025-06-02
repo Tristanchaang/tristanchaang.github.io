@@ -24,7 +24,7 @@ export const materialsIndexHTML = `
     </div>
 `;
 function thumbnailize(className) {
-    return (md) => md.replaceAll(/<li><a (?<att>.*)>((?<icon>.*)\|)?(?<title>[^\n\[\]\|]*)(\[(?<subtitle>[^\[\]]*)\])?<\/a><\/li>/g, `<a class="${className} local" $<att>>
+    return (md) => md.replaceAll(/<li><a (?<att>.*)>((?<icon>.*)\|)?(?<title>[^\n\[\]\|]*)(\[(?<subtitle>[^\[\]]*)\])?<\/a><\/li>/g, `<a class="${className}${(className === "mitThumbnail") ? ` local` : ``}" $<att>>
                 <insertNTG $<icon>>
                 <span style="font-size: 1.3rem; width:auto">$<title></span>
                 <span style="font-size: 0.8rem; position: absolute; bottom: 5px; right: 5px; font-style: italic; color: gray;">$<subtitle></span>
