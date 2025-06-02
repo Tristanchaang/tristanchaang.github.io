@@ -83,7 +83,7 @@ export async function writeMultiLangJMD(mdName: string, folderName: string, call
     const content = buildPage(titleLangs, spanLang(contentLangs)+"</br></br>");
 
     const htmlName = mdName.replace(/\.md$/, (folderName === "mitnotes") ? "/index.html" : ".html");
-    write(`${(folderName === "mitnotes") ? "materials" : folderName}/${htmlName}`, content);
+    write('compiled/' + `${(folderName === "mitnotes") ? "materials" : folderName}/${htmlName}`, content);
     return { date: new Date(date), filename: htmlName, titleLangs: titleLangs };
 }
 

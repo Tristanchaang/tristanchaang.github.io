@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta property="og:image" content="/assets/screenshot.png" />
+    <title lang="en">Convergence of the Integral of a Decreasing Sinusoidal</title><title lang="my">Penumpuan Kamiran Fungsi Sinus Berturun</title><title lang="zh">递减正弦函数积分的收敛性</title><title lang="hk">遞減正弦函數積分的收斂性</title><title lang="fr">Convergence de l’Intégrale d’une Fonction Sinusoïdale Décroissante</title><title lang="jp">減少する正弦関数の積分の収束性</title>
+    <link rel="stylesheet" href="/styles/index.css">
+    <script src="/dist/client-bundle.js" defer></script>
+    <script src="/dist/mathjax-config.js" defer></script>
+    <script type="text/javascript" id="MathJax-script" defer
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PH72KY1MTT"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PH72KY1MTT');
+    </script>
+    <link rel="icon" type="image/x-icon" href="/assets/circle-user-solid.ico">
+</head>
+<body>
+    
+    <nav>
+        <a class="local" onclick="directIndexSection('body')" style="font-size: 1.5rem; cursor: pointer">
+            <span lang="en">Tristan Chaang's Page</span><span lang="my">Laman Tristan Chaang</span><span lang="zh">曾子宸的网站</span><span lang="hk">曾子宸嘅網站</span><span lang="fr">La page de Tristan Chaang</span><span lang="jp">トリ・チャーンのペイジ</span>
+        </a>
+        <div id=navmenu style="display: flex; gap: 20px; align-items: center; gap: 2rem;" >
+            <a class="local" onclick="directIndexSection('#about')" style="cursor: pointer"><span lang="en">About</span><span lang="zh">关于我</span><span lang="hk">關於我</span><span lang="my">Tentang Saya</span><span lang="fr">Sur Moi</span><span lang="jp">僕について</span></a><a class="local" onclick="directIndexSection('#materials')" style="cursor: pointer"><span lang="en">Materials</span><span lang="zh">资料</span><span lang="hk">資料</span><span lang="my">Bahan</span><span lang="fr">Matériaux</span><span lang="jp">資料</span></a><a class="local" href="/materials/mitnotes.html" style="cursor: pointer"><span lang="en">MIT</span><span lang="zh">MIT</span><span lang="hk">MIT</span><span lang="my">MIT</span><span lang="fr">MIT</span><span lang="jp">MIT</span></a><a class="local" href="/webpage/" style="cursor: pointer"><span lang="en">Games</span><span lang="zh">游戏</span><span lang="hk">遊戲</span><span lang="my">Permainan</span><span lang="fr">Jeux</span><span lang="jp">ゲーム</span></a>
+            <div id=langSelect>
+                <a class="langButton" href="en"><img src="/assets/gb.svg" alt="en" width="24" height="16" style="vertical-align: middle;" /></a>
+                <a class="langButton" href="my"><img src="/assets/my.svg" alt="my" width="24" height="16" style="vertical-align: middle;" /></a>
+                <a class="langButton" href="zh"><img src="/assets/cn.svg" alt="zh" width="24" height="16" style="vertical-align: middle;" /></a>
+                <a class="langButton" href="hk"><img src="/assets/hk.svg" alt="hk" width="24" height="16" style="vertical-align: middle;" /></a>
+                <a class="langButton" href="fr"><img src="/assets/fr.svg" alt="fr" width="24" height="16" style="vertical-align: middle;" /></a>
+                <a class="langButton" href="jp"><img src="/assets/jp.svg" alt="jp" width="24" height="16" style="vertical-align: middle;" /></a>
+            </div>
+        </div> 
+        
+    </nav>
+<div><span lang="en">
+            <div style='font-family: Times New Roman; padding-left: 200px; padding-right: 200px'>
+                <h1>Convergence of the Integral of a Decreasing Sinusoidal</h1>
+                <p>Let $f$ be a continuous decreasing function on $(0,\infty)$ such that $\displaystyle \lim_{x\rightarrow \infty} f(x) = 0$. Then</p>
+<p>$$\begin{aligned}
+\int_1^\infty f(x) \sin x \ dx
+\end{aligned}$$</p>
+<p>is convergent.</p>
+<h2>Corollaries</h2>
+<ul>
+<li>$\displaystyle \int_c^\infty f(x) \sin (ax+b) \ dx$ is convergent</li>
+<li>$\displaystyle \int_1^\infty \frac{\cos (x-1/4)}{\sqrt{x}} \ dx$ is convergent (I will use this in a future topic)</li>
+</ul>
+<h2>Proof</h2>
+<p>For all positive integers $n$, let</p>
+<p>$$\begin{align}
+I_n &= \int_1^{2n\pi} f(x) \sin x \ dx\\
+J_n &= \int_1^{(2n+1)\pi} f(x) \sin x \ dx\\
+\end{align}$$</p>
+<p>Note that</p>
+<p>$$\begin{aligned}
+I_{n+1} - I_n &= \int_{2n\pi}^{(2n+2)\pi} f(x) \sin x \ dx\\
+&= \int_{2n\pi}^{(2n+1)\pi} f(x) \sin x \ dx + \int_{(2n+1)\pi}^{(2n+2)\pi} f(x) \sin x \ dx\\
+&= \int_{2n\pi}^{(2n+1)\pi} f(x) \sin x \ dx + \int_{2n\pi}^{(2n+1)\pi} f(x+\pi) \sin (x+\pi) \ dx\\
+&= \int_{2n\pi}^{(2n+1)\pi} \left(f(x)-f(x+\pi)\right) \sin x \ dx \geq 0\\
+J_{n+1} - J_n &= \int_{(2n+1)\pi}^{(2n+3)\pi} f(x) \sin x \ dx\\
+&= \int_{(2n+1)\pi}^{(2n+2)\pi} f(x) \sin x \ dx + \int_{(2n+2)\pi}^{(2n+3)\pi} f(x) \sin x \ dx\\
+&= \int_{(2n+1)\pi}^{(2n+2)\pi} f(x) \sin x \ dx + \int_{(2n+1)\pi}^{(2n+2)\pi} f(x+\pi) \sin (x+\pi) \ dx\\
+&= \int_{(2n+1)\pi}^{(2n+2)\pi} \left(f(x)-f(x+\pi)\right) \sin x \ dx \leq 0\\
+J_n - I_n &= \int_{2n\pi}^{(2n+1)\pi} f(x) \sin x \ dx \geq 0
+\end{aligned}$$</p>
+<p>and thus $I_1\leq I_2 \leq \cdots$ and $J_1 \geq J_2 \geq \cdots$. Since $I_n \leq J_n \leq J_1$, the monotone convergent theorem says that $I_n$ converges to some limit $L$. Similarly $J_n$ converges to some limit $L'$.</p>
+<p>$$\begin{aligned}
+\lim_{n\rightarrow \infty} |J_n-I_n| \leq \int_{2n\pi}^{(2n+1)\pi} f(x) |\sin x| \ dx \leq \pi \cdot \max_{[2n\pi,\infty)} f(x) \rightarrow 0
+\end{aligned}$$</p>
+<p>so $L=L'$. Let $t>1$.</p>
+<ul>
+<li>If $2n\pi \leq t < (2n+1)\pi$, then $I_n \leq \displaystyle \int_1^tf(x)\sin x \ dx \leq J_n$.</li>
+<li>If $(2n+1)\pi \leq t < (2n+2)\pi$, then $I_{n+1} \leq \displaystyle \int_1^tf(x)\sin x \ dx \leq J_n$.</li>
+</ul>
+<p>By the squeeze theorem, the integral converges to $L$.</p>
+
+            </div></span><span lang="my">
+            <div style='font-family: Times New Roman; padding-left: 200px; padding-right: 200px'>
+                <h1>Penumpuan Kamiran Fungsi Sinus Berturun</h1>
+                <p>Let $f$ be a continuous decreasing function on $(0,\infty)$ such that $\displaystyle \lim_{x\rightarrow \infty} f(x) = 0$. Then</p>
+<p>$$\begin{aligned}
+\int_1^\infty f(x) \sin x \ dx
+\end{aligned}$$</p>
+<p>is convergent.</p>
+<h2>Corollaries</h2>
+<ul>
+<li>$\displaystyle \int_c^\infty f(x) \sin (ax+b) \ dx$ is convergent</li>
+<li>$\displaystyle \int_1^\infty \frac{\cos (x-1/4)}{\sqrt{x}} \ dx$ is convergent (I will use this in a future topic)</li>
+</ul>
+<h2>Proof</h2>
+<p>For all positive integers $n$, let</p>
+<p>$$\begin{align}
+I_n &= \int_1^{2n\pi} f(x) \sin x \ dx\\
+J_n &= \int_1^{(2n+1)\pi} f(x) \sin x \ dx\\
+\end{align}$$</p>
+<p>Note that</p>
+<p>$$\begin{aligned}
+I_{n+1} - I_n &= \int_{2n\pi}^{(2n+2)\pi} f(x) \sin x \ dx\\
+&= \int_{2n\pi}^{(2n+1)\pi} f(x) \sin x \ dx + \int_{(2n+1)\pi}^{(2n+2)\pi} f(x) \sin x \ dx\\
+&= \int_{2n\pi}^{(2n+1)\pi} f(x) \sin x \ dx + \int_{2n\pi}^{(2n+1)\pi} f(x+\pi) \sin (x+\pi) \ dx\\
+&= \int_{2n\pi}^{(2n+1)\pi} \left(f(x)-f(x+\pi)\right) \sin x \ dx \geq 0\\
+J_{n+1} - J_n &= \int_{(2n+1)\pi}^{(2n+3)\pi} f(x) \sin x \ dx\\
+&= \int_{(2n+1)\pi}^{(2n+2)\pi} f(x) \sin x \ dx + \int_{(2n+2)\pi}^{(2n+3)\pi} f(x) \sin x \ dx\\
+&= \int_{(2n+1)\pi}^{(2n+2)\pi} f(x) \sin x \ dx + \int_{(2n+1)\pi}^{(2n+2)\pi} f(x+\pi) \sin (x+\pi) \ dx\\
+&= \int_{(2n+1)\pi}^{(2n+2)\pi} \left(f(x)-f(x+\pi)\right) \sin x \ dx \leq 0\\
+J_n - I_n &= \int_{2n\pi}^{(2n+1)\pi} f(x) \sin x \ dx \geq 0
+\end{aligned}$$</p>
+<p>and thus $I_1\leq I_2 \leq \cdots$ and $J_1 \geq J_2 \geq \cdots$. Since $I_n \leq J_n \leq J_1$, the monotone convergent theorem says that $I_n$ converges to some limit $L$. Similarly $J_n$ converges to some limit $L'$.</p>
+<p>$$\begin{aligned}
+\lim_{n\rightarrow \infty} |J_n-I_n| \leq \int_{2n\pi}^{(2n+1)\pi} f(x) |\sin x| \ dx \leq \pi \cdot \max_{[2n\pi,\infty)} f(x) \rightarrow 0
+\end{aligned}$$</p>
+<p>so $L=L'$. Let $t>1$.</p>
+<ul>
+<li>If $2n\pi \leq t < (2n+1)\pi$, then $I_n \leq \displaystyle \int_1^tf(x)\sin x \ dx \leq J_n$.</li>
+<li>If $(2n+1)\pi \leq t < (2n+2)\pi$, then $I_{n+1} \leq \displaystyle \int_1^tf(x)\sin x \ dx \leq J_n$.</li>
+</ul>
+<p>By the squeeze theorem, the integral converges to $L$.</p>
+
+            </div></span><span lang="zh">
+            <div style='font-family: Times New Roman; padding-left: 200px; padding-right: 200px'>
+                <h1>递减正弦函数积分的收敛性</h1>
+                <p>Let $f$ be a continuous decreasing function on $(0,\infty)$ such that $\displaystyle \lim_{x\rightarrow \infty} f(x) = 0$. Then</p>
+<p>$$\begin{aligned}
+\int_1^\infty f(x) \sin x \ dx
+\end{aligned}$$</p>
+<p>is convergent.</p>
+<h2>Corollaries</h2>
+<ul>
+<li>$\displaystyle \int_c^\infty f(x) \sin (ax+b) \ dx$ is convergent</li>
+<li>$\displaystyle \int_1^\infty \frac{\cos (x-1/4)}{\sqrt{x}} \ dx$ is convergent (I will use this in a future topic)</li>
+</ul>
+<h2>Proof</h2>
+<p>For all positive integers $n$, let</p>
+<p>$$\begin{align}
+I_n &= \int_1^{2n\pi} f(x) \sin x \ dx\\
+J_n &= \int_1^{(2n+1)\pi} f(x) \sin x \ dx\\
+\end{align}$$</p>
+<p>Note that</p>
+<p>$$\begin{aligned}
+I_{n+1} - I_n &= \int_{2n\pi}^{(2n+2)\pi} f(x) \sin x \ dx\\
+&= \int_{2n\pi}^{(2n+1)\pi} f(x) \sin x \ dx + \int_{(2n+1)\pi}^{(2n+2)\pi} f(x) \sin x \ dx\\
+&= \int_{2n\pi}^{(2n+1)\pi} f(x) \sin x \ dx + \int_{2n\pi}^{(2n+1)\pi} f(x+\pi) \sin (x+\pi) \ dx\\
+&= \int_{2n\pi}^{(2n+1)\pi} \left(f(x)-f(x+\pi)\right) \sin x \ dx \geq 0\\
+J_{n+1} - J_n &= \int_{(2n+1)\pi}^{(2n+3)\pi} f(x) \sin x \ dx\\
+&= \int_{(2n+1)\pi}^{(2n+2)\pi} f(x) \sin x \ dx + \int_{(2n+2)\pi}^{(2n+3)\pi} f(x) \sin x \ dx\\
+&= \int_{(2n+1)\pi}^{(2n+2)\pi} f(x) \sin x \ dx + \int_{(2n+1)\pi}^{(2n+2)\pi} f(x+\pi) \sin (x+\pi) \ dx\\
+&= \int_{(2n+1)\pi}^{(2n+2)\pi} \left(f(x)-f(x+\pi)\right) \sin x \ dx \leq 0\\
+J_n - I_n &= \int_{2n\pi}^{(2n+1)\pi} f(x) \sin x \ dx \geq 0
+\end{aligned}$$</p>
+<p>and thus $I_1\leq I_2 \leq \cdots$ and $J_1 \geq J_2 \geq \cdots$. Since $I_n \leq J_n \leq J_1$, the monotone convergent theorem says that $I_n$ converges to some limit $L$. Similarly $J_n$ converges to some limit $L'$.</p>
+<p>$$\begin{aligned}
+\lim_{n\rightarrow \infty} |J_n-I_n| \leq \int_{2n\pi}^{(2n+1)\pi} f(x) |\sin x| \ dx \leq \pi \cdot \max_{[2n\pi,\infty)} f(x) \rightarrow 0
+\end{aligned}$$</p>
+<p>so $L=L'$. Let $t>1$.</p>
+<ul>
+<li>If $2n\pi \leq t < (2n+1)\pi$, then $I_n \leq \displaystyle \int_1^tf(x)\sin x \ dx \leq J_n$.</li>
+<li>If $(2n+1)\pi \leq t < (2n+2)\pi$, then $I_{n+1} \leq \displaystyle \int_1^tf(x)\sin x \ dx \leq J_n$.</li>
+</ul>
+<p>By the squeeze theorem, the integral converges to $L$.</p>
+
+            </div></span><span lang="hk">
+            <div style='font-family: Times New Roman; padding-left: 200px; padding-right: 200px'>
+                <h1>遞減正弦函數積分的收斂性</h1>
+                <p>Let $f$ be a continuous decreasing function on $(0,\infty)$ such that $\displaystyle \lim_{x\rightarrow \infty} f(x) = 0$. Then</p>
+<p>$$\begin{aligned}
+\int_1^\infty f(x) \sin x \ dx
+\end{aligned}$$</p>
+<p>is convergent.</p>
+<h2>Corollaries</h2>
+<ul>
+<li>$\displaystyle \int_c^\infty f(x) \sin (ax+b) \ dx$ is convergent</li>
+<li>$\displaystyle \int_1^\infty \frac{\cos (x-1/4)}{\sqrt{x}} \ dx$ is convergent (I will use this in a future topic)</li>
+</ul>
+<h2>Proof</h2>
+<p>For all positive integers $n$, let</p>
+<p>$$\begin{align}
+I_n &= \int_1^{2n\pi} f(x) \sin x \ dx\\
+J_n &= \int_1^{(2n+1)\pi} f(x) \sin x \ dx\\
+\end{align}$$</p>
+<p>Note that</p>
+<p>$$\begin{aligned}
+I_{n+1} - I_n &= \int_{2n\pi}^{(2n+2)\pi} f(x) \sin x \ dx\\
+&= \int_{2n\pi}^{(2n+1)\pi} f(x) \sin x \ dx + \int_{(2n+1)\pi}^{(2n+2)\pi} f(x) \sin x \ dx\\
+&= \int_{2n\pi}^{(2n+1)\pi} f(x) \sin x \ dx + \int_{2n\pi}^{(2n+1)\pi} f(x+\pi) \sin (x+\pi) \ dx\\
+&= \int_{2n\pi}^{(2n+1)\pi} \left(f(x)-f(x+\pi)\right) \sin x \ dx \geq 0\\
+J_{n+1} - J_n &= \int_{(2n+1)\pi}^{(2n+3)\pi} f(x) \sin x \ dx\\
+&= \int_{(2n+1)\pi}^{(2n+2)\pi} f(x) \sin x \ dx + \int_{(2n+2)\pi}^{(2n+3)\pi} f(x) \sin x \ dx\\
+&= \int_{(2n+1)\pi}^{(2n+2)\pi} f(x) \sin x \ dx + \int_{(2n+1)\pi}^{(2n+2)\pi} f(x+\pi) \sin (x+\pi) \ dx\\
+&= \int_{(2n+1)\pi}^{(2n+2)\pi} \left(f(x)-f(x+\pi)\right) \sin x \ dx \leq 0\\
+J_n - I_n &= \int_{2n\pi}^{(2n+1)\pi} f(x) \sin x \ dx \geq 0
+\end{aligned}$$</p>
+<p>and thus $I_1\leq I_2 \leq \cdots$ and $J_1 \geq J_2 \geq \cdots$. Since $I_n \leq J_n \leq J_1$, the monotone convergent theorem says that $I_n$ converges to some limit $L$. Similarly $J_n$ converges to some limit $L'$.</p>
+<p>$$\begin{aligned}
+\lim_{n\rightarrow \infty} |J_n-I_n| \leq \int_{2n\pi}^{(2n+1)\pi} f(x) |\sin x| \ dx \leq \pi \cdot \max_{[2n\pi,\infty)} f(x) \rightarrow 0
+\end{aligned}$$</p>
+<p>so $L=L'$. Let $t>1$.</p>
+<ul>
+<li>If $2n\pi \leq t < (2n+1)\pi$, then $I_n \leq \displaystyle \int_1^tf(x)\sin x \ dx \leq J_n$.</li>
+<li>If $(2n+1)\pi \leq t < (2n+2)\pi$, then $I_{n+1} \leq \displaystyle \int_1^tf(x)\sin x \ dx \leq J_n$.</li>
+</ul>
+<p>By the squeeze theorem, the integral converges to $L$.</p>
+
+            </div></span><span lang="fr">
+            <div style='font-family: Times New Roman; padding-left: 200px; padding-right: 200px'>
+                <h1>Convergence de l’Intégrale d’une Fonction Sinusoïdale Décroissante</h1>
+                <p>Let $f$ be a continuous decreasing function on $(0,\infty)$ such that $\displaystyle \lim_{x\rightarrow \infty} f(x) = 0$. Then</p>
+<p>$$\begin{aligned}
+\int_1^\infty f(x) \sin x \ dx
+\end{aligned}$$</p>
+<p>is convergent.</p>
+<h2>Corollaries</h2>
+<ul>
+<li>$\displaystyle \int_c^\infty f(x) \sin (ax+b) \ dx$ is convergent</li>
+<li>$\displaystyle \int_1^\infty \frac{\cos (x-1/4)}{\sqrt{x}} \ dx$ is convergent (I will use this in a future topic)</li>
+</ul>
+<h2>Proof</h2>
+<p>For all positive integers $n$, let</p>
+<p>$$\begin{align}
+I_n &= \int_1^{2n\pi} f(x) \sin x \ dx\\
+J_n &= \int_1^{(2n+1)\pi} f(x) \sin x \ dx\\
+\end{align}$$</p>
+<p>Note that</p>
+<p>$$\begin{aligned}
+I_{n+1} - I_n &= \int_{2n\pi}^{(2n+2)\pi} f(x) \sin x \ dx\\
+&= \int_{2n\pi}^{(2n+1)\pi} f(x) \sin x \ dx + \int_{(2n+1)\pi}^{(2n+2)\pi} f(x) \sin x \ dx\\
+&= \int_{2n\pi}^{(2n+1)\pi} f(x) \sin x \ dx + \int_{2n\pi}^{(2n+1)\pi} f(x+\pi) \sin (x+\pi) \ dx\\
+&= \int_{2n\pi}^{(2n+1)\pi} \left(f(x)-f(x+\pi)\right) \sin x \ dx \geq 0\\
+J_{n+1} - J_n &= \int_{(2n+1)\pi}^{(2n+3)\pi} f(x) \sin x \ dx\\
+&= \int_{(2n+1)\pi}^{(2n+2)\pi} f(x) \sin x \ dx + \int_{(2n+2)\pi}^{(2n+3)\pi} f(x) \sin x \ dx\\
+&= \int_{(2n+1)\pi}^{(2n+2)\pi} f(x) \sin x \ dx + \int_{(2n+1)\pi}^{(2n+2)\pi} f(x+\pi) \sin (x+\pi) \ dx\\
+&= \int_{(2n+1)\pi}^{(2n+2)\pi} \left(f(x)-f(x+\pi)\right) \sin x \ dx \leq 0\\
+J_n - I_n &= \int_{2n\pi}^{(2n+1)\pi} f(x) \sin x \ dx \geq 0
+\end{aligned}$$</p>
+<p>and thus $I_1\leq I_2 \leq \cdots$ and $J_1 \geq J_2 \geq \cdots$. Since $I_n \leq J_n \leq J_1$, the monotone convergent theorem says that $I_n$ converges to some limit $L$. Similarly $J_n$ converges to some limit $L'$.</p>
+<p>$$\begin{aligned}
+\lim_{n\rightarrow \infty} |J_n-I_n| \leq \int_{2n\pi}^{(2n+1)\pi} f(x) |\sin x| \ dx \leq \pi \cdot \max_{[2n\pi,\infty)} f(x) \rightarrow 0
+\end{aligned}$$</p>
+<p>so $L=L'$. Let $t>1$.</p>
+<ul>
+<li>If $2n\pi \leq t < (2n+1)\pi$, then $I_n \leq \displaystyle \int_1^tf(x)\sin x \ dx \leq J_n$.</li>
+<li>If $(2n+1)\pi \leq t < (2n+2)\pi$, then $I_{n+1} \leq \displaystyle \int_1^tf(x)\sin x \ dx \leq J_n$.</li>
+</ul>
+<p>By the squeeze theorem, the integral converges to $L$.</p>
+
+            </div></span><span lang="jp">
+            <div style='font-family: Times New Roman; padding-left: 200px; padding-right: 200px'>
+                <h1>減少する正弦関数の積分の収束性</h1>
+                <p>Let $f$ be a continuous decreasing function on $(0,\infty)$ such that $\displaystyle \lim_{x\rightarrow \infty} f(x) = 0$. Then</p>
+<p>$$\begin{aligned}
+\int_1^\infty f(x) \sin x \ dx
+\end{aligned}$$</p>
+<p>is convergent.</p>
+<h2>Corollaries</h2>
+<ul>
+<li>$\displaystyle \int_c^\infty f(x) \sin (ax+b) \ dx$ is convergent</li>
+<li>$\displaystyle \int_1^\infty \frac{\cos (x-1/4)}{\sqrt{x}} \ dx$ is convergent (I will use this in a future topic)</li>
+</ul>
+<h2>Proof</h2>
+<p>For all positive integers $n$, let</p>
+<p>$$\begin{align}
+I_n &= \int_1^{2n\pi} f(x) \sin x \ dx\\
+J_n &= \int_1^{(2n+1)\pi} f(x) \sin x \ dx\\
+\end{align}$$</p>
+<p>Note that</p>
+<p>$$\begin{aligned}
+I_{n+1} - I_n &= \int_{2n\pi}^{(2n+2)\pi} f(x) \sin x \ dx\\
+&= \int_{2n\pi}^{(2n+1)\pi} f(x) \sin x \ dx + \int_{(2n+1)\pi}^{(2n+2)\pi} f(x) \sin x \ dx\\
+&= \int_{2n\pi}^{(2n+1)\pi} f(x) \sin x \ dx + \int_{2n\pi}^{(2n+1)\pi} f(x+\pi) \sin (x+\pi) \ dx\\
+&= \int_{2n\pi}^{(2n+1)\pi} \left(f(x)-f(x+\pi)\right) \sin x \ dx \geq 0\\
+J_{n+1} - J_n &= \int_{(2n+1)\pi}^{(2n+3)\pi} f(x) \sin x \ dx\\
+&= \int_{(2n+1)\pi}^{(2n+2)\pi} f(x) \sin x \ dx + \int_{(2n+2)\pi}^{(2n+3)\pi} f(x) \sin x \ dx\\
+&= \int_{(2n+1)\pi}^{(2n+2)\pi} f(x) \sin x \ dx + \int_{(2n+1)\pi}^{(2n+2)\pi} f(x+\pi) \sin (x+\pi) \ dx\\
+&= \int_{(2n+1)\pi}^{(2n+2)\pi} \left(f(x)-f(x+\pi)\right) \sin x \ dx \leq 0\\
+J_n - I_n &= \int_{2n\pi}^{(2n+1)\pi} f(x) \sin x \ dx \geq 0
+\end{aligned}$$</p>
+<p>and thus $I_1\leq I_2 \leq \cdots$ and $J_1 \geq J_2 \geq \cdots$. Since $I_n \leq J_n \leq J_1$, the monotone convergent theorem says that $I_n$ converges to some limit $L$. Similarly $J_n$ converges to some limit $L'$.</p>
+<p>$$\begin{aligned}
+\lim_{n\rightarrow \infty} |J_n-I_n| \leq \int_{2n\pi}^{(2n+1)\pi} f(x) |\sin x| \ dx \leq \pi \cdot \max_{[2n\pi,\infty)} f(x) \rightarrow 0
+\end{aligned}$$</p>
+<p>so $L=L'$. Let $t>1$.</p>
+<ul>
+<li>If $2n\pi \leq t < (2n+1)\pi$, then $I_n \leq \displaystyle \int_1^tf(x)\sin x \ dx \leq J_n$.</li>
+<li>If $(2n+1)\pi \leq t < (2n+2)\pi$, then $I_{n+1} \leq \displaystyle \int_1^tf(x)\sin x \ dx \leq J_n$.</li>
+</ul>
+<p>By the squeeze theorem, the integral converges to $L$.</p>
+
+            </div></span></br></br></div>
+    <footer>
+        <div id="socmed">
+            <a href="https://github.com/Tristanchaang" target="_blank">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="github" width="24" height="24">
+                </a><a href="https://www.youtube.com/016tristan" target="_blank">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/youtube.svg" alt="youtube" width="24" height="24">
+                </a><a href="https://www.linkedin.com/in/tchaang/" target="_blank">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg" alt="linkedin" width="24" height="24">
+                </a>
+        </div>
+    </footer>
+
+</body>
+</html>

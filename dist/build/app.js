@@ -7,7 +7,7 @@ import { gamesIndexHTML } from "./games.js";
 import { fileNames } from "./mitnotes.js";
 import { TITLE_LANGS } from "./header-footer.js";
 fileNames;
-write("index.html", buildPage(TITLE_LANGS, `
+write("compiled/index.html", buildPage(TITLE_LANGS, `
     ${welcomeHTML}
     ${postIndexHTML}
     ${aboutIndexHTML}

@@ -4520,32 +4520,25 @@
   }
 
   // src/lang.ts
-  function chooseLang(lang) {
-    document.querySelectorAll("[lang]").forEach((el) => {
-      if (el.getAttribute("lang") !== lang) {
-        el.remove();
-      }
-    });
-  }
+  var LANGS = ["en", "my", "zh", "hk", "fr", "jp"];
 
   // src/index.ts
   async function main() {
     window.directIndexSection = (tag, lang2 = "en") => {
-      if (window.location.pathname === "/") toIndexSection(tag);
-      else window.location.href = tag === "body" ? `/?lang=${lang2}` : `/?lang=${lang2}&scroll=${tag.slice(1)}`;
+      if (LANGS.includes(window.location.pathname.split("/")[1] ?? exports4.fail())) {
+        toIndexSection(tag);
+      } else window.location.href = (lang2 === "en" ? `/` : `/${lang2}/`) + (tag === "body") ? `` : `&scroll=${tag.slice(1)}`;
     };
     const params = new URLSearchParams(window.location.search);
-    const lang = params.get("lang") ?? "en";
-    chooseLang(lang);
+    const pathLang = window.location.pathname.split("/")[1] ?? "";
+    const lang = pathLang && LANGS.includes(pathLang) ? pathLang : "en";
     document.addEventListener("DOMContentLoaded", () => {
       const scrollTarget = params.get("scroll");
       if (scrollTarget) toIndexSection("#" + scrollTarget);
       document.querySelectorAll(".local").forEach((a) => {
         const href = a.getAttribute("href");
         if (href && !href.startsWith("javascript:") && !href.startsWith("#")) {
-          const url = new URL(href, window.location.origin);
-          url.searchParams.set("lang", lang);
-          a.setAttribute("href", url.pathname + url.search + url.hash);
+          a.setAttribute("href", (lang === "en" ? `` : `/${lang}`) + href);
         }
         if (a.hasAttribute("onclick")) {
           const onclick = a.getAttribute("onclick");
@@ -4557,6 +4550,13 @@
             a.setAttribute("onclick", updatedOnclick);
           }
         }
+      });
+      document.querySelectorAll(".langButton").forEach((a) => {
+        const dLang = a.getAttribute("href") ?? exports4.fail();
+        if (LANGS.includes(pathLang))
+          a.setAttribute("href", (dLang === "en" ? `` : `/${dLang}`) + window.location.pathname.slice(3));
+        else
+          a.setAttribute("href", (dLang === "en" ? `` : `/${dLang}`) + window.location.pathname);
       });
     });
     setTimeout(() => {
