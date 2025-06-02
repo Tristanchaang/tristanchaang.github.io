@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta property="og:image" content="/assets/screenshot.png" />
-    <title lang="en">Law of the Unconscious Statistician</title><title lang="my">Law of the Unconscious Statistician</title><title lang="zh">Law of the Unconscious Statistician</title><title lang="hk">Law of the Unconscious Statistician</title><title lang="fr">Law of the Unconscious Statistician</title><title lang="jp">Law of the Unconscious Statistician</title>
+    <title>Law of the Unconscious Statistician</title>
     <link rel="stylesheet" href="/styles/index.css">
     <script src="/dist/client-bundle.js" defer></script>
     <script src="/dist/mathjax-config.js" defer></script>
@@ -23,10 +23,10 @@
     
     <nav>
         <a class="local" onclick="directIndexSection('body')" style="font-size: 1.5rem; cursor: pointer">
-            <span lang="en">Tristan Chaang's Page</span><span lang="my">Laman Tristan Chaang</span><span lang="zh">曾子宸的网站</span><span lang="hk">曾子宸嘅網站</span><span lang="fr">La page de Tristan Chaang</span><span lang="jp">トリ・チャーンのペイジ</span>
+            Tristan Chaang's Page
         </a>
         <div id=navmenu style="display: flex; gap: 20px; align-items: center; gap: 2rem;" >
-            <a class="local" onclick="directIndexSection('#about')" style="cursor: pointer"><span lang="en">About</span><span lang="zh">关于我</span><span lang="hk">關於我</span><span lang="my">Tentang Saya</span><span lang="fr">Sur Moi</span><span lang="jp">僕について</span></a><a class="local" onclick="directIndexSection('#materials')" style="cursor: pointer"><span lang="en">Materials</span><span lang="zh">资料</span><span lang="hk">資料</span><span lang="my">Bahan</span><span lang="fr">Matériaux</span><span lang="jp">資料</span></a><a class="local" href="/materials/mitnotes.html" style="cursor: pointer"><span lang="en">MIT</span><span lang="zh">MIT</span><span lang="hk">MIT</span><span lang="my">MIT</span><span lang="fr">MIT</span><span lang="jp">MIT</span></a><a class="local" href="/webpage/" style="cursor: pointer"><span lang="en">Games</span><span lang="zh">游戏</span><span lang="hk">遊戲</span><span lang="my">Permainan</span><span lang="fr">Jeux</span><span lang="jp">ゲーム</span></a>
+            <a class="local" onclick="directIndexSection('#about')" style="cursor: pointer">About</a><a class="local" onclick="directIndexSection('#materials')" style="cursor: pointer">Materials</a><a class="local" href="/materials/mitnotes.html" style="cursor: pointer">MIT</a><a class="local" href="/webpage/" style="cursor: pointer">Games</a>
             <div id=langSelect>
                 <a class="langButton" href="?lang=en"><img src="/assets/gb.svg" alt="en" width="24" height="16" style="vertical-align: middle;" /></a>
                 <a class="langButton" href="?lang=my"><img src="/assets/my.svg" alt="my" width="24" height="16" style="vertical-align: middle;" /></a>
@@ -38,7 +38,7 @@
         </div> 
         
     </nav>
-<div><span lang="en">
+<div>
             <div style=' padding-left: 200px; padding-right: 200px'>
                 <h1>Law of the Unconscious Statistician</h1>
                 <blockquote>
@@ -54,87 +54,7 @@
 <p><embed src="https://drive.google.com/viewerng/
 viewer?embedded=true&url=http://tristanchaang.github.io/downloads/LOTUS.pdf" width="100%" height="600px" /></p>
 
-            </div></span><span lang="my">
-            <div style=' padding-left: 200px; padding-right: 200px'>
-                <h1>Law of the Unconscious Statistician</h1>
-                <blockquote>
-<p>"This law is not a trivial result of definitions as it might at first appear, but rather must be proved." - Wikipedia</p>
-</blockquote>
-<p>A few days ago I was writing an article titled `On Continuous Distributions', attempting to expand as much as possible the meaning of the distributions taught in A-level's Further Mathematics Syllabus. I tried to give a proof for every detail needed to derive the pdfs of the distributions, and one of them was the definition of expectation.</p>
-<p>I noticed the textbook wrote, the definition of $E(X)$ is $\int_{-\infty}^\infty x f_X(x) \ dx$ whereas the definition of $E(g(X))$ for some function $g$ is $\int_{-\infty}^\infty g(x) f_X(x) \ dx$. However, this got me wondering: According to the first definition, we can construct the pdf $f_{g(X)}(x)$ of $g(X)$ and then have $E(g(X))=\int_{-\infty}^\infty x f_{g(X)}(x) \ dx$, but this is a different form from the second definition. Unless there is a clear reason why these two forms mean the same thing, I will not accept both definitions if they can potentially clash with each other.</p>
-<p>Assume we take the second definition instead, then $E(X)=\int_{-\infty}^\infty x f_X(x) \ dx$ follows immediately, but with this we get that $E(g(X))=\int_{-\infty}^\infty x f_{g(X)}(x) \ dx$ again by replacing $X$ by $g(X)$.</p>
-<p>Therefore, I feel there is a need to prove that the two expressions are equal. This situation is similar to how the scalar product is sometimes defined as $x_1y_1+x_2y_2+\cdots$, but is sometimes defined as $|X||Y|\cos \theta$. The difference is, the equivalence between these two statements is quite easy to prove.</p>
-<p>After some attempts I couldn't manage to prove LOTUS completely because things get complicated when $g(X)$ is not bijective. Thus I went online and see if this was well-known, and after some digging, I still couldn't find anyone giving a complete proof. However, I did find out that this relation has name, which is the Law of the Unconscious Statistician. Wikipedia gives a so-called proof, but it assumes $g(x)$ is bijective and monotonic.</p>
-<p>Therefore, I will try to take on the challenge to prove LOTUS completely in this article.</p>
-<p><a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/LOTUS.pdf" download>Click here</a> to download, or read it here:</p>
-<p><embed src="https://drive.google.com/viewerng/
-viewer?embedded=true&url=http://tristanchaang.github.io/downloads/LOTUS.pdf" width="100%" height="600px" /></p>
-
-            </div></span><span lang="zh">
-            <div style=' padding-left: 200px; padding-right: 200px'>
-                <h1>Law of the Unconscious Statistician</h1>
-                <blockquote>
-<p>"This law is not a trivial result of definitions as it might at first appear, but rather must be proved." - Wikipedia</p>
-</blockquote>
-<p>A few days ago I was writing an article titled `On Continuous Distributions', attempting to expand as much as possible the meaning of the distributions taught in A-level's Further Mathematics Syllabus. I tried to give a proof for every detail needed to derive the pdfs of the distributions, and one of them was the definition of expectation.</p>
-<p>I noticed the textbook wrote, the definition of $E(X)$ is $\int_{-\infty}^\infty x f_X(x) \ dx$ whereas the definition of $E(g(X))$ for some function $g$ is $\int_{-\infty}^\infty g(x) f_X(x) \ dx$. However, this got me wondering: According to the first definition, we can construct the pdf $f_{g(X)}(x)$ of $g(X)$ and then have $E(g(X))=\int_{-\infty}^\infty x f_{g(X)}(x) \ dx$, but this is a different form from the second definition. Unless there is a clear reason why these two forms mean the same thing, I will not accept both definitions if they can potentially clash with each other.</p>
-<p>Assume we take the second definition instead, then $E(X)=\int_{-\infty}^\infty x f_X(x) \ dx$ follows immediately, but with this we get that $E(g(X))=\int_{-\infty}^\infty x f_{g(X)}(x) \ dx$ again by replacing $X$ by $g(X)$.</p>
-<p>Therefore, I feel there is a need to prove that the two expressions are equal. This situation is similar to how the scalar product is sometimes defined as $x_1y_1+x_2y_2+\cdots$, but is sometimes defined as $|X||Y|\cos \theta$. The difference is, the equivalence between these two statements is quite easy to prove.</p>
-<p>After some attempts I couldn't manage to prove LOTUS completely because things get complicated when $g(X)$ is not bijective. Thus I went online and see if this was well-known, and after some digging, I still couldn't find anyone giving a complete proof. However, I did find out that this relation has name, which is the Law of the Unconscious Statistician. Wikipedia gives a so-called proof, but it assumes $g(x)$ is bijective and monotonic.</p>
-<p>Therefore, I will try to take on the challenge to prove LOTUS completely in this article.</p>
-<p><a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/LOTUS.pdf" download>Click here</a> to download, or read it here:</p>
-<p><embed src="https://drive.google.com/viewerng/
-viewer?embedded=true&url=http://tristanchaang.github.io/downloads/LOTUS.pdf" width="100%" height="600px" /></p>
-
-            </div></span><span lang="hk">
-            <div style=' padding-left: 200px; padding-right: 200px'>
-                <h1>Law of the Unconscious Statistician</h1>
-                <blockquote>
-<p>"This law is not a trivial result of definitions as it might at first appear, but rather must be proved." - Wikipedia</p>
-</blockquote>
-<p>A few days ago I was writing an article titled `On Continuous Distributions', attempting to expand as much as possible the meaning of the distributions taught in A-level's Further Mathematics Syllabus. I tried to give a proof for every detail needed to derive the pdfs of the distributions, and one of them was the definition of expectation.</p>
-<p>I noticed the textbook wrote, the definition of $E(X)$ is $\int_{-\infty}^\infty x f_X(x) \ dx$ whereas the definition of $E(g(X))$ for some function $g$ is $\int_{-\infty}^\infty g(x) f_X(x) \ dx$. However, this got me wondering: According to the first definition, we can construct the pdf $f_{g(X)}(x)$ of $g(X)$ and then have $E(g(X))=\int_{-\infty}^\infty x f_{g(X)}(x) \ dx$, but this is a different form from the second definition. Unless there is a clear reason why these two forms mean the same thing, I will not accept both definitions if they can potentially clash with each other.</p>
-<p>Assume we take the second definition instead, then $E(X)=\int_{-\infty}^\infty x f_X(x) \ dx$ follows immediately, but with this we get that $E(g(X))=\int_{-\infty}^\infty x f_{g(X)}(x) \ dx$ again by replacing $X$ by $g(X)$.</p>
-<p>Therefore, I feel there is a need to prove that the two expressions are equal. This situation is similar to how the scalar product is sometimes defined as $x_1y_1+x_2y_2+\cdots$, but is sometimes defined as $|X||Y|\cos \theta$. The difference is, the equivalence between these two statements is quite easy to prove.</p>
-<p>After some attempts I couldn't manage to prove LOTUS completely because things get complicated when $g(X)$ is not bijective. Thus I went online and see if this was well-known, and after some digging, I still couldn't find anyone giving a complete proof. However, I did find out that this relation has name, which is the Law of the Unconscious Statistician. Wikipedia gives a so-called proof, but it assumes $g(x)$ is bijective and monotonic.</p>
-<p>Therefore, I will try to take on the challenge to prove LOTUS completely in this article.</p>
-<p><a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/LOTUS.pdf" download>Click here</a> to download, or read it here:</p>
-<p><embed src="https://drive.google.com/viewerng/
-viewer?embedded=true&url=http://tristanchaang.github.io/downloads/LOTUS.pdf" width="100%" height="600px" /></p>
-
-            </div></span><span lang="fr">
-            <div style=' padding-left: 200px; padding-right: 200px'>
-                <h1>Law of the Unconscious Statistician</h1>
-                <blockquote>
-<p>"This law is not a trivial result of definitions as it might at first appear, but rather must be proved." - Wikipedia</p>
-</blockquote>
-<p>A few days ago I was writing an article titled `On Continuous Distributions', attempting to expand as much as possible the meaning of the distributions taught in A-level's Further Mathematics Syllabus. I tried to give a proof for every detail needed to derive the pdfs of the distributions, and one of them was the definition of expectation.</p>
-<p>I noticed the textbook wrote, the definition of $E(X)$ is $\int_{-\infty}^\infty x f_X(x) \ dx$ whereas the definition of $E(g(X))$ for some function $g$ is $\int_{-\infty}^\infty g(x) f_X(x) \ dx$. However, this got me wondering: According to the first definition, we can construct the pdf $f_{g(X)}(x)$ of $g(X)$ and then have $E(g(X))=\int_{-\infty}^\infty x f_{g(X)}(x) \ dx$, but this is a different form from the second definition. Unless there is a clear reason why these two forms mean the same thing, I will not accept both definitions if they can potentially clash with each other.</p>
-<p>Assume we take the second definition instead, then $E(X)=\int_{-\infty}^\infty x f_X(x) \ dx$ follows immediately, but with this we get that $E(g(X))=\int_{-\infty}^\infty x f_{g(X)}(x) \ dx$ again by replacing $X$ by $g(X)$.</p>
-<p>Therefore, I feel there is a need to prove that the two expressions are equal. This situation is similar to how the scalar product is sometimes defined as $x_1y_1+x_2y_2+\cdots$, but is sometimes defined as $|X||Y|\cos \theta$. The difference is, the equivalence between these two statements is quite easy to prove.</p>
-<p>After some attempts I couldn't manage to prove LOTUS completely because things get complicated when $g(X)$ is not bijective. Thus I went online and see if this was well-known, and after some digging, I still couldn't find anyone giving a complete proof. However, I did find out that this relation has name, which is the Law of the Unconscious Statistician. Wikipedia gives a so-called proof, but it assumes $g(x)$ is bijective and monotonic.</p>
-<p>Therefore, I will try to take on the challenge to prove LOTUS completely in this article.</p>
-<p><a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/LOTUS.pdf" download>Click here</a> to download, or read it here:</p>
-<p><embed src="https://drive.google.com/viewerng/
-viewer?embedded=true&url=http://tristanchaang.github.io/downloads/LOTUS.pdf" width="100%" height="600px" /></p>
-
-            </div></span><span lang="jp">
-            <div style=' padding-left: 200px; padding-right: 200px'>
-                <h1>Law of the Unconscious Statistician</h1>
-                <blockquote>
-<p>"This law is not a trivial result of definitions as it might at first appear, but rather must be proved." - Wikipedia</p>
-</blockquote>
-<p>A few days ago I was writing an article titled `On Continuous Distributions', attempting to expand as much as possible the meaning of the distributions taught in A-level's Further Mathematics Syllabus. I tried to give a proof for every detail needed to derive the pdfs of the distributions, and one of them was the definition of expectation.</p>
-<p>I noticed the textbook wrote, the definition of $E(X)$ is $\int_{-\infty}^\infty x f_X(x) \ dx$ whereas the definition of $E(g(X))$ for some function $g$ is $\int_{-\infty}^\infty g(x) f_X(x) \ dx$. However, this got me wondering: According to the first definition, we can construct the pdf $f_{g(X)}(x)$ of $g(X)$ and then have $E(g(X))=\int_{-\infty}^\infty x f_{g(X)}(x) \ dx$, but this is a different form from the second definition. Unless there is a clear reason why these two forms mean the same thing, I will not accept both definitions if they can potentially clash with each other.</p>
-<p>Assume we take the second definition instead, then $E(X)=\int_{-\infty}^\infty x f_X(x) \ dx$ follows immediately, but with this we get that $E(g(X))=\int_{-\infty}^\infty x f_{g(X)}(x) \ dx$ again by replacing $X$ by $g(X)$.</p>
-<p>Therefore, I feel there is a need to prove that the two expressions are equal. This situation is similar to how the scalar product is sometimes defined as $x_1y_1+x_2y_2+\cdots$, but is sometimes defined as $|X||Y|\cos \theta$. The difference is, the equivalence between these two statements is quite easy to prove.</p>
-<p>After some attempts I couldn't manage to prove LOTUS completely because things get complicated when $g(X)$ is not bijective. Thus I went online and see if this was well-known, and after some digging, I still couldn't find anyone giving a complete proof. However, I did find out that this relation has name, which is the Law of the Unconscious Statistician. Wikipedia gives a so-called proof, but it assumes $g(x)$ is bijective and monotonic.</p>
-<p>Therefore, I will try to take on the challenge to prove LOTUS completely in this article.</p>
-<p><a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/LOTUS.pdf" download>Click here</a> to download, or read it here:</p>
-<p><embed src="https://drive.google.com/viewerng/
-viewer?embedded=true&url=http://tristanchaang.github.io/downloads/LOTUS.pdf" width="100%" height="600px" /></p>
-
-            </div></span></br></br></div>
+            </div><br><br></div>
     <footer>
         <div id="socmed">
             <a href="https://github.com/Tristanchaang" target="_blank">

@@ -1,5 +1,5 @@
 import { writeMultiLangJMD } from "./parsetools.js";
-import { spanLang, LangString } from "./langtools.js";
+import { spanLang, LangString, langMap } from "./langtools.js";
 import * as fs from "fs";
 
 const MATERIALS: {[s: string]: LangString} = {
@@ -26,6 +26,19 @@ export const materialsIndexHTML = `
         <img id="materialBg" src="/assets/folder-open-solid.svg" alt="Materials Icon">
     </div>
 `;
+
+export const materialsIndexHTMLLangs = 
+langMap({ en: "Materials", my: "Bahan-Bahan", zh: "资料", hk: "資料", fr: "Matériaux", jp: "資料" }, (lang, title) => `
+    <div id="materials" style="position: relative;">
+        <h1>${title}</h1>
+        <div class="thumbnailWindow">${Object.entries(MATERIALS).map(([link, titles]) => `
+                        <a class="materialThumbnail local" href="/materials/${link}.html">
+                            <img src="/assets/folder-closed-solid.svg" alt="Folder Icon" class="materialIcon" style="width:2rem; height:2rem; margin-right:1rem; vertical-align:middle;" />
+                            <span style="font-size: 1.3rem; width:auto">${titles[lang as keyof LangString]}</span>
+                        </a>`.trim()).join("")}</div>
+        <img id="materialBg" src="/assets/folder-open-solid.svg" alt="Materials Icon">
+    </div>
+`);
 
 function thumbnailize(className: string) {
     return (md: string) => md.replaceAll(

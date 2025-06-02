@@ -9,7 +9,7 @@ async function main() {
         if (window.location.pathname === "/")
             toIndexSection(tag);
         else
-            window.location.href = (tag === "body") ? `/?lang=${lang}` : `/?lang=${lang}&scroll=${tag.slice(1)}`;
+            window.location.href = `/${lang === "en" ? `` : lang}/` + ((tag === "body") ? `` : `index.html&scroll=${tag.slice(1)}`);
     };
     const params = new URLSearchParams(window.location.search);
     const lang = params.get("lang") ?? "en";

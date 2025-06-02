@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta property="og:image" content="/assets/screenshot.png" />
+    <title>有趣的题目</title>
+    <link rel="stylesheet" href="/styles/index.css">
+    <script src="/dist/client-bundle.js" defer></script>
+    <script src="/dist/mathjax-config.js" defer></script>
+    <script type="text/javascript" id="MathJax-script" defer
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PH72KY1MTT"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PH72KY1MTT');
+    </script>
+    <link rel="icon" type="image/x-icon" href="/assets/circle-user-solid.ico">
+</head>
+<body>
+    
+    <nav>
+        <a class="local" onclick="directIndexSection('body')" style="font-size: 1.5rem; cursor: pointer">
+            曾子宸的网站
+        </a>
+        <div id=navmenu style="display: flex; gap: 20px; align-items: center; gap: 2rem;" >
+            <a class="local" onclick="directIndexSection('#about')" style="cursor: pointer">关于我</a><a class="local" onclick="directIndexSection('#materials')" style="cursor: pointer">资料</a><a class="local" href="/materials/mitnotes.html" style="cursor: pointer">MIT</a><a class="local" href="/webpage/" style="cursor: pointer">游戏</a>
+            <div id=langSelect>
+                <a class="langButton" href="?lang=en"><img src="/assets/gb.svg" alt="en" width="24" height="16" style="vertical-align: middle;" /></a>
+                <a class="langButton" href="?lang=my"><img src="/assets/my.svg" alt="my" width="24" height="16" style="vertical-align: middle;" /></a>
+                <a class="langButton" href="?lang=zh"><img src="/assets/cn.svg" alt="zh" width="24" height="16" style="vertical-align: middle;" /></a>
+                <a class="langButton" href="?lang=hk"><img src="/assets/hk.svg" alt="hk" width="24" height="16" style="vertical-align: middle;" /></a>
+                <a class="langButton" href="?lang=fr"><img src="/assets/fr.svg" alt="fr" width="24" height="16" style="vertical-align: middle;" /></a>
+                <a class="langButton" href="?lang=jp"><img src="/assets/jp.svg" alt="jp" width="24" height="16" style="vertical-align: middle;" /></a>
+            </div>
+        </div> 
+        
+    </nav>
+<div>
+            <div style='font-family: Times New Roman; padding-left: 200px; padding-right: 200px'>
+                <h1>有趣的题目</h1>
+                <h3>中级BIMO自写题目</h3>
+<p>已知 $k$ 为正整数及$f$为正数系数多项式，使得对于所有 $x \in \mathbb{Z}$，有 $f(x) \neq 0$ 和 $f(x) \mid f(x + k)$。证明 $f$ 为常数多项式。</p>
+<p><div class="boxed">
+<details>
+<summary> <span class="click">点击显示解法</span> </summary>
+假设 $f(x) = a_nx^n + \cdots + a_0$ 不是常数，则存在正整数 $N$ 使得 $f|_{x\geq N}$ 为单射函数。但，$\lim_{x\rightarrow \infty} \frac{f(x+h)}{f(x)}= \frac{a_n}{a_n} = 1$, 且对所有整数 $x$ 有 $f(x) \mid f(x + k)$，所以必定存在 $M\in \mathbb{R}$ 使得对于所有整数$x\geq M$ 有 $f(x+h)=f(x)$。这与 $f$ 的单射性质矛盾。
+</details>
+</div></p>
+<p><hr/></p>
+<h3>均匀表面电荷正方形上的电场</h3>
+<p>(Source: <emph>Introduction to Electrodynamics</emph> by Griffiths, 第 2 章节) 计算一带有均匀表面电荷 $\sigma$，边长为 $s$ 的正方形薄片中心上方高度为 $z$ 处的电场强度。</p>
+<p><div class="boxed">
+<details>
+<summary> <span class="click">点击显示解法</span> </summary>
+<b>Answer:</b> $\frac{\sigma}{2\varepsilon_0}\left[\frac{4}{\pi}\arctan\left(\sqrt{1+s^2/2z^2}\right)-1\right]$
+<hr/>
+<b>Proof:</b></p>
+<p>$$\begin{aligned}\int_0^\frac{\pi}{4}\frac{d\theta}{\sqrt{k^2+\sec^2\theta}} &= \int_0^\frac{\pi}{4}\frac{\cos\theta \ d\theta}{\sqrt{k^2\cos^2\theta+1}}\\
+&= \int_0^{1/\sqrt{2}}\frac{du}{\sqrt{k^2(1-u^2)+1}}\\
+&= \frac{1}{k}\int_0^{1/\sqrt{2}}\frac{du}{\sqrt{(1+k^{-2} - u^2)}}\\
+&= \frac{1}{k}\arcsin\left(\frac{1/\sqrt{2}}{\sqrt{1+k^{-2}}}\right)\\
+&= \frac{1}{k}\arctan\left(\frac{k}{\sqrt{k^2+2}}\right)\end{aligned}$$
+将顶点为 $(0,0),(1,0),(1,1)$ 的三角形写作 $\triangle$。
+$$\begin{aligned}f(k) & = \int_{-1}^1 \int_{-1}^1 \frac{dx \ dy}{(k^2+x^2+y^2)^{3/2}}\\
+&= 8\iint_{\triangle} \frac{dx \ dy}{(k^2+x^2+y^2)^{3/2}}\\
+&= 8\int_0^{\frac{\pi}{4}} \int_{0}^{\sec\theta} \frac{r \ dr \ d\theta}{(k^2+r^2)^{3/2}}\\
+&= 4\int_0^{\frac{\pi}{4}} \left[\int_{0}^{\sec\theta} \frac{d(k^2+r^2)}{(k^2+r^2)^{3/2}}\right]  d\theta\\
+&= 8\int_0^{\frac{\pi}{4}} \left[\frac{1}{k} - \frac{1}{\sqrt{k^2+\sec^2\theta}}\right] d\theta\\
+&= \frac{2\pi}{k} - \frac{8}{k}\arctan\left(\frac{k}{\sqrt{k^2+2}}\right)\end{aligned}$$
+在高度 $z$，
+$$\begin{aligned}V(z) &= \frac{1}{4\pi \varepsilon_0} \int_{S} \frac{dq}{r} = \frac{\sigma}{4\pi \varepsilon_0}  \int_S \frac{dx \ dy}{\sqrt{z^2+x^2+y^2}}\\
+E(z) = - \frac{\partial V}{\partial z} &= \frac{\sigma}{4\pi \varepsilon_0} \int_{-s/2}^{s/2}\int_{-s/2}^{s/2} \frac{z\ dx \ dy}{(z^2+x^2+y^2)^{3/2}}\\
+&= \frac{\sigma z}{2\pi \varepsilon_0 s} \int_{-s/2}^{s/2}\int_{-s/2}^{s/2} \frac{d(2x/s) \ d(2y/s)}{((2z/s)^2+(2x/s)^2+(2y/s)^2)^{3/2}}\\
+&= \frac{\sigma z}{2\pi \varepsilon_0 s} f(2z/s)\\
+&= \frac{\sigma}{2\varepsilon_0}\left[1 - \frac{4}{\pi}\arctan\left(\frac{z}{\sqrt{z^2+s^2/2}}\right)\right]\\
+&= \frac{\sigma}{2\varepsilon_0}\left[\frac{4}{\pi}\arctan\left(\sqrt{1+s^2/2z^2}\right)-1\right]\end{aligned}$$
+</details>
+</div></p>
+<p><hr/></p>
+<h3>General Solution for Linear Recursion</h3>
+<p>Suppose $a_n = c_{k-1}a_{n-1}+c_{k-2}a_{n-2}+\cdots + c_{0}a_{n-k}$ is a recursive relation of $a_i$ with constants $c_1,\cdots,c_{k-1}$. We define the <em>characteristic polynomial</em> of this relation as $f(x) = x^k - c_{k-1}x^{k-1}- c_{k-2}x^{k-2} - \cdots - c_0$. If the factored form of $f(x)$ is $f(x) = \prod _i (x-\lambda _i)^{m_i}$ where $\lambda _i$ are distinct roots, then the general solution for $a_n$ is</p>
+<p><p align=center> $a_n = \sum_{i} (C_{i,0} + nC_{i,1} + \cdots + n^{m_i-1} C_{i,m_i-1}) \lambda _i^n$. </p></p>
+<p>where $C_{i,j}$ are all constants determined by the initial terms of the recursion.</p>
+<p><div class="boxed">
+<details>
+<summary> <span class="click">Click for Proof</span> </summary>
+Let $\vec{v_n}=[a_n,a_{n-1},\cdots,a_{n-k+1}]$ for each $n\in \mathbb{Z}$. Note that if $M$ is the matrix
+<p align=center>
+$\begin{bmatrix}
+c_{k-1} & 1 & 0 & \cdots & 0\\
+c_{k-2} & 0 & 1 & \cdots & 0\\
+c_{k-3} & 0 & 0 & \cdots & 0\\
+\vdots & \vdots & \vdots & \ddots & \vdots\\
+c_0 & 0 & 0 & \cdots & 0
+\end{bmatrix}$
+</p>
+then $\vec{v_n}M = \vec{v_{n+1}}$ and thus $\vec{v_n} = \vec{v_0} M^n$. It is easy to verify that $\text{det}(xI-M)=f(x)$ via induction by expanding the last row. Write $M=P^{-1} J P$ in Jordan Form. Hence $\vec{v_n} = \vec{v_0}P^{-1}J^n P$. Recall that $J^n$ is made up of $n$-th powers of Jordan blocks, whose entries are all in the form $\lambda _i^{n-j} \binom{n}{j}$ etc. $\binom{n}{j}$ is just a polynomial in $n$. Expanded out, the first entry $a_n$ of $\vec{v_n}$ definitely has the form as stated in the problem.
+</details>
+</div></p>
+<p><hr/></p>
+<h3>General Solution for Homogeneous Differential Equation</h3>
+<p>Suppose $y^{(n)} = c_{n-1}y^{(n-1)} + c_{n-2}y^{(n-2)} + \cdots + c_0 y$ is an ordinary differential equation of $y(t)$ with constants $c_1,\cdots,c_{n-1}$. We define the <em>characteristic polynomial</em> of this ODE as $f(x) = x^k - c_{n-1}x^{n-1}- c_{n-2}x^{n-2} - \cdots - c_0$. If the factored form of $f(x)$ is $f(x) = \prod _i (x-\lambda _i)^{m_i}$ where $\lambda _i$ are distinct roots, then the general solution for $y$ is</p>
+<p><p align=center> $y(t) = \sum_{i} (C_{i,0} + tC_{i,1} + \cdots + t^{m_i-1} C_{i,m_i-1}) e^{\lambda _it}$. </p></p>
+<p>where $C_{i,j}$ are all constants.</p>
+<p><div class="boxed">
+<details>
+<summary> <span class="click">Click for Proof</span> </summary>
+We proceed like the previous problem. Let $\vec{v}=[y^{(n-1)},y^{(n-2)},\cdots,y]$ for each $n\in \mathbb{Z}$. Note that if $M$ is the matrix
+<p align=center>
+$\begin{bmatrix}
+c_{n-1} & 1 & 0 & \cdots & 0\\
+c_{n-2} & 0 & 1 & \cdots & 0\\
+c_{n-3} & 0 & 0 & \cdots & 0\\
+\vdots & \vdots & \vdots & \ddots & \vdots\\
+c_0 & 0 & 0 & \cdots & 0
+\end{bmatrix}$
+</p>
+then $\vec{v}M = \frac{d\vec{v}}{dt}$. Using the useful property of matrix exponentials, $\vec{v}=\vec{v_0}e^{tM}$ for some constant $\vec{v_0}$. Write $M$ as the Jordan form and proceed as the previous problem.
+</details>
+</div></p>
+<p><hr/></p>
+<h3>Burnside's Lemma (<a href="https://en.wikipedia.org/wiki/Burnside%27s_lemma"><em>The Lemma that is not Burnside's</em></a>)</h3>
+<p>Let $G$ be any permutation group of $N=\\{1,\cdots,n\\}$. Let $f: N\rightarrow \\{1,\cdots,m\\}$ be a colouring of $N$ with $m$ colours. Two colourings $f_1$ and $f_2$ are said to be equivalent if $f_1=f_2 \circ g$ for some $g\in G$. The number of equivalence classes is $ \frac{1}{|G|}\sum_{g\in G} m^{C(g)}$
+where $C(g)$ is the number of cycles in the cyclic decomposition of $g$.</p>
+<p><div class="boxed">
+<details>
+<summary> <span class="click">Click for Proof</span> </summary>
+Let $G$ act on the set $S= {f_i}$ of colourings by the rule $g(f) = f \circ g$. The number of colourings fixed by an element $g\in G$ is exactly $m^{C(g)}$ because for such colourings, every element of ${1,\cdots,n}$ situated in the same cycle of $g$ must have the same colour and elements situated in different cycles can freely have different colours. Therefore, using double counting, $\sum_{g\in G} m^{C(g)} = \sum_{f \in S} |\text{Stab}(f)|$. By the Orbit-Stabiliser theorem, $|\text{Stab}(f)| = \frac{|G|}{|O_f|} $ where $O_f$ is the orbit of $f$. In conclusion, the number of orbits in total is $\sum_{f\in S} \frac{1}{|O_f|} = \sum_{f\in S} \frac{|\text{Stab}(f)|}{|G|} = \frac{1}{|G|} \sum_{g\in G} m^{C(g)}$.
+</details>
+</div></p>
+
+            </div><br><br></div>
+    <footer>
+        <div id="socmed">
+            <a href="https://github.com/Tristanchaang" target="_blank">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="github" width="24" height="24">
+                </a><a href="https://www.youtube.com/016tristan" target="_blank">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/youtube.svg" alt="youtube" width="24" height="24">
+                </a><a href="https://www.linkedin.com/in/tchaang/" target="_blank">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg" alt="linkedin" width="24" height="24">
+                </a>
+        </div>
+    </footer>
+
+</body>
+</html>

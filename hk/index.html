@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="hk">
+<head>
+    <meta charset="utf-8">
+    <meta property="og:image" content="/assets/screenshot.png" />
+    <title>曾子宸嘅網站</title>
+    <link rel="stylesheet" href="/styles/index.css">
+    <script src="/dist/client-bundle.js" defer></script>
+    <script src="/dist/mathjax-config.js" defer></script>
+    <script type="text/javascript" id="MathJax-script" defer
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PH72KY1MTT"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PH72KY1MTT');
+    </script>
+    <link rel="icon" type="image/x-icon" href="/assets/circle-user-solid.ico">
+</head>
+<body>
+    
+    <nav>
+        <a class="local" onclick="directIndexSection('body')" style="font-size: 1.5rem; cursor: pointer">
+            曾子宸嘅網站
+        </a>
+        <div id=navmenu style="display: flex; gap: 20px; align-items: center; gap: 2rem;" >
+            <a class="local" onclick="directIndexSection('#about')" style="cursor: pointer">關於我</a><a class="local" onclick="directIndexSection('#materials')" style="cursor: pointer">資料</a><a class="local" href="/materials/mitnotes.html" style="cursor: pointer">MIT</a><a class="local" href="/webpage/" style="cursor: pointer">遊戲</a>
+            <div id=langSelect>
+                <a class="langButton" href="?lang=en"><img src="/assets/gb.svg" alt="en" width="24" height="16" style="vertical-align: middle;" /></a>
+                <a class="langButton" href="?lang=my"><img src="/assets/my.svg" alt="my" width="24" height="16" style="vertical-align: middle;" /></a>
+                <a class="langButton" href="?lang=zh"><img src="/assets/cn.svg" alt="zh" width="24" height="16" style="vertical-align: middle;" /></a>
+                <a class="langButton" href="?lang=hk"><img src="/assets/hk.svg" alt="hk" width="24" height="16" style="vertical-align: middle;" /></a>
+                <a class="langButton" href="?lang=fr"><img src="/assets/fr.svg" alt="fr" width="24" height="16" style="vertical-align: middle;" /></a>
+                <a class="langButton" href="?lang=jp"><img src="/assets/jp.svg" alt="jp" width="24" height="16" style="vertical-align: middle;" /></a>
+            </div>
+        </div> 
+        
+    </nav>
+<div>
+    <div id="welcome">
+        <p>歡迎嚟到我嘅網站！我係呢度寫關於我嘅嘢同埋我想分享嘅事。呢個網站係最新嘅版本，所以可能有漏洞。你可以喺右邊上面隨意換唔同嘅語言（英文、馬拉文、普通話、廣東話、法文、日文）！</p>
+    </div>
+
+    
+    <div id="posts" style="position: relative">
+        <h1>貼文</h1>
+        <div id="postWindow">
+            <a class="postThumbnail local" href="/posts/2024-05-29-mypackage.html">
+                            <span style="font-size: 1.3rem; width:auto">
+                                我嘅$\LaTeX$宏包
+                            </span>
+                            <span style="min-width:150px; text-align: right;">
+                                2024年5月29日
+                            </span>
+                        </a><a class="postThumbnail local" href="/posts/2023-08-14-convergence-decreasing-integral.html">
+                            <span style="font-size: 1.3rem; width:auto">
+                                遞減正弦函數積分的收斂性
+                            </span>
+                            <span style="min-width:150px; text-align: right;">
+                                2023年8月14日
+                            </span>
+                        </a><a class="postThumbnail local" href="/posts/2022-09-22-multivariate-calculus.html">
+                            <span style="font-size: 1.3rem; width:auto">
+                                多元微積分
+                            </span>
+                            <span style="min-width:150px; text-align: right;">
+                                2022年9月22日
+                            </span>
+                        </a><a class="postThumbnail local" href="/posts/2022-05-19-my-book.html">
+                            <span style="font-size: 1.3rem; width:auto">
+                                高中數學比賽技巧
+                            </span>
+                            <span style="min-width:150px; text-align: right;">
+                                2022年5月19日
+                            </span>
+                        </a><a class="postThumbnail local" href="/posts/2022-03-11-stirling-numbers.html">
+                            <span style="font-size: 1.3rem; width:auto">
+                                Stirling Numbers
+                            </span>
+                            <span style="min-width:150px; text-align: right;">
+                                2022年3月11日
+                            </span>
+                        </a><a class="postThumbnail local" href="/posts/2022-02-20-imo-complex.html">
+                            <span style="font-size: 1.3rem; width:auto">
+                                Solving an IMOSL Problem with Complex Analysis!
+                            </span>
+                            <span style="min-width:150px; text-align: right;">
+                                2022年2月20日
+                            </span>
+                        </a><a class="postThumbnail local" href="/posts/2022-02-15-infinite-expectation.html">
+                            <span style="font-size: 1.3rem; width:auto">
+                                Infinite Expectation?
+                            </span>
+                            <span style="min-width:150px; text-align: right;">
+                                2022年2月15日
+                            </span>
+                        </a><a class="postThumbnail local" href="/posts/2022-02-07-on-discrete-distributions.html">
+                            <span style="font-size: 1.3rem; width:auto">
+                                On Discrete Distributions
+                            </span>
+                            <span style="min-width:150px; text-align: right;">
+                                2022年2月7日
+                            </span>
+                        </a><a class="postThumbnail local" href="/posts/2022-01-28-lotus.html">
+                            <span style="font-size: 1.3rem; width:auto">
+                                Law of the Unconscious Statistician
+                            </span>
+                            <span style="min-width:150px; text-align: right;">
+                                2022年1月28日
+                            </span>
+                        </a><a class="postThumbnail local" href="/posts/2022-01-25-on-continuous-distributions.html">
+                            <span style="font-size: 1.3rem; width:auto">
+                                On Continuous Distributions
+                            </span>
+                            <span style="min-width:150px; text-align: right;">
+                                2022年1月25日
+                            </span>
+                        </a><a class="postThumbnail local" href="/posts/2022-01-22-for-which-primes.html">
+                            <span style="font-size: 1.3rem; width:auto">
+                                $p^2 = m^2 + dn^2$
+                            </span>
+                            <span style="min-width:150px; text-align: right;">
+                                2022年1月22日
+                            </span>
+                        </a><a class="postThumbnail local" href="/posts/2022-01-22-finite-differences.html">
+                            <span style="font-size: 1.3rem; width:auto">
+                                Finite Differences \((\Delta f)(n)\)
+                            </span>
+                            <span style="min-width:150px; text-align: right;">
+                                2022年1月22日
+                            </span>
+                        </a><a class="postThumbnail local" href="/posts/2022-01-10-quotes.html">
+                            <span style="font-size: 1.3rem; width:auto">
+                                Literature Quotes
+                            </span>
+                            <span style="min-width:150px; text-align: right;">
+                                2022年1月10日
+                            </span>
+                        </a><a class="postThumbnail local" href="/posts/2022-01-06-on-teaching.html">
+                            <span style="font-size: 1.3rem; width:auto">
+                                On Teaching
+                            </span>
+                            <span style="min-width:150px; text-align: right;">
+                                2022年1月6日
+                            </span>
+                        </a><a class="postThumbnail local" href="/posts/2022-01-03-creating-this-page.html">
+                            <span style="font-size: 1.3rem; width:auto">
+                                Creating This Webpage
+                            </span>
+                            <span style="min-width:150px; text-align: right;">
+                                2022年1月3日
+                            </span>
+                        </a>
+        </div>
+        <img id="postBg" src="/assets/file-pen-solid.svg" alt="Posts Icon">
+    </div>
+
+    
+<div id="about">
+    <h1>關於我</h1>
+    <div style="display:flex; align-items: center;">
+        <div>
+            <h3>曾子宸</h3>
+            <p>你好！我係麻省理工學院嘅馬來西亞本科生，主修數學同電腦科學同工程。我鍾意解題、教書、學新嘅語言同埋話劇演技（睇 <a href="https://lost.mit.edu" target="_blank">MIT LOST </a>）。我識講英文、馬拉文、廣東話、普通話、同一啲日文同法文。</p>
+        </div>
+        <img src="/assets/ProfilePic.jpg" alt="Profile Picture" style="height: 180px; width: 180px; margin-left: 50px;"/>
+    </div>
+    <h4>教育</h4>
+    <div id="education">
+        
+            <div>
+                <div style="background-image: url('/assets/kcphoto.jpg');"></div>
+                <span style="position:absolute; top: 10px; left: 10px; font-size: 1rem">2016-2021</span>
+                <span style="position:absolute; top: 0; bottom: 0; left: 0; right: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 0.5rem;">
+                    坤成中學
+                    <span>(SPM)</span>
+                </span>
+            </div>
+            <div>
+                <div style="background-image: url('/assets/sunwayphoto.jpg');"></div>
+                <span style="position:absolute; top: 10px; left: 10px; font-size: 1rem">2021-2022</span>
+                <span style="position:absolute; top: 0; bottom: 0; left: 0; right: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 0.5rem;">
+                    吉隆坡雙威學院
+                    <span>(A水準)</span>
+                </span>
+            </div>
+            <div>
+                <div style="background-image: url('/assets/mitphoto.jpg');"></div>
+                <span style="position:absolute; top: 10px; left: 10px; font-size: 1rem">2023-2027</span>
+                <span style="position:absolute; top: 0; bottom: 0; left: 0; right: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 0.5rem;">
+                    麻省理工學院
+                    <span>(理學本科: 數學與CS)</span>
+                </span>
+            </div>
+    </div>
+    <div class="thumbnailWindow">
+        <a class="eduThumbnail local" href="/materials/resume.html">
+            <img src="/assets/file-solid.svg" alt="Folder Icon" class="materialIcon" style="width:2rem; height:2rem; margin-right:1rem; vertical-align:middle;" />
+            <span style="font-size: 1.3rem; width:auto">
+                最新履歷/簡歷
+            </span>
+        </a>
+        <a class="eduThumbnail local" href="/posts/2022-05-19-my-book.html">
+            <img src="/assets/book-solid.svg" alt="Folder Icon" class="materialIcon" style="width:2rem; height:2rem; margin-right:1rem; vertical-align:middle;" />
+            <span style="font-size: 1.3rem; width:auto">
+                我嘅數學教科書
+            </span>
+        </a>
+    </div>
+</div>
+
+    
+    <div id="materials" style="position: relative;">
+        <h1>資料</h1>
+        <div class="thumbnailWindow"><a class="materialThumbnail local" href="/materials/random.html">
+                            <img src="/assets/folder-closed-solid.svg" alt="Folder Icon" class="materialIcon" style="width:2rem; height:2rem; margin-right:1rem; vertical-align:middle;" />
+                            <span style="font-size: 1.3rem; width:auto">得意嘅題目</span>
+                        </a><a class="materialThumbnail local" href="/materials/talks.html">
+                            <img src="/assets/folder-closed-solid.svg" alt="Folder Icon" class="materialIcon" style="width:2rem; height:2rem; margin-right:1rem; vertical-align:middle;" />
+                            <span style="font-size: 1.3rem; width:auto">講座</span>
+                        </a><a class="materialThumbnail local" href="/materials/bimo.html">
+                            <img src="/assets/folder-closed-solid.svg" alt="Folder Icon" class="materialIcon" style="width:2rem; height:2rem; margin-right:1rem; vertical-align:middle;" />
+                            <span style="font-size: 1.3rem; width:auto">BIMO 講義</span>
+                        </a><a class="materialThumbnail local" href="/materials/olympiads.html">
+                            <img src="/assets/folder-closed-solid.svg" alt="Folder Icon" class="materialIcon" style="width:2rem; height:2rem; margin-right:1rem; vertical-align:middle;" />
+                            <span style="font-size: 1.3rem; width:auto">奧林匹克教材</span>
+                        </a><a class="materialThumbnail local" href="/materials/nonolympiads.html">
+                            <img src="/assets/folder-closed-solid.svg" alt="Folder Icon" class="materialIcon" style="width:2rem; height:2rem; margin-right:1rem; vertical-align:middle;" />
+                            <span style="font-size: 1.3rem; width:auto">非奧林匹克教材</span>
+                        </a><a class="materialThumbnail local" href="/materials/spmchemistry.html">
+                            <img src="/assets/folder-closed-solid.svg" alt="Folder Icon" class="materialIcon" style="width:2rem; height:2rem; margin-right:1rem; vertical-align:middle;" />
+                            <span style="font-size: 1.3rem; width:auto">SPM 化學</span>
+                        </a><a class="materialThumbnail local" href="/materials/resume.html">
+                            <img src="/assets/folder-closed-solid.svg" alt="Folder Icon" class="materialIcon" style="width:2rem; height:2rem; margin-right:1rem; vertical-align:middle;" />
+                            <span style="font-size: 1.3rem; width:auto">最新履歷/簡歷</span>
+                        </a><a class="materialThumbnail local" href="/materials/mitnotes.html">
+                            <img src="/assets/folder-closed-solid.svg" alt="Folder Icon" class="materialIcon" style="width:2rem; height:2rem; margin-right:1rem; vertical-align:middle;" />
+                            <span style="font-size: 1.3rem; width:auto">MIT</span>
+                        </a></div>
+        <img id="materialBg" src="/assets/folder-open-solid.svg" alt="Materials Icon">
+    </div>
+
+    <div id="games">
+    <h1>遊戲</h1>
+    <div class="thumbnailWindow">
+        <a class="thumbnail" style="background: linear-gradient(to right, rgb(218, 255, 150), rgb(236, 255, 226)); width: 300px;" href="/webpage/">
+            <img src="/assets/arrow-right-solid.svg" alt="Folder Icon" class="materialIcon" style="width:2rem; height:2rem; margin-right:1rem; vertical-align:middle;" />
+            <span style="font-size: 1.3rem; width:auto">
+                沙盒
+            </span>
+        </a>
+    </div>
+</div>
+
+    
+<div id="aboutwebsite">
+    <h2>關於此網站</h2>
+            <p>此網站完全用 HTML、CSS 同（npm）Typescript 建構，冇使用任何高級框架。網站喺 Github Pages（<a href="https://docs.github.com/en/github/site-policy/github-privacy-statement">私隱聲明</a>）運行，並使用 <a href="https://developers.google.com/analytics">Google Analytics</a>（<a href="https://policies.google.com/privacy">私隱聲明</a>）。呢個網站只係一個我覺得很有趣嘅個人項目，我亦都用呢個機會練習編程同用唔同嘅語言打字。</p>
+</div>
+
+    <br><br>
+    </div>
+    <footer>
+        <div id="socmed">
+            <a href="https://github.com/Tristanchaang" target="_blank">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="github" width="24" height="24">
+                </a><a href="https://www.youtube.com/016tristan" target="_blank">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/youtube.svg" alt="youtube" width="24" height="24">
+                </a><a href="https://www.linkedin.com/in/tchaang/" target="_blank">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg" alt="linkedin" width="24" height="24">
+                </a>
+        </div>
+    </footer>
+
+</body>
+</html>

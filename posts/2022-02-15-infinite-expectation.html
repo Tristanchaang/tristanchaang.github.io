@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta property="og:image" content="/assets/screenshot.png" />
-    <title lang="en">Infinite Expectation?</title><title lang="my">Infinite Expectation?</title><title lang="zh">Infinite Expectation?</title><title lang="hk">Infinite Expectation?</title><title lang="fr">Infinite Expectation?</title><title lang="jp">Infinite Expectation?</title>
+    <title>Infinite Expectation?</title>
     <link rel="stylesheet" href="/styles/index.css">
     <script src="/dist/client-bundle.js" defer></script>
     <script src="/dist/mathjax-config.js" defer></script>
@@ -23,10 +23,10 @@
     
     <nav>
         <a class="local" onclick="directIndexSection('body')" style="font-size: 1.5rem; cursor: pointer">
-            <span lang="en">Tristan Chaang's Page</span><span lang="my">Laman Tristan Chaang</span><span lang="zh">曾子宸的网站</span><span lang="hk">曾子宸嘅網站</span><span lang="fr">La page de Tristan Chaang</span><span lang="jp">トリ・チャーンのペイジ</span>
+            Tristan Chaang's Page
         </a>
         <div id=navmenu style="display: flex; gap: 20px; align-items: center; gap: 2rem;" >
-            <a class="local" onclick="directIndexSection('#about')" style="cursor: pointer"><span lang="en">About</span><span lang="zh">关于我</span><span lang="hk">關於我</span><span lang="my">Tentang Saya</span><span lang="fr">Sur Moi</span><span lang="jp">僕について</span></a><a class="local" onclick="directIndexSection('#materials')" style="cursor: pointer"><span lang="en">Materials</span><span lang="zh">资料</span><span lang="hk">資料</span><span lang="my">Bahan</span><span lang="fr">Matériaux</span><span lang="jp">資料</span></a><a class="local" href="/materials/mitnotes.html" style="cursor: pointer"><span lang="en">MIT</span><span lang="zh">MIT</span><span lang="hk">MIT</span><span lang="my">MIT</span><span lang="fr">MIT</span><span lang="jp">MIT</span></a><a class="local" href="/webpage/" style="cursor: pointer"><span lang="en">Games</span><span lang="zh">游戏</span><span lang="hk">遊戲</span><span lang="my">Permainan</span><span lang="fr">Jeux</span><span lang="jp">ゲーム</span></a>
+            <a class="local" onclick="directIndexSection('#about')" style="cursor: pointer">About</a><a class="local" onclick="directIndexSection('#materials')" style="cursor: pointer">Materials</a><a class="local" href="/materials/mitnotes.html" style="cursor: pointer">MIT</a><a class="local" href="/webpage/" style="cursor: pointer">Games</a>
             <div id=langSelect>
                 <a class="langButton" href="?lang=en"><img src="/assets/gb.svg" alt="en" width="24" height="16" style="vertical-align: middle;" /></a>
                 <a class="langButton" href="?lang=my"><img src="/assets/my.svg" alt="my" width="24" height="16" style="vertical-align: middle;" /></a>
@@ -38,7 +38,7 @@
         </div> 
         
     </nav>
-<div><span lang="en">
+<div>
             <div style=' padding-left: 200px; padding-right: 200px'>
                 <h1>Infinite Expectation?</h1>
                 <blockquote>
@@ -52,77 +52,7 @@
 <p>Is this computation hence flawed? Or are human beings just not rational enough? The key reason why $E(X)$ is infinite is because the prizes are rising with the same speed as the fall in the probability. In essence, it is a situation where <em>winning a lot of money is rare, but if I won I would get so much money!</em> If we were to play this game infinitely many times, then the amount of money won from the really lucky games will eventually cover up the games in which we only won a little a bit of money.</p>
 <p>Hence the computation isn't flawed, but human beings aren't irrational either. It is impossible to play this game an arbitrarily large number of times. Even if we could, casinoes would not host this game as they would also expect infinite losses!</p>
 
-            </div></span><span lang="my">
-            <div style=' padding-left: 200px; padding-right: 200px'>
-                <h1>Infinite Expectation?</h1>
-                <blockquote>
-<p>"Stake any amount of money you can get your hands on on this game, because the expected number of winnings is infinite." - Mark Jago, <em>Infinity Paradoxes</em>, Numberphile</p>
-</blockquote>
-<p>Consider the following game: You start with 1 dollar in a jar, and you flip a coin. If it turns up to be tails, take whatever's in the jar (in this case, 1 dollar) and the game is over. If it turns up to be heads, double the money in the jar and repeat the previous process. How much are you willing to pay to enter this game?</p>
-<p>Let's compute the expected prize of this game. The game must be a sequence of (say $n$) tails and then a head, in which case you earn $2^n$ dollars. The probability of getting $n$ tails and then a head is $\frac{1}{2^{n+1}}$, so the expected prize is</p>
-<p><p align="center">$\displaystyle \sum_{n=0}^\infty 2^n \cdot \frac{1}{2^{n+1}} = \sum_{n=0}^\infty \frac{1}{2}\rightarrow +\infty$. </p></p>
-<p>What's going on here? The expected prize is infinite! In other words, if you play this game enough number of times, you will, on average, get infinite money, so anyone should pay any finite amount of money to play this game.</p>
-<p>However, this does not make much sense. What if you just paid $10^{100}$ dollars to play the game, but got a tails on the first try? I cannot imagine how angry you would be.</p>
-<p>Is this computation hence flawed? Or are human beings just not rational enough? The key reason why $E(X)$ is infinite is because the prizes are rising with the same speed as the fall in the probability. In essence, it is a situation where <em>winning a lot of money is rare, but if I won I would get so much money!</em> If we were to play this game infinitely many times, then the amount of money won from the really lucky games will eventually cover up the games in which we only won a little a bit of money.</p>
-<p>Hence the computation isn't flawed, but human beings aren't irrational either. It is impossible to play this game an arbitrarily large number of times. Even if we could, casinoes would not host this game as they would also expect infinite losses!</p>
-
-            </div></span><span lang="zh">
-            <div style=' padding-left: 200px; padding-right: 200px'>
-                <h1>Infinite Expectation?</h1>
-                <blockquote>
-<p>"Stake any amount of money you can get your hands on on this game, because the expected number of winnings is infinite." - Mark Jago, <em>Infinity Paradoxes</em>, Numberphile</p>
-</blockquote>
-<p>Consider the following game: You start with 1 dollar in a jar, and you flip a coin. If it turns up to be tails, take whatever's in the jar (in this case, 1 dollar) and the game is over. If it turns up to be heads, double the money in the jar and repeat the previous process. How much are you willing to pay to enter this game?</p>
-<p>Let's compute the expected prize of this game. The game must be a sequence of (say $n$) tails and then a head, in which case you earn $2^n$ dollars. The probability of getting $n$ tails and then a head is $\frac{1}{2^{n+1}}$, so the expected prize is</p>
-<p><p align="center">$\displaystyle \sum_{n=0}^\infty 2^n \cdot \frac{1}{2^{n+1}} = \sum_{n=0}^\infty \frac{1}{2}\rightarrow +\infty$. </p></p>
-<p>What's going on here? The expected prize is infinite! In other words, if you play this game enough number of times, you will, on average, get infinite money, so anyone should pay any finite amount of money to play this game.</p>
-<p>However, this does not make much sense. What if you just paid $10^{100}$ dollars to play the game, but got a tails on the first try? I cannot imagine how angry you would be.</p>
-<p>Is this computation hence flawed? Or are human beings just not rational enough? The key reason why $E(X)$ is infinite is because the prizes are rising with the same speed as the fall in the probability. In essence, it is a situation where <em>winning a lot of money is rare, but if I won I would get so much money!</em> If we were to play this game infinitely many times, then the amount of money won from the really lucky games will eventually cover up the games in which we only won a little a bit of money.</p>
-<p>Hence the computation isn't flawed, but human beings aren't irrational either. It is impossible to play this game an arbitrarily large number of times. Even if we could, casinoes would not host this game as they would also expect infinite losses!</p>
-
-            </div></span><span lang="hk">
-            <div style=' padding-left: 200px; padding-right: 200px'>
-                <h1>Infinite Expectation?</h1>
-                <blockquote>
-<p>"Stake any amount of money you can get your hands on on this game, because the expected number of winnings is infinite." - Mark Jago, <em>Infinity Paradoxes</em>, Numberphile</p>
-</blockquote>
-<p>Consider the following game: You start with 1 dollar in a jar, and you flip a coin. If it turns up to be tails, take whatever's in the jar (in this case, 1 dollar) and the game is over. If it turns up to be heads, double the money in the jar and repeat the previous process. How much are you willing to pay to enter this game?</p>
-<p>Let's compute the expected prize of this game. The game must be a sequence of (say $n$) tails and then a head, in which case you earn $2^n$ dollars. The probability of getting $n$ tails and then a head is $\frac{1}{2^{n+1}}$, so the expected prize is</p>
-<p><p align="center">$\displaystyle \sum_{n=0}^\infty 2^n \cdot \frac{1}{2^{n+1}} = \sum_{n=0}^\infty \frac{1}{2}\rightarrow +\infty$. </p></p>
-<p>What's going on here? The expected prize is infinite! In other words, if you play this game enough number of times, you will, on average, get infinite money, so anyone should pay any finite amount of money to play this game.</p>
-<p>However, this does not make much sense. What if you just paid $10^{100}$ dollars to play the game, but got a tails on the first try? I cannot imagine how angry you would be.</p>
-<p>Is this computation hence flawed? Or are human beings just not rational enough? The key reason why $E(X)$ is infinite is because the prizes are rising with the same speed as the fall in the probability. In essence, it is a situation where <em>winning a lot of money is rare, but if I won I would get so much money!</em> If we were to play this game infinitely many times, then the amount of money won from the really lucky games will eventually cover up the games in which we only won a little a bit of money.</p>
-<p>Hence the computation isn't flawed, but human beings aren't irrational either. It is impossible to play this game an arbitrarily large number of times. Even if we could, casinoes would not host this game as they would also expect infinite losses!</p>
-
-            </div></span><span lang="fr">
-            <div style=' padding-left: 200px; padding-right: 200px'>
-                <h1>Infinite Expectation?</h1>
-                <blockquote>
-<p>"Stake any amount of money you can get your hands on on this game, because the expected number of winnings is infinite." - Mark Jago, <em>Infinity Paradoxes</em>, Numberphile</p>
-</blockquote>
-<p>Consider the following game: You start with 1 dollar in a jar, and you flip a coin. If it turns up to be tails, take whatever's in the jar (in this case, 1 dollar) and the game is over. If it turns up to be heads, double the money in the jar and repeat the previous process. How much are you willing to pay to enter this game?</p>
-<p>Let's compute the expected prize of this game. The game must be a sequence of (say $n$) tails and then a head, in which case you earn $2^n$ dollars. The probability of getting $n$ tails and then a head is $\frac{1}{2^{n+1}}$, so the expected prize is</p>
-<p><p align="center">$\displaystyle \sum_{n=0}^\infty 2^n \cdot \frac{1}{2^{n+1}} = \sum_{n=0}^\infty \frac{1}{2}\rightarrow +\infty$. </p></p>
-<p>What's going on here? The expected prize is infinite! In other words, if you play this game enough number of times, you will, on average, get infinite money, so anyone should pay any finite amount of money to play this game.</p>
-<p>However, this does not make much sense. What if you just paid $10^{100}$ dollars to play the game, but got a tails on the first try? I cannot imagine how angry you would be.</p>
-<p>Is this computation hence flawed? Or are human beings just not rational enough? The key reason why $E(X)$ is infinite is because the prizes are rising with the same speed as the fall in the probability. In essence, it is a situation where <em>winning a lot of money is rare, but if I won I would get so much money!</em> If we were to play this game infinitely many times, then the amount of money won from the really lucky games will eventually cover up the games in which we only won a little a bit of money.</p>
-<p>Hence the computation isn't flawed, but human beings aren't irrational either. It is impossible to play this game an arbitrarily large number of times. Even if we could, casinoes would not host this game as they would also expect infinite losses!</p>
-
-            </div></span><span lang="jp">
-            <div style=' padding-left: 200px; padding-right: 200px'>
-                <h1>Infinite Expectation?</h1>
-                <blockquote>
-<p>"Stake any amount of money you can get your hands on on this game, because the expected number of winnings is infinite." - Mark Jago, <em>Infinity Paradoxes</em>, Numberphile</p>
-</blockquote>
-<p>Consider the following game: You start with 1 dollar in a jar, and you flip a coin. If it turns up to be tails, take whatever's in the jar (in this case, 1 dollar) and the game is over. If it turns up to be heads, double the money in the jar and repeat the previous process. How much are you willing to pay to enter this game?</p>
-<p>Let's compute the expected prize of this game. The game must be a sequence of (say $n$) tails and then a head, in which case you earn $2^n$ dollars. The probability of getting $n$ tails and then a head is $\frac{1}{2^{n+1}}$, so the expected prize is</p>
-<p><p align="center">$\displaystyle \sum_{n=0}^\infty 2^n \cdot \frac{1}{2^{n+1}} = \sum_{n=0}^\infty \frac{1}{2}\rightarrow +\infty$. </p></p>
-<p>What's going on here? The expected prize is infinite! In other words, if you play this game enough number of times, you will, on average, get infinite money, so anyone should pay any finite amount of money to play this game.</p>
-<p>However, this does not make much sense. What if you just paid $10^{100}$ dollars to play the game, but got a tails on the first try? I cannot imagine how angry you would be.</p>
-<p>Is this computation hence flawed? Or are human beings just not rational enough? The key reason why $E(X)$ is infinite is because the prizes are rising with the same speed as the fall in the probability. In essence, it is a situation where <em>winning a lot of money is rare, but if I won I would get so much money!</em> If we were to play this game infinitely many times, then the amount of money won from the really lucky games will eventually cover up the games in which we only won a little a bit of money.</p>
-<p>Hence the computation isn't flawed, but human beings aren't irrational either. It is impossible to play this game an arbitrarily large number of times. Even if we could, casinoes would not host this game as they would also expect infinite losses!</p>
-
-            </div></span></br></br></div>
+            </div><br><br></div>
     <footer>
         <div id="socmed">
             <a href="https://github.com/Tristanchaang" target="_blank">

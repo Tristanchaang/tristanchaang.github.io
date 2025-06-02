@@ -1,5 +1,5 @@
-import { spanLang } from "./langtools.js";
-const welcomeText = {
+import { langMap, spanLang } from "./langtools.js";
+const welcomeTextLangs = {
     en: "Welcome to my personal page! Here I write about myself and all kinds of stuff I want to share. This is a new version of my website, and may have bugs. Feel free to switch to different languages (English, Malay, Mandarin, Cantonese, French, Japanese) on the top-right corner!",
     my: "Selamat datang ke laman web saya! Di sini saya menulis tentang saya dan berkongsi apa-apa perkara yang menarik. Versi laman web ini adalah terbaru, jadi ia mungkin ada kerosakan. Beralih kepada bahasa-bahasa berbeza (Inggeris, Melayu, Mandarin, Kantonis, Perancis, Jepun) pada penjuru kanan sebelah atas!",
     zh: "欢迎来到我的网站！我在这里写一些关于自己的东西和我想分享的事物。这是网站的最新版本，所以可能会有漏洞。您可以在右上角随意切换到不同的语言（英语、马来语、普通话、粤语、法语、日语）！",
@@ -9,7 +9,11 @@ const welcomeText = {
 };
 export const welcomeHTML = `
     <div id="welcome">
-        <p>${spanLang(welcomeText)}</p>
+        <p>${spanLang(welcomeTextLangs)}</p>
     </div>
 `;
+export const welcomeHTMLLangs = langMap(welcomeTextLangs, (lang, welcomeText) => `<div id="welcome">
+        <p>${welcomeText}</p>
+    </div>
+`);
 //# sourceMappingURL=welcome.js.map

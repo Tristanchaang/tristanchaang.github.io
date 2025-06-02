@@ -11,7 +11,7 @@ async function main(): Promise<void> {
 
     (window as any).directIndexSection = (tag: string, lang: string = "en"): void => {
         if (window.location.pathname === "/") toIndexSection(tag);
-        else window.location.href = (tag==="body") ? `/?lang=${lang}` : `/?lang=${lang}&scroll=${tag.slice(1)}`;
+        else window.location.href = `/${lang === "en" ? `` : lang}/` + ((tag==="body") ? `` : `index.html&scroll=${tag.slice(1)}`);
     }
 
     const params = new URLSearchParams(window.location.search);

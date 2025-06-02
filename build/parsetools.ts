@@ -1,8 +1,8 @@
 import * as fs from "fs";
 import MarkdownIt from "markdown-it";
 import assert from "assert";
-import { LangString, spanLang, componentLang, langPromise, langMap } from "./langtools.js";
-import { headerHTML, footerHTML } from "./header-footer.js";
+import { LangString, spanLang, componentLang, langPromise, langMap, LANGS } from "./langtools.js";
+import { headerHTML, footerHTML, headerHTMLLangs } from "./header-footer.js";
 
 const mdParser = new MarkdownIt();
 
@@ -77,16 +77,22 @@ export async function writeMultiLangJMD(mdName: string, folderName: string, call
             <div style='${("font" in bundle.meta) ? `font-family: ${bundle.meta.font};` : ``} padding-left: 200px; padding-right: 200px'>
                 <h1>${bundle.title}</h1>
                 ${(callbackOnInterior.get(bundle.meta.title) ?? defaultCallback)(bundle.interior)}
-            </div>`
+            </div><br><br>`
         );
 
-    const content = buildPage(titleLangs, spanLang(contentLangs)+"</br></br>");
+    const pageLangs = buildPageLangs(titleLangs, contentLangs);
 
     const htmlName = mdName.replace(/\.md$/, (folderName === "mitnotes") ? "/index.html" : ".html");
-    write(`${(folderName === "mitnotes") ? "materials" : folderName}/${htmlName}`, content);
+    
+    
+    writeMultiLang(`${(folderName === "mitnotes") ? "materials" : folderName}/${htmlName}`, pageLangs);
     return { date: new Date(date), filename: htmlName, titleLangs: titleLangs };
 }
 
+
+export const writeMultiLang = async (filepath: string, pageLangs: LangString) => {
+    LANGS.map((lang: string) => write(lang === "en" ? filepath : `${lang}/`+filepath, pageLangs[lang as keyof LangString]));
+};
 
 
 export const read = async (filepath: string) => fs.promises.readFile(filepath, { encoding: "utf8" });
@@ -120,3 +126,31 @@ export const buildPage = (title: string | LangString, insert: string) =>
 </body>
 </html>
 `
+
+export const buildPageLangs = (titleLangs: LangString, contentLangs: LangString): LangString => 
+    langMap(titleLangs, (lang, title: string) => `
+<!DOCTYPE html>
+<html lang="${lang}">
+<head>
+    <meta charset="utf-8">
+    <meta property="og:image" content="/assets/screenshot.png" />
+    <title>${title}</title>
+    <link rel="stylesheet" href="/styles/index.css">
+    <script src="/dist/client-bundle.js" defer></script>
+    <script src="/dist/mathjax-config.js" defer></script>
+    <script type="text/javascript" id="MathJax-script" defer
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PH72KY1MTT"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PH72KY1MTT');
+    </script>
+    <link rel="icon" type="image/x-icon" href="/assets/circle-user-solid.ico">
+</head>
+<body>
+    ${headerHTMLLangs[lang as keyof LangString]}<div>${contentLangs[lang as keyof LangString]}</div>${footerHTML}
+</body>
+</html>
+`)
