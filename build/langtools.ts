@@ -23,10 +23,10 @@ export type LangString = Lang<string>;
  * @param comp - HTML component name.
  * @returns A string of HTML with each translation wrapped in a <comp lang="..."> element.
  */
-export function componentLang(langs: LangString, comp: string): string {
+export function componentLang(langs: LangString, comp: string, delimiter?: string): string {
     return Object.entries(langs).map(
         ([lang, next]) => `<${comp} lang="${lang}">${next}</${comp}>`
-    ).join(``);
+    ).join(delimiter ?? "");
 }
 
 

@@ -7,8 +7,8 @@ export const LANGS = ["en", "my", "zh", "hk", "fr", "jp"];
  * @param comp - HTML component name.
  * @returns A string of HTML with each translation wrapped in a <comp lang="..."> element.
  */
-export function componentLang(langs, comp) {
-    return Object.entries(langs).map(([lang, next]) => `<${comp} lang="${lang}">${next}</${comp}>`).join(``);
+export function componentLang(langs, comp, delimiter) {
+    return Object.entries(langs).map(([lang, next]) => `<${comp} lang="${lang}">${next}</${comp}>`).join(delimiter ?? "");
 }
 /**
  * Generates an HTML string containing each translation wrapped in a <span> with the appropriate language attribute.

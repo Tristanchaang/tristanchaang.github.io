@@ -100,7 +100,7 @@ export const buildPage = (title: string | LangString, insert: string) =>
 <head>
     <meta charset="utf-8">
     <meta property="og:image" content="/assets/screenshot.png" />
-    ${(title instanceof Object) ? componentLang(title, "title") : `<title>${title}</title>`}
+    ${(title instanceof Object) ? componentLang(title, "title", "<title lang='xx'> / </title>") : `<title>${title}</title>`}
     <link rel="stylesheet" href="/styles/index.css">
     <script src="/dist/client-bundle.js" defer></script>
     <script src="/dist/mathjax-config.js" defer></script>
