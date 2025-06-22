@@ -15,7 +15,7 @@ const EDU = [
 ];
 export const aboutIndexHTML = `
 <div id="about">
-    <h1>${spanLang({ en: "About", my: "Tentang Saya", zh: "关于我", hk: "關於我", fr: "Sur Moi", jp: "僕について" })}</h1>
+    <h1>${spanLang({ en: "About", my: "Tentang Saya", zh: "关于我", hk: "關於我", fr: "Sur Moi", jp: "私について" })}</h1>
     <div style="display:flex; align-items: center;">
         <div>
             <h3>${spanLang({ en: "Tristan Chaang", my: "Tristan Chaang", zh: "曾子宸", hk: "曾子宸", fr: "Tristan Chaang", jp: "トリスタン・チャーン / <ruby>曾<rt>そう</rt>子<rt>し</rt>宸<rt>しん</rt></ruby>" })}</h3>
@@ -25,7 +25,7 @@ export const aboutIndexHTML = `
     zh: `你好！我是麻省理工学院的马来西亚本科生，主修数学和计算机科学与工程。我喜欢解题、教书、学习新语言和话剧演艺（请看<a href="https://lost.mit.edu" target="_blank">MIT LOST</a>）。我会说英语、马来语、粤语、华语，以及一点日语和法语。`,
     hk: `你好！我係麻省理工學院嘅馬來西亞本科生，主修數學同電腦科學同工程。我鍾意解題、教書、學新嘅語言同埋話劇演技（睇 <a href="https://lost.mit.edu" target="_blank">MIT LOST </a>）。我識講英文、馬拉文、廣東話、普通話、同一啲日文同法文。`,
     fr: `Bonjour ! Je suis un étudiant malaisien au MIT, spécialisé en mathématiques et en informatique et ingénierie. J'aime résoudre des problèmes, enseigner, apprendre des nouvelles langues et jouer au théâtre (voir <a href="https://lost.mit.edu" target="_blank">MIT LOST</a>). Je parle anglais, malais, cantonais, mandarin et un peu de japonais et de français.`,
-    jp: `こんにちは！僕はMITでマレーシア出身の大学生だって、専攻は数学と計算機の科学と工学です。問題解決、教えること、新しい言語を学ぶこと、そして演技が大好きです（<a href="https://lost.mit.edu" target="_blank">MIT LOST</a>をご覧ください）。英語、マレー語、広東語、中国語を話し、日本語とフランス語も少し話せます。`
+    jp: `こんにちは！私はMITでマレーシア出身の大学生だって、専攻は数学と計算機の科学と工学です。問題解決、教えること、新しい言語を学ぶこと、そして演技が大好きです（<a href="https://lost.mit.edu" target="_blank">MIT LOST</a>をご覧ください）。英語、マレー語、広東語、中国語を話し、日本語とフランス語も少し話せます。`
 })}</p>
         </div>
         <img src="/assets/ProfilePic.jpg" alt="Profile Picture" style="height: 180px; width: 180px; margin-left: 50px;"/>
@@ -52,7 +52,7 @@ export const aboutIndexHTML = `
         <a class="eduThumbnail local" href="/posts/2022-05-19-my-book.html">
             <img src="/assets/book-solid.svg" alt="Folder Icon" class="materialIcon" style="width:2rem; height:2rem; margin-right:1rem; vertical-align:middle;" />
             <span style="font-size: 1.3rem; width:auto">
-                ${spanLang({ en: "My Math Book", my: "Buku Matematik Saya", zh: "我的数学教科书", hk: "我嘅數學教科書", fr: "Mon livre de mathématiques", jp: "僕の数学の教科書" })}
+                ${spanLang({ en: "My Math Book", my: "Buku Matematik Saya", zh: "我的数学教科书", hk: "我嘅數學教科書", fr: "Mon livre de mathématiques", jp: "私の数学の教科書" })}
             </span>
         </a>
     </div>
@@ -72,7 +72,7 @@ export const aboutWebsiteIndexHTML = `
     fr: `<h2>À propos de ce site Web</h2>
             <p>Cette page web est entièrement construite avec HTML, CSS et Typescript. Aucun framework avancé n'a été utilisé. Ce site fonctionne sur Github Pages (<a href="https://docs.github.com/en/github/site-policy/github-privacy-statement">Déclaration de confidentialité</a>) et utilise <a href="https://developers.google.com/analytics">Google Analytics</a> (<a href="https://policies.google.com/privacy">Déclaration de confidentialité</a>). Cette page web est simplement un projet personnel, et je trouve cela plutôt amusant. J'utilise également ce site pour m'entraîner à coder et à taper dans différentes langues.</p>`,
     jp: `<h2>このウェブサイトについて</h2>
-            <p>このウェブページは HTML、CSS、と Typescript だけで作成されています。高度なフレームワークは使用していません。このサイトは Github Pages（<a href="https://docs.github.com/en/github/site-policy/github-privacy-statement">プライバシーステートメント</a>）で運用され、<a href="https://developers.google.com/analytics">Google Analytics</a>（<a href="https://policies.google.com/privacy">プライバシーステートメント</a>）を使用しています。このウェブページは個人的なプロジェクトであり、僕はとても楽しいと思っています。また、このサイトを使ってコーディングを練習して、様々な言語でのタイピングを練習しています。</p>`
+            <p>このウェブページは HTML、CSS、と Typescript だけで作成されています。高度なフレームワークは使用していません。このサイトは Github Pages（<a href="https://docs.github.com/en/github/site-policy/github-privacy-statement">プライバシーステートメント</a>）で運用され、<a href="https://developers.google.com/analytics">Google Analytics</a>（<a href="https://policies.google.com/privacy">プライバシーステートメント</a>）を使用しています。このウェブページは個人的なプロジェクトであり、私はとても楽しいと思っています。また、このサイトを使ってコーディングを練習して、様々な言語でのタイピングを練習しています。</p>`
 })}
 </div>
 `;

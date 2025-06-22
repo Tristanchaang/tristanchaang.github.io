@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 僕の$\LaTeX$のパッケージ
+title: 私の$\LaTeX$のパッケージ
 ---
 
 <a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/natsirt.zip" download="download">Click here</a> to download the zip file that contains 'natsirt.cls'.

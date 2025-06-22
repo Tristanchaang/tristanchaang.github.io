@@ -1,14 +1,14 @@
 import { LangString, spanLang } from "./langtools.js";
 
 const NAVBAR_TABS: [LangString, string][] = [
-    [{ en: "About", zh: "关于我", hk: "關於我", my: "Tentang Saya", fr: "Sur Moi", jp: "僕について" },
+    [{ en: "About", zh: "关于我", hk: "關於我", my: "Tentang Saya", fr: "Sur Moi", jp: "私について" },
         `onclick="directIndexSection('#about')"`],
     [{ en: "Materials", zh: "资料", hk: "資料", my: "Bahan", fr: "Matériaux", jp: "資料" },
         `onclick="directIndexSection('#materials')"`],
     [{ en: "MIT", zh: "MIT", hk: "MIT", my: "MIT", fr: "MIT", jp: "MIT" },
         `href="/materials/mitnotes.html"`],
     [{ en: "Games", zh: "游戏", hk: "遊戲", my: "Permainan", fr: "Jeux", jp: "ゲーム" },
-        `href="/webpage/"`]
+        `onclick="directIndexSection('#games')"`]
 ];
 
 const SOCMED = {
