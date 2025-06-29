@@ -2,12 +2,14 @@ import assert from 'node:assert';
 import { getElem, getAllElems, appendChild } from './html.js'
 import { toIndexSection } from './header-footer.js';
 import { chooseLang } from './lang.js';
-
+import { configureMathJax } from './mathjax-config.js';
 
 /**
  * Set up the page.
  */
 async function main(): Promise<void> {
+
+    configureMathJax();
 
     (window as any).directIndexSection = (tag: string, lang: string = "en"): void => {
         if (window.location.pathname === "/") toIndexSection(tag);

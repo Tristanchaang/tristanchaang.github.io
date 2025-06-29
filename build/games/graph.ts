@@ -1,5 +1,7 @@
 import { LangString } from "../langtools.js";
-import { buildPage, write } from "../parsetools.js";
+import { write } from "../parsetools.js";
+import { buildGamePage } from "./gametools.js"
+import { logoButton } from "../buttons.js";
 
 export const graphTitleLangs: LangString = { 
     en: "Graph Playground", 
@@ -10,4 +12,8 @@ export const graphTitleLangs: LangString = {
     jp: "グラフの遊び場" 
 }
 
-write("games/graph.html", "Hi")
+write("games/graph.html", buildGamePage(graphTitleLangs,
+`
+${logoButton("house-solid", "40px", {class: 'local', href: '/'}, {position: "fixed", margin: "10px", left: "0", top: "0"}, "Home").outerHTML}   
+
+`))

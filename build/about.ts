@@ -20,7 +20,7 @@ export const aboutIndexHTML = `
     <h1>${spanLang({ en: "About", my: "Tentang Saya", zh: "关于我", hk: "關於我", fr: "Sur Moi", jp: "私について" })}</h1>
     <div style="display:flex; align-items: center;">
         <div>
-            <h3>${spanLang({ en: "Tristan Chaang", my: "Tristan Chaang", zh: "曾子宸", hk: "曾子宸", fr: "Tristan Chaang", jp: "トリスタン・チャーン / <ruby>曾<rt>そう</rt>子<rt>し</rt>宸<rt>しん</rt></ruby>" })}</h3>
+            <h3>${spanLang({ en: "Tristan Chaang", my: "Tristan Chaang", zh: "曾子宸", hk: "曾子宸", fr: "Tristan Chaang", jp: "トリスタン・チャーン / <ruby>曾<rt>チャーン</rt>子<rt>ジ</rt>宸<rt>シェン</rt></ruby>" })}</h3>
             <p>${spanLang({
                 en: `Hello! I am a Malaysian undergraduate student at MIT majoring in Course 18 (Mathematics) and Course 6-3 (Computer Science and Engineering). I love problem solving, teaching, learning new languages, and acting (see <a href="https://lost.mit.edu" target="_blank">MIT LOST</a>). I speak English, Malay, Cantonese, Mandarin and a little Japanese and French.`,
                 my: `Helo! Saya seorang pelajar dari Malaysia yang sedang melanjut pelajaran di MIT. Bidang pelajaran saya adalah matematik, dan sains dan kejuruteraan komputer. Saya suka menyelesai masalah, mengajar, belajar bahasa-bahasa baru, dan berlakon (layari <a href="https://lost.mit.edu" target="_blank">MIT LOST</a>). Saya boleh bertutur dalam Bahasa Inggeris, Melayu, Kantonis, Mandarin, dan sedikit Bahasa Jepun dan Perancis.`,

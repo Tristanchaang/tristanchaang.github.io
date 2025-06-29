@@ -4,7 +4,7 @@ title: MIT
 ---
 
 
-- [file-lines-solid|僕の$\LaTeX$のパッケージ []](/posts/2024-05-29-mypackage.html)
+- [file-lines-solid|私の$\LaTeX$のパッケージ []](/posts/2024-05-29-mypackage.html)
 
 ## 数学
 

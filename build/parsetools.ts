@@ -103,7 +103,6 @@ export const buildPage = (title: string | LangString, insert: string) =>
     ${(title instanceof Object) ? componentLang(title, "title", "<title lang='xx'> / </title>") : `<title>${title}</title>`}
     <link rel="stylesheet" href="/styles/index.css">
     <script src="/dist/client-bundle.js" defer></script>
-    <script src="/dist/mathjax-config.js" defer></script>
     <script type="text/javascript" id="MathJax-script" defer
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PH72KY1MTT"></script>

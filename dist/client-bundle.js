@@ -4528,8 +4528,21 @@
     });
   }
 
+  // src/mathjax-config.ts
+  function configureMathJax() {
+    window.MathJax = {
+      tex: {
+        inlineMath: [["$", "$"], ["\\(", "\\)"]]
+      },
+      svg: {
+        fontCache: "global"
+      }
+    };
+  }
+
   // src/index.ts
   async function main() {
+    configureMathJax();
     window.directIndexSection = (tag, lang2 = "en") => {
       if (window.location.pathname === "/") toIndexSection(tag);
       else window.location.href = tag === "body" ? `/?lang=${lang2}` : `/?lang=${lang2}&scroll=${tag.slice(1)}`;
