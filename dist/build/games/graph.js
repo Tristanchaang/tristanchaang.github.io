@@ -1,6 +1,3 @@
-import { write } from "../parsetools.js";
-import { buildGamePage } from "./gametools.js";
-import { logoButton } from "../buttons.js";
 export const graphTitleLangs = {
     en: "Graph Playground",
     my: "Perisian Graf",
@@ -9,8 +6,4 @@ export const graphTitleLangs = {
     fr: "Jardin des graphes",
     jp: "グラフの遊び場"
 };
-write("games/graph.html", buildGamePage(graphTitleLangs, `
-${logoButton("house-solid", "40px", { class: 'local', href: '/' }, { position: "fixed", margin: "10px", left: "0", top: "0" }, "Home").outerHTML}   
-
-`));
 //# sourceMappingURL=graph.js.map

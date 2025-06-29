@@ -1,4 +1,4 @@
-import { buildPage, write } from "./parsetools.js";
+import { writeDocument, buildPage, write, newDocument } from "./parsetools.js";
 
 import { welcomeHTML } from "./welcome.js";
 import { postIndexHTML } from "./posts.js";
@@ -8,6 +8,8 @@ import { gamesIndexHTML, gamesTitles } from "./games.js";
 
 import { fileNames } from "./mitnotes.js"
 import { TITLE_LANGS } from "./header-footer.js";
+
+import assert from "node:assert"
 
 fileNames;
 
@@ -22,3 +24,7 @@ write("index.html", buildPage(TITLE_LANGS,
     <br><br>
     `
 ));
+
+const testingDoc = newDocument(TITLE_LANGS)
+testingDoc.body.textContent = "Hello"
+writeDocument("testing.html", testingDoc)

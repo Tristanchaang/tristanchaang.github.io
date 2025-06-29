@@ -1,4 +1,4 @@
-import { buildPage, write } from "./parsetools.js";
+import { writeDocument, buildPage, write, newDocument } from "./parsetools.js";
 import { welcomeHTML } from "./welcome.js";
 import { postIndexHTML } from "./posts.js";
 import { aboutIndexHTML, aboutWebsiteIndexHTML } from "./about.js";
@@ -16,4 +16,7 @@ write("index.html", buildPage(TITLE_LANGS, `
     ${aboutWebsiteIndexHTML}
     <br><br>
     `));
+const testingDoc = newDocument(TITLE_LANGS);
+testingDoc.body.textContent = "Hello";
+writeDocument("testing.html", testingDoc);
 //# sourceMappingURL=app.js.map

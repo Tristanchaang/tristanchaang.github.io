@@ -11,9 +11,3 @@ export const graphTitleLangs: LangString = {
     fr: "Jardin des graphes", 
     jp: "グラフの遊び場" 
 }
-
-write("games/graph.html", buildGamePage(graphTitleLangs,
-`
-${logoButton("house-solid", "40px", {class: 'local', href: '/'}, {position: "fixed", margin: "10px", left: "0", top: "0"}, "Home").outerHTML}   
-
-`))

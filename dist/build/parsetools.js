@@ -3,6 +3,7 @@ import MarkdownIt from "markdown-it";
 import assert from "assert";
 import { spanLang, componentLang, langPromise, langMap } from "./langtools.js";
 import { headerHTML, footerHTML } from "./header-footer.js";
+import { JSDOM } from 'jsdom';
 const mdParser = new MarkdownIt();
 const PREPARSE_REPLACEMENTS = [
     ["\\\\", "\\\\\\\\"], // change \\ to \\\\
@@ -95,4 +96,31 @@ export const buildPage = (title, insert) => `
 </body>
 </html>
 `;
+export function newDocument(title) {
+    return new JSDOM(`<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta property="og:image" content="/assets/screenshot.png" />
+    ${(title instanceof Object) ? componentLang(title, "title", "<title lang='xx'> / </title>") : `<title>${title}</title>`}
+    <link rel="stylesheet" href="/styles/index.css">
+    <script src="/dist/client-bundle.js" defer></script>
+    <script type="text/javascript" id="MathJax-script" defer
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PH72KY1MTT"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PH72KY1MTT');
+    </script>
+    <link rel="icon" type="image/x-icon" href="/assets/circle-user-solid.ico">
+</head>
+<body>
+</body>
+</html>`).window.document;
+}
+export function writeDocument(filepath, doc) {
+    write(filepath, '<!DOCTYPE html>\n' + doc.documentElement.outerHTML);
+}
 //# sourceMappingURL=parsetools.js.map
