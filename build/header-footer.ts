@@ -23,7 +23,7 @@ export const TITLE_LANGS: LangString = {
     zh: "曾子宸的网站", 
     hk: "曾子宸嘅網站", 
     fr: "La page de Tristan Chaang", 
-    jp: "トリ・チャーンのペイジ" 
+    jp: "トリスタンのページ" 
 }
 
 export const headerHTML = `
