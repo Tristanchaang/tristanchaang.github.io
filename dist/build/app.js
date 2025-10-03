@@ -17,6 +17,5 @@ write("index.html", buildPage(TITLE_LANGS, `
     <br><br>
     `));
 const testingDoc = newDocument(TITLE_LANGS);
-testingDoc.body.textContent = "Hello";
 writeDocument("testing.html", testingDoc);
 //# sourceMappingURL=app.js.map

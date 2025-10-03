@@ -93,9 +93,14 @@ export async function writeMultiLangJMD(mdName: string, folderName: string, call
 export const read = async (filepath: string) => fs.promises.readFile(filepath, { encoding: "utf8" });
 export const write = async (filepath: string, content: string) => fs.promises.writeFile(filepath, content, { encoding: "utf8" });
 
-
-export const buildPage = (title: string | LangString, insert: string) =>
-`
+/**
+ * Build HTML for page
+ * @param title 
+ * @param insert 
+ * @returns string representing full HTML for page
+ */
+export function buildPage(title: string | LangString, insert: string): string {
+    return `
 <!DOCTYPE html>
 <html>
 <head>
@@ -120,9 +125,10 @@ export const buildPage = (title: string | LangString, insert: string) =>
 </body>
 </html>
 `
+}
 
 export function newDocument(title: string | LangString): Document {
-    return new JSDOM(`<!DOCTYPE html>
+    const doc = new JSDOM(`<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -134,18 +140,24 @@ export function newDocument(title: string | LangString): Document {
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PH72KY1MTT"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-PH72KY1MTT');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-PH72KY1MTT');
     </script>
     <link rel="icon" type="image/x-icon" href="/assets/circle-user-solid.ico">
 </head>
 <body>
 </body>
 </html>`).window.document;
+    
+    doc.body.innerHTML += headerHTML;
+    doc.body.append(doc.createElement("div"));
+    doc.body.innerHTML += footerHTML;
+    return doc
 }
 
 export function writeDocument(filepath: string, doc: Document) {
-    write(filepath, '<!DOCTYPE html>\n' + doc.documentElement.outerHTML)
+    write(filepath, '<!DOCTYPE html>\n' + doc.documentElement.outerHTML);
 }
+
