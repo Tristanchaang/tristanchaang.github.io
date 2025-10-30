@@ -1,0 +1,3 @@
+User-agent: Googlebot-Image
+Disallow: /assets/flags/
+Disallow: /assets/icons/

@@ -1,0 +1,30 @@
+@import url('banner.css');
+@import url('thumbnail.css');
+@import url('tables.css');
+
+body {
+    margin: 0px;
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    min-height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+}
+
+main > section {
+    padding: 20px 100px 20px 100px;
+}
+
+main > section > h1 {
+    font-size: 2em;
+}
+
+a {
+    color: inherit;
+}
+
+

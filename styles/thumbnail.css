@@ -1,0 +1,41 @@
+.thumbnail-window {
+    display: flex;
+    column-gap: 3rem;
+    row-gap: 1rem;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.post-thumbnail, .thumbnail, .longthumbnail {
+    padding: 15px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+}
+
+.thumbnail, .longthumbnail {
+    color: black;
+    background: linear-gradient(to right, rgb(185, 219, 255), rgb(179, 250, 255));
+}
+
+.notes {
+    background: linear-gradient(to right, rgb(199, 255, 138), rgba(229, 255, 192, 0.885));
+}
+
+.thumbnail {
+    width: 300px;
+}
+
+.longthumbnail {
+    width: 100%;
+}
+
+.thumbnail > img {
+    width: 2rem; 
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
