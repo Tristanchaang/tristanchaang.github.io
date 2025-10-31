@@ -9,14 +9,18 @@
 
 .post-thumbnail, .thumbnail, .longthumbnail {
     padding: 15px;
-    height: 35px;
     display: flex;
     align-items: center;
     text-decoration: none;
     position: relative;
 }
 
+.post-thumbnail {
+    min-height: 35px;
+}
+
 .thumbnail, .longthumbnail {
+    height: 35px;
     color: black;
     background: linear-gradient(to right, rgb(185, 219, 255), rgb(179, 250, 255));
 }

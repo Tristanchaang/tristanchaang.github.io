@@ -10,8 +10,8 @@ nav {
     left: 0;
     right: 0;
     min-height: 70px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: min(50px, 5vw);
+    padding-right: min(50px, 5vw);
 
     color: white;
     background: linear-gradient(to right, rgb(19, 28, 19), rgb(38, 95, 64));
@@ -19,14 +19,17 @@ nav {
 }
 
 nav a {
+    text-decoration: none;
+}
+
+.navbutton {
     color: white;
     pointer-events: stroke;
-    text-decoration: none;
     font-size: 1.2rem;
     transition: transform 0.2s ease, color 0.2s ease;
 }
 
-#navmenu > a:hover {
+.navbutton:hover {
     color: skyblue;
     transform: scale(1.3);
 }
@@ -54,15 +57,12 @@ footer > a {
 }
 
 #langSelect {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    position: absolute;
     justify-items: center;
     align-items: center;
-    column-gap: 5px;
-    row-gap: 5px;
+    top: 100%;
+    right:  0%;
     width: 60px;
-    height: 50px;
 }
 
 #langSelect > a {

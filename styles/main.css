@@ -16,7 +16,9 @@ main {
 }
 
 main > section {
-    padding: 20px 100px 20px 100px;
+    padding: 20px 8vw 20px 8vw;
+    overflow: hidden;
+    position: relative;
 }
 
 main > section > h1 {

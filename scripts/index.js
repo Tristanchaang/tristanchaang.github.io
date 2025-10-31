@@ -1,6 +1,11 @@
 const params = new URLSearchParams(window.location.search);
 const lang = params.get("lang") ?? "en";
 
+function toggleLangMenu() {
+    const menu = document.getElementById('langSelect')
+    menu.style.display = (menu.style.display === 'none') ? 'grid' : 'none';
+}
+
 /**
  * filter lang
  */
