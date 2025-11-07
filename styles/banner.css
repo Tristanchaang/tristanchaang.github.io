@@ -16,7 +16,7 @@ nav {
     color: white;
     background: linear-gradient(to right, #003425, #005B41);
     /* linear-gradient(to right, rgb(19, 28, 19), rgb(38, 95, 64)); */
-    font: normal 1.5rem Verdana, Geneva, Tahoma, sans-serif;
+    font: normal 1.5rem;
 }
 
 nav a {

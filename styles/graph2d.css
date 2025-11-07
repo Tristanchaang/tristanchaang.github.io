@@ -1,0 +1,17 @@
+@keyframes pulse {
+  0%   { r: 25; }
+  50%  { r: 30; }
+  100% { r: 25; }
+}
+
+.node > circle {
+  animation: pulse 1.8s linear infinite;
+}
+
+.node {
+    cursor: pointer;
+}
+
+.edge {
+    cursor: pointer;
+}
