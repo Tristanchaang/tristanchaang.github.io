@@ -126,40 +126,9 @@ document.addEventListener("click", function (ev) {
     showQueue();
 });
 document.addEventListener("keydown", function (ev) {
-    var _a, _b, _c, _d, _e, _f, _g, _h;
     switch (ev.code) {
         case "Enter": {
-            for (var ix = 0; ix < queue.length; ix++) {
-                var queueItem = queue[ix];
-                if (queueItem instanceof Vertex) {
-                    if (ix < queue.length - 1) {
-                        var nextItem = queue[ix + 1];
-                        if (nextItem instanceof Vertex) {
-                            var eIDs = allEdges().map(function (e) { return e.label; });
-                            var newID = -1;
-                            while (eIDs.includes(String(newID)))
-                                newID--;
-                            var meta = parseCommand();
-                            var edge = new Edge(String(newID), queueItem, nextItem, Number((_a = meta.w) !== null && _a !== void 0 ? _a : 1), Number((_b = meta.b) !== null && _b !== void 0 ? _b : 0));
-                            queueItem.addOutEdge(edge);
-                            edge.writeHTML();
-                        }
-                    }
-                }
-                else if (queueItem instanceof Edge) { }
-                else {
-                    var _j = queueItem, _ = _j[0], x = _j[1], y = _j[2];
-                    if (existCoord(x, y))
-                        break;
-                    var newID = 0;
-                    while (Object.keys(vertices).includes(String(newID)))
-                        newID++;
-                    var node = new Vertex(String(newID), x, y);
-                    vertices[node.label] = node;
-                    node.writeHTML();
-                }
-            }
-            emptyQueue();
+            enterPressed();
             break;
         }
         case "Escape": {
@@ -167,26 +136,7 @@ document.addEventListener("keydown", function (ev) {
             break;
         }
         case "Backspace": {
-            for (var _i = 0, queue_1 = queue; _i < queue_1.length; _i++) {
-                var queueItem = queue_1[_i];
-                if (queueItem instanceof Vertex) {
-                    for (var _k = 0, _l = allEdges(); _k < _l.length; _k++) {
-                        var e = _l[_k];
-                        if (e.start.label === queueItem.label || e.end.label === queueItem.label) {
-                            e.start.removeOutEdge(e);
-                            e.end.removeOutEdge(e);
-                            (_c = graph.querySelector("#edges")) === null || _c === void 0 ? void 0 : _c.removeChild((_d = document.getElementById(e.label)) !== null && _d !== void 0 ? _d : assert.fail());
-                        }
-                    }
-                    delete vertices[queueItem.label];
-                    (_e = graph.querySelector("#nodes")) === null || _e === void 0 ? void 0 : _e.removeChild((_f = document.getElementById(queueItem.label)) !== null && _f !== void 0 ? _f : assert.fail());
-                }
-                else if (queueItem instanceof Edge) {
-                    queueItem.start.removeOutEdge(queueItem);
-                    (_g = graph.querySelector("#edges")) === null || _g === void 0 ? void 0 : _g.removeChild((_h = document.getElementById(queueItem.label)) !== null && _h !== void 0 ? _h : assert.fail());
-                }
-            }
-            emptyQueue();
+            delPressed();
             break;
         }
         default: {
@@ -195,6 +145,63 @@ document.addEventListener("keydown", function (ev) {
         }
     }
 });
+function enterPressed() {
+    var _a, _b;
+    for (var ix = 0; ix < queue.length; ix++) {
+        var queueItem = queue[ix];
+        if (queueItem instanceof Vertex) {
+            if (ix < queue.length - 1) {
+                var nextItem = queue[ix + 1];
+                if (nextItem instanceof Vertex) {
+                    var eIDs = allEdges().map(function (e) { return e.label; });
+                    var newID = -1;
+                    while (eIDs.includes(String(newID)))
+                        newID--;
+                    var meta = parseCommand();
+                    var edge = new Edge(String(newID), queueItem, nextItem, Number((_a = meta.w) !== null && _a !== void 0 ? _a : 1), Number((_b = meta.b) !== null && _b !== void 0 ? _b : 0));
+                    queueItem.addOutEdge(edge);
+                    edge.writeHTML();
+                }
+            }
+        }
+        else if (queueItem instanceof Edge) { }
+        else {
+            var _c = queueItem, _ = _c[0], x = _c[1], y = _c[2];
+            if (existCoord(x, y))
+                break;
+            var newID = 0;
+            while (Object.keys(vertices).includes(String(newID)))
+                newID++;
+            var node = new Vertex(String(newID), x, y);
+            vertices[node.label] = node;
+            node.writeHTML();
+        }
+    }
+    emptyQueue();
+}
+function delPressed() {
+    var _a, _b, _c, _d, _e, _f;
+    for (var _i = 0, queue_1 = queue; _i < queue_1.length; _i++) {
+        var queueItem = queue_1[_i];
+        if (queueItem instanceof Vertex) {
+            for (var _g = 0, _h = allEdges(); _g < _h.length; _g++) {
+                var e = _h[_g];
+                if (e.start.label === queueItem.label || e.end.label === queueItem.label) {
+                    e.start.removeOutEdge(e);
+                    e.end.removeOutEdge(e);
+                    (_a = graph.querySelector("#edges")) === null || _a === void 0 ? void 0 : _a.removeChild((_b = document.getElementById(e.label)) !== null && _b !== void 0 ? _b : assert.fail());
+                }
+            }
+            delete vertices[queueItem.label];
+            (_c = graph.querySelector("#nodes")) === null || _c === void 0 ? void 0 : _c.removeChild((_d = document.getElementById(queueItem.label)) !== null && _d !== void 0 ? _d : assert.fail());
+        }
+        else if (queueItem instanceof Edge) {
+            queueItem.start.removeOutEdge(queueItem);
+            (_e = graph.querySelector("#edges")) === null || _e === void 0 ? void 0 : _e.removeChild((_f = document.getElementById(queueItem.label)) !== null && _f !== void 0 ? _f : assert.fail());
+        }
+    }
+    emptyQueue();
+}
 function emptyQueue() {
     document.getElementById("command-panel").textContent = "";
     while (queue.length > 0) {
