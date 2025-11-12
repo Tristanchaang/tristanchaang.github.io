@@ -110,6 +110,7 @@ var Vertex = /** @class */ (function () {
         this.outEdges = [];
         this.g = createSVG("g");
         this.writeHTML();
+        Vertex.ids[this.label] = this;
     }
     Vertex.prototype.addOutEdge = function (e) { this.outEdges.push(e); };
     Vertex.prototype.removeOutEdge = function (edge) { this.outEdges = this.outEdges.filter(function (e) { return (e !== edge); }); };
@@ -220,6 +221,7 @@ var Edge = /** @class */ (function () {
             this.label++;
         Edge.labels.push(this.label);
         this.writeHTML();
+        this.start.addOutEdge(this);
     }
     Edge.prototype.highlight = function (on) {
         var _a;
@@ -320,27 +322,27 @@ var Coord = /** @class */ (function () {
         this.y = y;
     }
     Coord.prototype.delete = function () { };
+    Coord.prototype.exist = function () {
+        var e_6, _a;
+        try {
+            for (var _b = __values(Vertex.all()), _c = _b.next(); !_c.done; _c = _b.next()) {
+                var v = _c.value;
+                if (v.x === this.x && v.y === this.y)
+                    return true;
+            }
+        }
+        catch (e_6_1) { e_6 = { error: e_6_1 }; }
+        finally {
+            try {
+                if (_c && !_c.done && (_a = _b.return)) _a.call(_b);
+            }
+            finally { if (e_6) throw e_6.error; }
+        }
+        return false;
+    };
     return Coord;
 }());
 var queue = [];
-function existCoord(x, y) {
-    var e_6, _a;
-    try {
-        for (var _b = __values(Vertex.all()), _c = _b.next(); !_c.done; _c = _b.next()) {
-            var v = _c.value;
-            if (v.x === x && v.y === y)
-                return true;
-        }
-    }
-    catch (e_6_1) { e_6 = { error: e_6_1 }; }
-    finally {
-        try {
-            if (_c && !_c.done && (_a = _b.return)) _a.call(_b);
-        }
-        finally { if (e_6) throw e_6.error; }
-    }
-    return false;
-}
 function parseCommand() {
     var _a;
     var fullCmd = (_a = elemById("command-panel")) === null || _a === void 0 ? void 0 : _a.textContent;
@@ -350,9 +352,9 @@ function parseCommand() {
 document.addEventListener("click", function (ev) {
     if (ev.target === elemById("alg"))
         return;
-    var _a = __read([Math.floor((ev.pageX + 25) / 50) * 50, Math.floor((ev.pageY + 25) / 50) * 50], 2), x = _a[0], y = _a[1];
-    if (ev.target === graph && !existCoord(x, y)) {
-        queue.push(new Coord(x, y));
+    var c = new Coord(Math.floor((ev.pageX + 25) / 50) * 50, Math.floor((ev.pageY + 25) / 50) * 50);
+    if (ev.target === graph && !c.exist()) {
+        queue.push(c);
     }
     showQueue();
 });
@@ -377,37 +379,37 @@ document.addEventListener("keydown", function (ev) {
     }
 });
 function enterPressed() {
-    var _a, _b;
     var meta = parseCommand();
-    if (queue.length === 2 && queue[0] instanceof Vertex && queue[1] instanceof Coord) {
-        queue[0].move(queue[1].x, queue[1].y);
-        return emptyQueue();
-    }
-    for (var ix = 0; ix < queue.length; ix++) {
-        var queueItem = queue[ix];
-        if (queueItem instanceof Vertex) {
-            cmdOnObj(meta, queueItem);
-            if (ix < queue.length - 1) {
-                var nextItem = queue[ix + 1];
-                if (nextItem instanceof Vertex) {
-                    var edge = new Edge(queueItem, nextItem, Number((_a = meta.w) !== null && _a !== void 0 ? _a : 1), Number((_b = meta.b) !== null && _b !== void 0 ? _b : 0));
-                    queueItem.addOutEdge(edge);
-                }
-            }
-        }
-        else if (queueItem instanceof Edge) {
-            cmdOnObj(meta, queueItem);
-        }
-        else {
-            if (existCoord(queueItem.x, queueItem.y))
-                break;
+    // [Coord, Coord, Coord, ...] -> Create nodes
+    if (queue.every(function (x) { return x instanceof Coord; })) {
+        queue.forEach(function (c) {
+            if (c.exist())
+                return;
             var newID = 0;
             while (Object.keys(Vertex.ids).includes(String(newID)))
                 newID++;
-            var node = new Vertex(String(newID), queueItem.x, queueItem.y);
-            Vertex.ids[node.label] = node;
-        }
+            new Vertex(String(newID), c.x, c.y);
+        });
     }
+    // [Vertex, Vertex, Vertex, ...] -> Create edges
+    else if (queue.every(function (x) { return x instanceof Vertex; })) {
+        queue.forEach(function (v, i) {
+            var _a, _b;
+            // cmdOnObj(meta, v);
+            if (i === 0)
+                return;
+            var u = queue[i - 1];
+            new Edge(u, v, Number((_a = meta.w) !== null && _a !== void 0 ? _a : 1), Number((_b = meta.b) !== null && _b !== void 0 ? _b : 0));
+        });
+    }
+    // [Vertex, Coord] -> Move nodes
+    else if (queue.length === 2 && queue[0] instanceof Vertex && queue[1] instanceof Coord) {
+        queue[0].move(queue[1].x, queue[1].y);
+    }
+    // [no Coords] -> Apply transformation
+    // else if (queue.every(x => x instanceof Vertex || x instanceof Edge)) {
+    //     queue.forEach(o => cmdOnObj(meta, o));
+    // }
     emptyQueue();
 }
 function delPressed() {
