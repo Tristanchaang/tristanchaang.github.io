@@ -4,6 +4,8 @@
   100% { r: 25; }
 }
 
+
+
 .node > circle {
   animation: pulse 1.8s linear infinite;
 }
@@ -14,4 +16,8 @@
 
 .edge {
     cursor: pointer;
+}
+
+main {
+    overflow: hidden;
 }
