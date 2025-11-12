@@ -21,11 +21,3 @@
 main {
     overflow: hidden;
 }
-
-#queue {
-    top: 20px;
-}
-
-@media (pointer:none), (pointer:coarse) {
-    #queue { bottom: 20px; }
-}
