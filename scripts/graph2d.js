@@ -63,6 +63,15 @@ var __values = (this && this.__values) || function(o) {
     };
     throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
 };
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
 var darkGreen = "#003425";
 var green = "#005B41";
 var aquamarine = "aquamarine";
@@ -653,34 +662,140 @@ function dfs(s) {
         }
     });
 }
+function dijkstra(s) {
+    function extractMin() {
+        var e_14, _a;
+        var minNode = null;
+        var minDist = Infinity;
+        try {
+            for (var _b = __values(fake.entries()), _c = _b.next(); !_c.done; _c = _b.next()) {
+                var _d = __read(_c.value, 2), v = _d[0], d = _d[1];
+                if (d <= minDist && !visited.has(v)) {
+                    minNode = v;
+                    minDist = d;
+                }
+            }
+        }
+        catch (e_14_1) { e_14 = { error: e_14_1 }; }
+        finally {
+            try {
+                if (_c && !_c.done && (_a = _b.return)) _a.call(_b);
+            }
+            finally { if (e_14) throw e_14.error; }
+        }
+        return minNode;
+    }
+    function relax(e) {
+        var _a, _b;
+        fake.set(e.end, Math.min((_a = fake.get(e.end)) !== null && _a !== void 0 ? _a : assert.fail(), ((_b = fake.get(e.start)) !== null && _b !== void 0 ? _b : assert.fail()) + e.weight));
+    }
+    var fake, visited, minNode, delta, _a, _b, e, parent_1;
+    var e_13, _c;
+    var _d, _e;
+    return __generator(this, function (_f) {
+        switch (_f.label) {
+            case 0:
+                fake = new Map(__spreadArray([], __read(Vertex.all()), false).map(function (v) { return [v, Infinity]; }));
+                fake.set(s, 0);
+                visited = new Set();
+                minNode = extractMin();
+                _f.label = 1;
+            case 1:
+                if (!(minNode !== null)) return [3 /*break*/, 4];
+                visited.add(minNode);
+                delta = (_d = fake.get(minNode)) !== null && _d !== void 0 ? _d : assert.fail();
+                return [4 /*yield*/, [minNode, 0, null, fake]];
+            case 2:
+                _f.sent();
+                try {
+                    for (_a = (e_13 = void 0, __values(minNode.outEdges)), _b = _a.next(); !_b.done; _b = _a.next()) {
+                        e = _b.value;
+                        relax(e);
+                    }
+                }
+                catch (e_13_1) { e_13 = { error: e_13_1 }; }
+                finally {
+                    try {
+                        if (_b && !_b.done && (_c = _a.return)) _c.call(_a);
+                    }
+                    finally { if (e_13) throw e_13.error; }
+                }
+                parent_1 = (_e = __spreadArray([], __read(Edge.all()), false).filter(function (e) {
+                    var _a;
+                    return e.end === minNode &&
+                        ((_a = fake.get(e.start)) !== null && _a !== void 0 ? _a : assert.fail()) + e.weight === fake.get(e.end);
+                })[0]) !== null && _e !== void 0 ? _e : null;
+                return [4 /*yield*/, [minNode, delta, parent_1]];
+            case 3:
+                _f.sent();
+                minNode = extractMin();
+                return [3 /*break*/, 1];
+            case 4: return [2 /*return*/, null];
+        }
+    });
+}
 var GraphAlg = /** @class */ (function () {
     function GraphAlg() {
     }
     GraphAlg.activate = function (alg) {
-        var _a;
+        var e_15, _a;
+        var _b;
         if (!(queue[0] instanceof Vertex))
             throw Error;
-        var algGenerator = (_a = {
+        var algGenerator = (_b = {
             BFS: bfs,
-            DFS: dfs
-        }[alg]) !== null && _a !== void 0 ? _a : assert.fail();
+            DFS: dfs,
+            Dijkstra: dijkstra
+        }[alg]) !== null && _b !== void 0 ? _b : assert.fail();
         GraphAlg.alg = alg;
         GraphAlg.order = algGenerator(queue[0]);
+        if (alg === "Dijkstra") {
+            try {
+                for (var _c = __values(Vertex.all()), _d = _c.next(); !_d.done; _d = _c.next()) {
+                    var v = _d.value;
+                    v.setSuperscript("∞");
+                }
+            }
+            catch (e_15_1) { e_15 = { error: e_15_1 }; }
+            finally {
+                try {
+                    if (_d && !_d.done && (_a = _c.return)) _a.call(_c);
+                }
+                finally { if (e_15) throw e_15.error; }
+            }
+        }
         emptyQueue();
     };
     GraphAlg.next = function () {
+        var e_16, _a;
         var x = GraphAlg.order.next().value;
         if (x === null)
             return GraphAlg.stop();
-        var _a = __read(x, 3), vertex = _a[0], level = _a[1], parent = _a[2];
-        vertex.highlight(true, (level >= 0) ? aquamarine : "#ff9c9cff");
-        if (GraphAlg.alg === "BFS")
-            vertex.setSuperscript(String(level));
+        var _b = __read(x, 3), vertex = _b[0], level = _b[1], parent = _b[2];
+        if (GraphAlg.alg !== "Dijkstra" || x.length !== 4)
+            vertex.highlight(true, (level >= 0 || GraphAlg.alg !== "DFS") ? aquamarine : "#ff9c9cff");
+        if (GraphAlg.alg !== "DFS" && x.length === 3)
+            vertex.setSuperscript((function (x) { return (x === Infinity) ? "∞" : String(x); })(level));
+        if (x.length === 4) {
+            try {
+                for (var _c = __values(Vertex.all()), _d = _c.next(); !_d.done; _d = _c.next()) {
+                    var v = _d.value;
+                    v.setSuperscript((function (x) { return (x === Infinity) ? "∞" : String(x); })(x[3].get(v)));
+                }
+            }
+            catch (e_16_1) { e_16 = { error: e_16_1 }; }
+            finally {
+                try {
+                    if (_d && !_d.done && (_a = _c.return)) _a.call(_c);
+                }
+                finally { if (e_16) throw e_16.error; }
+            }
+        }
         if (parent)
             parent.highlight(true);
     };
     GraphAlg.stop = function () {
-        var e_13, _a, e_14, _b;
+        var e_17, _a, e_18, _b;
         GraphAlg.alg = "";
         try {
             for (var _c = __values(Vertex.all()), _d = _c.next(); !_d.done; _d = _c.next()) {
@@ -689,12 +804,12 @@ var GraphAlg = /** @class */ (function () {
                 v.setSuperscript("");
             }
         }
-        catch (e_13_1) { e_13 = { error: e_13_1 }; }
+        catch (e_17_1) { e_17 = { error: e_17_1 }; }
         finally {
             try {
                 if (_d && !_d.done && (_a = _c.return)) _a.call(_c);
             }
-            finally { if (e_13) throw e_13.error; }
+            finally { if (e_17) throw e_17.error; }
         }
         try {
             for (var _e = __values(Edge.all()), _f = _e.next(); !_f.done; _f = _e.next()) {
@@ -702,12 +817,12 @@ var GraphAlg = /** @class */ (function () {
                 e.highlight(false);
             }
         }
-        catch (e_14_1) { e_14 = { error: e_14_1 }; }
+        catch (e_18_1) { e_18 = { error: e_18_1 }; }
         finally {
             try {
                 if (_f && !_f.done && (_b = _e.return)) _b.call(_e);
             }
-            finally { if (e_14) throw e_14.error; }
+            finally { if (e_18) throw e_18.error; }
         }
     };
     GraphAlg.alg = "";
@@ -723,6 +838,7 @@ function switchMission() {
     var curMission = elemById("alg").textContent;
     elemById("alg").textContent = (_a = {
         BFS: "DFS",
-        DFS: "BFS"
+        DFS: "Dijkstra",
+        Dijkstra: "BFS"
     }[curMission]) !== null && _a !== void 0 ? _a : assert.fail();
 }
