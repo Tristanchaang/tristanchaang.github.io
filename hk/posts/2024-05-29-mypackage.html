@@ -1,0 +1,165 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="/circle-user-solid.ico"><script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><script type="module">window.MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]]}};</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Chiron+Sung+HK:ital,wght@0,200..900;1,200..900&amp;family=Dancing+Script:wght@400..700&amp;family=LXGW+WenKai+Mono+TC&amp;family=Ma+Shan+Zheng&amp;family=Manrope:wght@200..800&amp;family=Marck+Script&amp;family=New+Tegomin&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;family=Noto+Serif+JP:wght@200..900&amp;family=Noto+Serif+SC:wght@200..900&amp;family=Noto+Serif+TC:wght@200..900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Radley:ital@0;1&amp;family=Satisfy&amp;family=Urbanist:ital,wght@0,100..900;1,100..900&amp;family=Yuji+Syuku&amp;family=Zen+Antique&amp;family=Zhi+Mang+Xing&amp;display=swap" rel="stylesheet"><title>我嘅 LaTeX 宏包</title><style>.button{background-color:#50506e;border:none;color:#fff;cursor:pointer;display:inline-flex;font-size:1rem;padding:.5rem 1rem;text-decoration:none;transition:background-color .2s}.button>div{gap:.5rem}.button>span{color:#87cefa}.button:hover{background-color:#3c3c6e}nav{z-index:1;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(to top,#0000,#000);position:relative;height:4rem;border:none;padding:0 1rem}nav a{color:#fff;text-decoration:none;font-family:Newsreader,"Noto Serif SC","Noto Serif TC","Noto Serif JP";font-weight:700}#langToggle:hover{cursor:pointer}#langSelect{animation:fadeInFromTop .5s ease-out}@keyframes fadeInFromTop{0%{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}body{margin:0;color:#fff;font-family:Newsreader,"Noto Serif SC","Noto Serif TC","Noto Serif JP";padding-bottom:5rem}a{color:#3cb371;text-decoration:none}main{margin:0 max(2rem,10vw);animation:fadeInFromLeft 1s ease-out}@keyframes fadeInFromLeft{0%{opacity:0;transform:translate(-40px)}to{opacity:1;transform:translate(0)}}#resume-shortcut,#book-shortcut{font-size:1.25rem;background-color:#3c503c;color:#fff;display:inline-flex;margin:0 1rem 1rem 0;align-items:center;padding:0rem 0rem 0rem 1rem;width:17rem;height:4rem;transition:background-color .2s}#edu{display:flex;flex-direction:row;flex-wrap:wrap;gap:.5rem 2rem;margin:0rem;list-style:disc}#edu>li>p{font-size:.75rem}#edu>li>h4,#edu>li>p{margin:.5rem}#post-list{width:100%;height:8rem;display:flex;flex-direction:row;flex-wrap:nowrap;gap:1rem;overflow-x:auto;overflow-y:hidden;list-style:none;padding:0;margin:0;mask-image:linear-gradient(to right,black 0%,black 80%,transparent 100%)}#post-list>li{flex:0 0 auto;background-color:#3c503c;width:18rem;position:relative;transition:background-color .2s}#post-list>li>a{position:absolute;inset:0;padding:0 1rem 1rem;display:flex;flex-direction:column;justify-content:space-between;color:#fff;font-size:1.25rem}#post-list>li>a>span{color:#3cb371;text-align:right;font-size:1rem}#material-list{display:grid;grid-template-columns:repeat(auto-fill,18rem);gap:1rem;overflow-x:auto;overflow-y:hidden;list-style:none;padding:0;margin:0}#material-list>li{flex:0 0 auto;background-color:#3c503c;width:18rem;height:4rem;position:relative;transition:background-color .2s}#material-list>li>a{position:absolute;inset:0;padding:1rem;display:flex;flex-direction:column;justify-content:center;color:#fff;font-size:1.25rem;box-sizing:border-box}#resume-shortcut:hover,#book-shortcut:hover,#material-list>li:hover,#post-list>li:hover{background-color:#285028}embed{background-color:#141428}
+</style></head> <body style="background-color:rgb(40, 40, 60)"> <nav style=""> <a href="/hk/"><h2 style="font-family:LXGW WenKai Mono TC">曾子宸嘅網站</h2></a> <div style="display:flex;flex-direction:row;align-items:center;gap:2rem">  <a href="/hk/materials/mit">筆記</a> <div style="width:68"> <a onclick="
+        const langSelect = document.getElementById('langSelect');
+        if (langSelect) langSelect.style.display = langSelect.style.display === 'grid' ? 'none' : 'grid';
+      " id="langToggle"> <div style="display:flex;flex-direction:row;align-items:center">  <img src="/flags/hk.svg" height="20px"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"> <polyline points="6 9 12 15 18 9"></polyline> </svg>  </div> </a> <div id="langSelect" style="display:none;flex-direction:column;align-items:center;position:absolute;width:3.5rem;gap:1rem;top:3.5rem"> <a href="/posts/2024-05-29-mypackage.html"> <div style="display:flex;flex-direction:row;align-items:center;gap:0.5rem">  <img src="/flags/en.svg" width="24" height="20" style="vertical-align:middle"> <span>en</span>  </div> </a><a href="/my/posts/2024-05-29-mypackage.html"> <div style="display:flex;flex-direction:row;align-items:center;gap:0.5rem">  <img src="/flags/my.svg" width="24" height="20" style="vertical-align:middle"> <span>my</span>  </div> </a><a href="/zh/posts/2024-05-29-mypackage.html"> <div style="display:flex;flex-direction:row;align-items:center;gap:0.5rem">  <img src="/flags/zh.svg" width="24" height="20" style="vertical-align:middle"> <span>华</span>  </div> </a><a href="/fr/posts/2024-05-29-mypackage.html"> <div style="display:flex;flex-direction:row;align-items:center;gap:0.5rem">  <img src="/flags/fr.svg" width="24" height="20" style="vertical-align:middle"> <span>fr</span>  </div> </a><a href="/jp/posts/2024-05-29-mypackage.html"> <div style="display:flex;flex-direction:row;align-items:center;gap:0.5rem">  <img src="/flags/jp.svg" width="24" height="20" style="vertical-align:middle"> <span>日</span>  </div> </a> </div> </div>  </div> </nav> <main> <h1>我嘅 LaTeX 宏包</h1> <p><a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/natsirt.zip" download>Click here</a> to download the zip file that contains ‘natsirt.cls’.</p>
+<p>I have modified the MIT Course 6 LaTeX Package to one that is suited for my convenience and purposes. For an example of a product of this package, see my <a href="https://tristanchaang.github.io/notes/real_analysis">Real Analysis Notes</a> and <a href="https://tristanchaang.github.io/notes/topology">Topology Notes</a>.</p>
+<p>To use the package on Overleaf, upload the .cls file onto your project, and type the following into your .tex file:</p>
+<blockquote>
+<p>\documentclass{natsirt}</p>
+<p>\title{…}</p>
+<p>\author{…}</p>
+<p>\subtitle{…} % optional</p>
+<p>\begin{document}</p>
+<p>…</p>
+<p>\end{document}</p>
+</blockquote>
+<h2 id="extra-features">Extra Features</h2>
+<h3 id="new-chapter-and-subchapters">New Chapter and Subchapters</h3>
+<p>\chapter{} and \chapterpart{} will create chapter titles. \chapter{} will create a page break for every subsequent chapter.</p>
+<h3 id="new-problem-and-subproblems-for-psets">New Problem and Subproblems (for Psets)</h3>
+<p>\problem{Num}{Collaborators} and \problempart{} will create problem titles. \problem{} will create a page break for every subsequent problem.</p>
+<h3 id="blue-green-red-and-white-boxes">Blue, Green, Red and White Boxes</h3>
+<p>The environment commands \begin{bluebox}, \begin{greenbox}, \begin{redbox} and \begin{whitebox} create a colored box in which you can type paragraphs.</p>
+<h3 id="brackets">Brackets</h3>
+<p>These brackets support automatic size correction. E.g. \pr{\sum} will be $\left(\displaystyle\sum\right)$ instead of $(\displaystyle\sum)$</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="center">\pr{…}</th><th align="center">\br{…}</th><th align="center">\ar{…}</th><th align="center">\set{…}</th><th align="center">\abs{…}</th><th align="center">\norm{…}</th><th align="center">\fl{…}</th><th align="center">\ce{…}</th></tr></thead><tbody><tr><td align="center">$(…)$</td><td align="center">$[…]$</td><td align="center">$\langle … \rangle$</td><td align="center">$\{…\}$</td><td align="center">$\mid … \mid$</td><td align="center">$\Vert … \Vert$</td><td align="center">$\lfloor…\rfloor$</td><td align="center">$\lceil…\rceil$</td></tr></tbody></table>
+<h3 id="function-shorthands">Function Shorthands</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="center">\prb{…}</th><th align="center">\epv{…}</th><th align="center">\var{…}</th><th align="center">\Re{…}</th><th align="center">\Im{…}</th></tr></thead><tbody><tr><td align="center">$\mathbb{P}[…]$</td><td align="center">$\mathbb{E}[…]$</td><td align="center">$\mathbb{V}[…]$</td><td align="center">$\mathfrak{Re}[…]$</td><td align="center">$\mathfrak{Im}[…]$</td></tr></tbody></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="center">\under{abc}{x}</th><th align="center">\od{a}{b}</th><th align="center">\pd{a}{b}</th></tr></thead><tbody><tr><td align="center">$\underset{x}{\mathrm{abc}}$</td><td align="center">$\frac{\mathrm{d}a}{\mathrm{d}b}$</td><td align="center">$\frac{\partial a}{\partial b}$</td></tr></tbody></table>
+<h3 id="symbols">Symbols</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="center">\emp</th><th align="center">\A,\B,…,\Z</th><th align="center">\eps</th><th align="center">\phi</th><th align="center">\></th></tr></thead><tbody><tr><td align="center">$\varnothing$</td><td align="center">$\mathbb{A},\mathbb{B},\cdots,\mathbb{Z}$</td><td align="center">$\varepsilon$</td><td align="center">$\varphi$</td><td align="center">$\rightarrow$</td></tr></tbody></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="center">\imply</th><th align="center">\Imply</th><th align="center">\iff</th><th align="center">\Iff</th><th align="center">\qed</th><th align="center">\QED</th><th align="center">\mod{…}</th><th align="center">\df</th></tr></thead><tbody><tr><td align="center">$\Rightarrow$</td><td align="center">$\Longrightarrow$</td><td align="center">$\Leftrightarrow$</td><td align="center">$\Longleftrightarrow$</td><td align="center">$\square$</td><td align="center">$\blacksquare$</td><td align="center">$(\mathrm{mod} \ …)$</td><td align="center">$\mathrm{d}$</td></tr></tbody></table>
+<h3 id="others">Others</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="center">\DS</th><th align="center">\TS</th><th align="center">\cases{abc\\ xyz\\ …}</th><th align="center">\ol{abc}</th><th align="center">\td{abc}</th><th align="center">\emph{text}</th><th align="center">\scr{ABC}</th></tr></thead><tbody><tr><td align="center">\displaystyle</td><td align="center">\textstyle</td><td align="center">$\begin{cases}abc \\ xyz\\ \vdots \end{cases}$</td><td align="center">$\overline{abc}$</td><td align="center">$\widetilde{abc}$</td><td align="center"><em><strong>text</strong></em></td><td align="center">$\mathscr{ABC}$</td></tr></tbody></table>
+<h3 id="example">Example</h3>
+<p><code>f_X(x) = \od{}{t}\prb{X\leq t} = \cases{1, &#x26; 0\leq x \leq 1 \\. 0, &#x26; \text{otherwise}}</code></p>
+<p>$$ f_X(x) = \frac{\mathrm{d}}{\mathrm{d}t}\mathbb{P}[X\leq t] = \begin{cases}1, &#x26; 0\leq x \leq 1\\ 0, &#x26; \text{otherwise}\end{cases} $$</p>
+<p><code>f \in \mathcal{R}(a,b) \iff \under{inf}{a=x_0&#x26;#60;\cdots&#x26;#60;x_N=b} \sum_{i=1}^{N} (x_i - x_{i-1}) \under{osc}{[x_{i-1}, x_i]} f = 0</code></p>
+<p>$$f \in \mathcal{R}(a,b) \ \Leftrightarrow \ \underset{a=x_0 \lt \cdots\lt x_N=b}{\mathrm{inf}} \sum_{i=1}^{N} (x_i - x_{i-1}) \underset{[x_{i-1}, x_i]}{\mathrm{osc}} f = 0 $$</p> </main></body></html>
