@@ -1,0 +1,4 @@
+User-agent: Googlebot-Image
+Disallow: /flags/
+Disallow: /icons/
+Disallow: /contour.png

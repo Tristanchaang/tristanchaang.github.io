@@ -1,0 +1,240 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="/icons/circle-user-solid.ico"><script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><script type="module">window.MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]]}};</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Chiron+Sung+HK:ital,wght@0,200..900;1,200..900&amp;family=Dancing+Script:wght@400..700&amp;family=LXGW+WenKai+Mono+TC&amp;family=Ma+Shan+Zheng&amp;family=Manrope:wght@200..800&amp;family=Marck+Script&amp;family=New+Tegomin&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;family=Noto+Serif+JP:wght@200..900&amp;family=Noto+Serif+SC:wght@200..900&amp;family=Noto+Serif+TC:wght@200..900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Radley:ital@0;1&amp;family=Satisfy&amp;family=Urbanist:ital,wght@0,100..900;1,100..900&amp;family=Yuji+Syuku&amp;family=Zen+Antique&amp;family=Zhi+Mang+Xing&amp;display=swap" rel="stylesheet"><script>
+			if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1")) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+				ga('create', '{{ site.google_analytics }}', 'auto');
+				ga('send', 'pageview');
+			}
+		</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-PH72KY1MTT"></script><script>
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('config', 'G-PH72KY1MTT');
+			</script><script>
+				window.addEventListener('DOMContentLoaded', () => {
+					document.querySelectorAll('.timeline-window').forEach((timeline) => {
+						requestAnimationFrame(() => {
+							timeline.scrollLeft = timeline.scrollWidth;
+						});
+					});
+				});
+			</script><title>My LaTeX Package</title><style>.button{background-color:#50506e;border:none;color:#fff;cursor:pointer;display:inline-flex;font-size:1rem;padding:.5rem 1rem;text-decoration:none;transition:background-color .2s}.button>div{gap:.5rem}.button>span{color:#87cefa}.button:hover{background-color:#3c3c6e}nav{z-index:1;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(to top,#0000,#000);position:relative;height:4rem;border:none;padding:0 1rem}nav a{color:#fff;text-decoration:none;font-family:Newsreader,"Noto Serif SC","Noto Serif TC","Noto Serif JP";font-weight:700}#langToggle:hover{cursor:pointer}#langSelect{animation:fadeInFromTop .5s ease-out}@keyframes fadeInFromTop{0%{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}body{margin:0;color:#fff;font-family:Newsreader,"Noto Serif SC","Noto Serif TC","Noto Serif JP";padding-bottom:5rem}a{color:#3cb371;text-decoration:none}main{margin:0 max(2rem,10vw);animation:fadeInFromLeft 1s ease-out}@keyframes fadeInFromLeft{0%{opacity:0;transform:translate(-40px)}to{opacity:1;transform:translate(0)}}#timeline-shortcut,#resume-shortcut,#book-shortcut{font-size:1.25rem;background-color:#3c503c;color:#fff;display:inline-flex;margin:0 1rem 1rem 0;align-items:center;padding:0rem 0rem 0rem 1rem;width:17rem;height:4rem;transition:background-color .2s}.timeline-window{position:relative;height:32rem;margin:2rem 0;overflow-x:auto;overflow-y:hidden;background-color:#141e1499}.timeline-track{position:relative;width:120rem;height:100%}.timeline-axis{position:absolute;left:0;right:0;bottom:4rem;height:2px;background-color:#fff}.timeline-tick{position:absolute;bottom:2.5rem;transform:translate(-50%);color:#fff;font-size:.9rem;white-space:nowrap}.timeline-interval{position:absolute;box-sizing:border-box;padding:1rem;color:#fff;border:none;outline:none;box-shadow:none;overflow:hidden;line-height:1.3}.timeline-interval.timeline-shade-1{background-color:#306c46bf}.timeline-interval.timeline-shade-2{background-color:#44844ebf}.timeline-interval.timeline-shade-3{background-color:#245c40bf}.timeline-interval.timeline-shade-4{background-color:#58965abf}.timeline-point{position:absolute;width:16rem;text-align:left;color:#fff;box-sizing:border-box;padding:1rem;line-height:1.3}.timeline-interval time,.timeline-point time{display:block;color:#b4ffb4;font-weight:700;margin-bottom:.5rem}#edu{display:flex;flex-direction:row;flex-wrap:wrap;gap:.5rem 2rem;margin:0rem;list-style:disc}#edu>li>p{font-size:.75rem}#edu>li>h4,#edu>li>p{margin:.5rem}#post-list{width:100%;height:8rem;display:flex;flex-direction:row;flex-wrap:nowrap;gap:1rem;overflow-x:auto;overflow-y:hidden;list-style:none;padding:0;margin:0;mask-image:linear-gradient(to right,black 0%,black 80%,transparent 100%)}#post-list>li{flex:0 0 auto;background-color:#3c503c;width:18rem;position:relative;transition:background-color .2s}#post-list>li>a{position:absolute;inset:0;padding:0 1rem 1rem;display:flex;flex-direction:column;justify-content:space-between;color:#fff;font-size:1.25rem}#post-list>li>a>span{color:#3cb371;text-align:right;font-size:1rem}#material-list{display:grid;grid-template-columns:repeat(auto-fill,18rem);gap:1rem;overflow-x:auto;overflow-y:hidden;list-style:none;padding:0;margin:0}#material-list>li{flex:0 0 auto;background-color:#3c503c;width:18rem;height:4rem;position:relative;transition:background-color .2s}#material-list>li>a{position:absolute;inset:0;padding:1rem;display:flex;flex-direction:column;justify-content:center;color:#fff;font-size:1.25rem;box-sizing:border-box}#timeline-shortcut:hover,#resume-shortcut:hover,#book-shortcut:hover,#material-list>li:hover,#post-list>li:hover{background-color:#285028}embed{background-color:#141428}table{border-collapse:collapse}table,th,td{border:1px solid white}th,td{width:15rem;padding:.5rem;text-align:left;font-family:monospace}thead{background-color:#3c3c50}
+</style></head> <body style="background-color:rgb(40, 40, 60)"> <nav style=""> <a href="/"><h2 style="font-family:Satisfy">Tristan Chaang&#39;s Page</h2></a> <div style="display:flex;flex-direction:row;align-items:center;gap:2rem">  <a href="/materials/mit">Notes</a> <div style="width:68"> <a onclick="
+        const langSelect = document.getElementById('langSelect');
+        if (langSelect) langSelect.style.display = langSelect.style.display === 'grid' ? 'none' : 'grid';
+      " id="langToggle"> <div style="display:flex;flex-direction:row;align-items:center">  <img src="/flags/en.svg" height="20px"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"> <polyline points="6 9 12 15 18 9"></polyline> </svg>  </div> </a> <div id="langSelect" style="display:none;flex-direction:column;align-items:center;position:absolute;width:3.5rem;gap:1rem;top:3.5rem"> <a href="/my/posts/2024-05-29-mypackage.html"> <div style="display:flex;flex-direction:row;align-items:center;gap:0.5rem">  <img src="/flags/my.svg" width="24" height="20" style="vertical-align:middle"> <span>my</span>  </div> </a><a href="/zh/posts/2024-05-29-mypackage.html"> <div style="display:flex;flex-direction:row;align-items:center;gap:0.5rem">  <img src="/flags/zh.svg" width="24" height="20" style="vertical-align:middle"> <span>华</span>  </div> </a><a href="/hk/posts/2024-05-29-mypackage.html"> <div style="display:flex;flex-direction:row;align-items:center;gap:0.5rem">  <img src="/flags/hk.svg" width="24" height="20" style="vertical-align:middle"> <span>粵</span>  </div> </a><a href="/fr/posts/2024-05-29-mypackage.html"> <div style="display:flex;flex-direction:row;align-items:center;gap:0.5rem">  <img src="/flags/fr.svg" width="24" height="20" style="vertical-align:middle"> <span>fr</span>  </div> </a><a href="/jp/posts/2024-05-29-mypackage.html"> <div style="display:flex;flex-direction:row;align-items:center;gap:0.5rem">  <img src="/flags/jp.svg" width="24" height="20" style="vertical-align:middle"> <span>日</span>  </div> </a> </div> </div>  </div> </nav> <main> <h1>My LaTeX Package</h1> <p><a href="https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/archive/natsirt.zip" download>Click here</a> to download the zip file that contains ‘natsirt.cls’.</p>
+<p>I have modified the MIT Course 6 LaTeX Package to one that is suited for my convenience and purposes. For an example of a product of this package, see my <a href="https://tristanchaang.github.io/materials/mit/18/real.html">Real Analysis Notes</a> and <a href="https://tristanchaang.github.io/materials/mit/18/topology.html">Topology Notes</a>.</p>
+<p>To use the package on Overleaf, upload the .cls file onto your project, and type the following into your .tex file:</p>
+<blockquote>
+<p>\documentclass{natsirt}</p>
+<p>\title{…}</p>
+<p>\author{…}</p>
+<p>\subtitle{…} % optional</p>
+<p>\begin{document}</p>
+<p>…</p>
+<p>\end{document}</p>
+</blockquote>
+<h2 id="extra-features">Extra Features</h2>
+<h3 id="new-chapter-and-subchapters">New Chapter and Subchapters</h3>
+<p>\chapter{} and \chapterpart{} will create chapter titles. \chapter{} will create a page break for every subsequent chapter.</p>
+<h3 id="new-problem-and-subproblems-for-psets">New Problem and Subproblems (for Psets)</h3>
+<p>\problem{Num}{Collaborators} and \problempart{} will create problem titles. \problem{} will create a page break for every subsequent problem.</p>
+<h3 id="blue-green-red-and-white-boxes">Blue, Green, Red and White Boxes</h3>
+<p>The environment commands \begin{bluebox}, \begin{greenbox}, \begin{redbox} and \begin{whitebox} create a colored box in which you can type paragraphs.</p>
+<h3 id="brackets">Brackets</h3>
+<p>These brackets support automatic size correction. E.g. \pr{\sum} will be $\left(\displaystyle\sum\right)$ instead of $(\displaystyle\sum)$</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="center">Command</th><th align="center">Output</th></tr></thead><tbody><tr><td align="center">\pr{…}</td><td align="center">$(…)$</td></tr><tr><td align="center">\br{…}</td><td align="center">$[…]$</td></tr><tr><td align="center">\ar{…}</td><td align="center">$\langle … \rangle$</td></tr><tr><td align="center">\set{…}</td><td align="center">$\{…\}$</td></tr><tr><td align="center">\abs{…}</td><td align="center">$\mid … \mid$</td></tr><tr><td align="center">\norm{…}</td><td align="center">$\Vert … \Vert$</td></tr><tr><td align="center">\fl{…}</td><td align="center">$\lfloor…\rfloor$</td></tr><tr><td align="center">\ce{…}</td><td align="center">$\lceil…\rceil$</td></tr></tbody></table>
+<h3 id="function-shorthands">Function Shorthands</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="center">Command</th><th align="center">Output</th></tr></thead><tbody><tr><td align="center">\prb{…}</td><td align="center">$\mathbb{P}[…]$</td></tr><tr><td align="center">\epv{…}</td><td align="center">$\mathbb{E}[…]$</td></tr><tr><td align="center">\var{…}</td><td align="center">$\mathbb{V}[…]$</td></tr><tr><td align="center">\Re{…}</td><td align="center">$\mathfrak{Re}[…]$</td></tr><tr><td align="center">\Im{…}</td><td align="center">$\mathfrak{Im}[…]$</td></tr><tr><td align="center">\under{abc}{x}</td><td align="center">$\underset{x}{\mathrm{abc}}$</td></tr><tr><td align="center">\od{a}{b}</td><td align="center">$\frac{\mathrm{d}a}{\mathrm{d}b}$</td></tr><tr><td align="center">\pd{a}{b}</td><td align="center">$\frac{\partial a}{\partial b}$</td></tr></tbody></table>
+<h3 id="symbols">Symbols</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="center">Command</th><th align="center">Output</th></tr></thead><tbody><tr><td align="center">\emp</td><td align="center">$\varnothing$</td></tr><tr><td align="center">\A,\B,…,\Z</td><td align="center">$\mathbb{A},\mathbb{B},\cdots,\mathbb{Z}$</td></tr><tr><td align="center">\eps</td><td align="center">$\varepsilon$</td></tr><tr><td align="center">\phi</td><td align="center">$\varphi$</td></tr><tr><td align="center">\></td><td align="center">$\rightarrow$</td></tr><tr><td align="center">\imply</td><td align="center">$\Rightarrow$</td></tr><tr><td align="center">\Imply</td><td align="center">$\Longrightarrow$</td></tr><tr><td align="center">\iff</td><td align="center">$\Leftrightarrow$</td></tr><tr><td align="center">\Iff</td><td align="center">$\Longleftrightarrow$</td></tr><tr><td align="center">\qed</td><td align="center">$\square$</td></tr><tr><td align="center">\QED</td><td align="center">$\blacksquare$</td></tr><tr><td align="center">\mod{…}</td><td align="center">$(\mathrm{mod} \ …)$</td></tr><tr><td align="center">\df</td><td align="center">$\mathrm{d}$</td></tr></tbody></table>
+<h3 id="others">Others</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="center">Command</th><th align="center">Output</th></tr></thead><tbody><tr><td align="center">\DS</td><td align="center">\displaystyle</td></tr><tr><td align="center">\TS</td><td align="center">\textstyle</td></tr><tr><td align="center"><code>\cases{abc\\ xyz\\ ...}</code></td><td align="center">$\begin{cases}abc \\ xyz\\ \vdots \end{cases}$</td></tr><tr><td align="center">\ol{abc}</td><td align="center">$\overline{abc}$</td></tr><tr><td align="center">\td{abc}</td><td align="center">$\widetilde{abc}$</td></tr><tr><td align="center">\emph{text}</td><td align="center"><em><strong>text</strong></em></td></tr><tr><td align="center">\scr{ABC}</td><td align="center">$\mathscr{ABC}$</td></tr></tbody></table>
+<h3 id="example">Example</h3>
+<p><code>f_X(x) = \od{}{t}\prb{X\leq t} = \cases{1, &#x26; 0\leq x \leq 1 \\ 0, &#x26; \text{otherwise}}</code></p>
+<p>$$ f_X(x) = \frac{\mathrm{d}}{\mathrm{d}t}\mathbb{P}[X\leq t] = \begin{cases}1, &#x26; 0\leq x \leq 1\\ 0, &#x26; \text{otherwise}\end{cases} $$</p>
+<p><code>f \in \mathcal{R}(a,b) \iff \under{inf}{a=x_0&#x26;#60;\cdots&#x26;#60;x_N=b} \sum_{i=1}^{N} (x_i - x_{i-1}) \under{osc}{[x_{i-1}, x_i]} f = 0</code></p>
+<p>$$f \in \mathcal{R}(a,b) \ \Leftrightarrow \ \underset{a=x_0 \lt \cdots\lt x_N=b}{\mathrm{inf}} \sum_{i=1}^{N} (x_i - x_{i-1}) \underset{[x_{i-1}, x_i]}{\mathrm{osc}} f = 0 $$</p> </main></body></html>
